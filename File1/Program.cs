@@ -8,9 +8,9 @@ namespace File1
 {
     internal class Program
     {
-        public static void bai3()
+        public static void bai10()
         {
-
+            Console.WriteLine("XIN CHÀO");
         }
         static void Main(string[] args)
         {
