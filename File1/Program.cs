@@ -12,6 +12,10 @@ namespace File1
         {
             Console.WriteLine("XIN CHÀO");
         }
+        public static void bai3()
+        {
+
+        }
         static void Main(string[] args)
         {
         }
