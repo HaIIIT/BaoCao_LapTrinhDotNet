@@ -15,7 +15,7 @@ namespace HETHONGQLCHUNGCU
         public Frm_Menu()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
         }
-
     }
 }
