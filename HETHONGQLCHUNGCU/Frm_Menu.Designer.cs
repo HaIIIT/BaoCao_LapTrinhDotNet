@@ -264,7 +264,7 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.White;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(784, 245);
+            this.pictureBox5.Location = new System.Drawing.Point(784, 243);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(80, 71);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -278,7 +278,7 @@
             this.panel8.Controls.Add(this.label12);
             this.panel8.Controls.Add(this.label13);
             this.panel8.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.panel8.Location = new System.Drawing.Point(782, 243);
+            this.panel8.Location = new System.Drawing.Point(782, 241);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(309, 75);
             this.panel8.TabIndex = 37;
@@ -309,7 +309,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(410, 245);
+            this.pictureBox3.Location = new System.Drawing.Point(410, 243);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(80, 71);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -323,7 +323,7 @@
             this.panel5.Controls.Add(this.label7);
             this.panel5.Controls.Add(this.label8);
             this.panel5.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.panel5.Location = new System.Drawing.Point(408, 243);
+            this.panel5.Location = new System.Drawing.Point(408, 241);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(324, 75);
             this.panel5.TabIndex = 35;
@@ -354,7 +354,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.White;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(32, 244);
+            this.pictureBox4.Location = new System.Drawing.Point(32, 242);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(83, 72);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -367,7 +367,7 @@
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.label9);
             this.panel6.Controls.Add(this.label10);
-            this.panel6.Location = new System.Drawing.Point(30, 243);
+            this.panel6.Location = new System.Drawing.Point(30, 241);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(309, 75);
             this.panel6.TabIndex = 32;
@@ -398,7 +398,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(21, 219);
+            this.label11.Location = new System.Drawing.Point(21, 217);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(186, 20);
             this.label11.TabIndex = 33;
@@ -407,7 +407,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.panel7.Location = new System.Drawing.Point(10, 219);
+            this.panel7.Location = new System.Drawing.Point(10, 217);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(8, 106);
             this.panel7.TabIndex = 31;
@@ -558,7 +558,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
             this.Name = "Frm_Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hệ Thống Quản Lý Chung Cư";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.panel9.ResumeLayout(false);
