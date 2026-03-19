@@ -34,7 +34,6 @@
             this.txt_tk = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_cancel = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
             this.btn_dn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -94,7 +93,6 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
             this.panel1.Controls.Add(this.btn_cancel);
-            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.btn_dn);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -122,16 +120,6 @@
             this.btn_cancel.Text = "Cancel";
             this.btn_cancel.UseVisualStyleBackColor = true;
             this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(472, 373);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 16);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Quên mật khẩu?";
             // 
             // btn_dn
             // 
@@ -225,7 +213,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btn_dn;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button btn_cancel;
     }
