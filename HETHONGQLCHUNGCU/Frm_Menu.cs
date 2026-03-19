@@ -20,6 +20,8 @@ namespace HETHONGQLCHUNGCU
 
         private void Frm_Menu_Load(object sender, EventArgs e)
         {
+            btn_dangnhap.Visible = true;//hiện button đăng nhập
+            btn_thoat.Visible = true;//hiện button thoát
             cb_user.Visible = false;//tắt ComboBox
             cb_user.DropDownStyle = ComboBoxStyle.DropDownList;
         }
@@ -59,7 +61,6 @@ namespace HETHONGQLCHUNGCU
                     cb_user.Visible = false;
                     cb_user.Items.Clear();
                 }
-
             }
         }
     }

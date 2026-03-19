@@ -61,6 +61,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cb_user = new System.Windows.Forms.ComboBox();
+            this.btn_thoat = new System.Windows.Forms.Button();
             this.panel13 = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -78,8 +80,6 @@
             this.panel18 = new System.Windows.Forms.Panel();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
-            this.btn_thoat = new System.Windows.Forms.Button();
-            this.cb_user = new System.Windows.Forms.ComboBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -124,12 +124,12 @@
             // 
             // btn_dangnhap
             // 
-            this.btn_dangnhap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_dangnhap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_dangnhap.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btn_dangnhap.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumTurquoise;
             this.btn_dangnhap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleTurquoise;
             this.btn_dangnhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_dangnhap.Location = new System.Drawing.Point(1701, 7);
+            this.btn_dangnhap.Location = new System.Drawing.Point(1530, 6);
             this.btn_dangnhap.Name = "btn_dangnhap";
             this.btn_dangnhap.Size = new System.Drawing.Size(107, 29);
             this.btn_dangnhap.TabIndex = 1;
@@ -476,14 +476,40 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.cb_user);
             this.panel1.Controls.Add(this.btn_thoat);
             this.panel1.Controls.Add(this.btn_dangnhap);
+            this.panel1.Controls.Add(this.cb_user);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-1, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1926, 42);
+            this.panel1.Size = new System.Drawing.Size(1925, 42);
             this.panel1.TabIndex = 24;
+            // 
+            // cb_user
+            // 
+            this.cb_user.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_user.FormattingEnabled = true;
+            this.cb_user.Location = new System.Drawing.Point(1697, 9);
+            this.cb_user.Name = "cb_user";
+            this.cb_user.Size = new System.Drawing.Size(225, 24);
+            this.cb_user.TabIndex = 3;
+            this.cb_user.SelectedIndexChanged += new System.EventHandler(this.cb_user_SelectedIndexChanged_1);
+            // 
+            // btn_thoat
+            // 
+            this.btn_thoat.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_thoat.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.btn_thoat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumTurquoise;
+            this.btn_thoat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleTurquoise;
+            this.btn_thoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_thoat.ForeColor = System.Drawing.Color.Red;
+            this.btn_thoat.Location = new System.Drawing.Point(1643, 6);
+            this.btn_thoat.Name = "btn_thoat";
+            this.btn_thoat.Size = new System.Drawing.Size(107, 29);
+            this.btn_thoat.TabIndex = 2;
+            this.btn_thoat.Text = "Thoát";
+            this.btn_thoat.UseVisualStyleBackColor = true;
+            this.btn_thoat.Click += new System.EventHandler(this.btn_thoat_Click);
             // 
             // panel13
             // 
@@ -672,31 +698,6 @@
             this.label31.Text = "Đăng Ký Dịch Vụ";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btn_thoat
-            // 
-            this.btn_thoat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_thoat.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.btn_thoat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumTurquoise;
-            this.btn_thoat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleTurquoise;
-            this.btn_thoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_thoat.ForeColor = System.Drawing.Color.Red;
-            this.btn_thoat.Location = new System.Drawing.Point(1815, 7);
-            this.btn_thoat.Name = "btn_thoat";
-            this.btn_thoat.Size = new System.Drawing.Size(107, 29);
-            this.btn_thoat.TabIndex = 2;
-            this.btn_thoat.Text = "Thoát";
-            this.btn_thoat.UseVisualStyleBackColor = true;
-            this.btn_thoat.Click += new System.EventHandler(this.btn_thoat_Click);
-            // 
-            // cb_user
-            // 
-            this.cb_user.FormattingEnabled = true;
-            this.cb_user.Location = new System.Drawing.Point(1701, 7);
-            this.cb_user.Name = "cb_user";
-            this.cb_user.Size = new System.Drawing.Size(225, 24);
-            this.cb_user.TabIndex = 3;
-            this.cb_user.SelectedIndexChanged += new System.EventHandler(this.cb_user_SelectedIndexChanged_1);
-            // 
             // pictureBox13
             // 
             this.pictureBox13.BackColor = System.Drawing.Color.White;
@@ -845,7 +846,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(1925, 874);
+            this.ClientSize = new System.Drawing.Size(1924, 874);
             this.Controls.Add(this.pictureBox13);
             this.Controls.Add(this.panel18);
             this.Controls.Add(this.pictureBox12);
