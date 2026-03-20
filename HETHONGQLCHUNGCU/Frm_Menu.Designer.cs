@@ -517,6 +517,7 @@
             // 
             // cb_user
             // 
+            this.cb_user.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cb_user.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_user.FormattingEnabled = true;
             this.cb_user.Location = new System.Drawing.Point(1697, 9);
