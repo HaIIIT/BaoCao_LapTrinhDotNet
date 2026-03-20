@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Frm_CuDan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_CuDan.Designer.cs">
+      <DependentUpon>Frm_CuDan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Frm_CuDan.resx">
+      <DependentUpon>Frm_CuDan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Login.resx">
       <DependentUpon>Frm_Login.cs</DependentUpon>
     </EmbeddedResource>
