@@ -47,7 +47,7 @@ namespace HETHONGQLCHUNGCU
 
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
+             this.Hide();
             Frm_Menu menu = new Frm_Menu();
             menu.Show();
         }
