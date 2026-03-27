@@ -45,6 +45,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Frm_BaotruSuachua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_BaotruSuachua.Designer.cs">
+      <DependentUpon>Frm_BaotruSuachua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_btsc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_btsc.Designer.cs">
+      <DependentUpon>frm_btsc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +81,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Frm_BaotruSuachua.resx">
+      <DependentUpon>Frm_BaotruSuachua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_btsc.resx">
+      <DependentUpon>frm_btsc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Login.resx">
       <DependentUpon>Frm_Login.cs</DependentUpon>
     </EmbeddedResource>
