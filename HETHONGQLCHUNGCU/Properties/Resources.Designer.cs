@@ -123,6 +123,36 @@ namespace HETHONGQLCHUNGCU.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap QLCN_sua {
+            get {
+                object obj = ResourceManager.GetObject("QLCN_sua", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap QLCN_sua1 {
+            get {
+                object obj = ResourceManager.GetObject("QLCN_sua1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap QLCN_them_ {
+            get {
+                object obj = ResourceManager.GetObject("QLCN_them+", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap QLDV_DkyDV {
             get {
                 object obj = ResourceManager.GetObject("QLDV_DkyDV", resourceCulture);
