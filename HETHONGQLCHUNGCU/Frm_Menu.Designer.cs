@@ -124,7 +124,6 @@
             // 
             // btn_dangnhap
             // 
-            this.btn_dangnhap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_dangnhap.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btn_dangnhap.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumTurquoise;
             this.btn_dangnhap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleTurquoise;
@@ -500,7 +499,6 @@
             // 
             // btn_thoat
             // 
-            this.btn_thoat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_thoat.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btn_thoat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumTurquoise;
             this.btn_thoat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleTurquoise;
@@ -880,7 +878,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(1934, 846);
+            this.ClientSize = new System.Drawing.Size(1924, 846);
             this.Controls.Add(this.pictureBox13);
             this.Controls.Add(this.panel18);
             this.Controls.Add(this.pictureBox12);
