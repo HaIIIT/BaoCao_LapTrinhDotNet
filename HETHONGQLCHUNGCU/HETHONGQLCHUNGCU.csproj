@@ -150,6 +150,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_btsc.resx">
       <DependentUpon>frm_btsc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_CSKH.resx">
       <DependentUpon>Frm_CSKH.cs</DependentUpon>
     </EmbeddedResource>
