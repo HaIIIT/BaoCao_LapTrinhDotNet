@@ -60,7 +60,12 @@
     <Compile Include="Frm_BPCNV.Designer.cs">
       <DependentUpon>Frm_BPCNV.cs</DependentUpon>
     </Compile>
-
+    <Compile Include="Frm_CuDan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_CuDan.Designer.cs">
+      <DependentUpon>Frm_CuDan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,7 +79,6 @@
     <Compile Include="Frm_Menu.Designer.cs">
       <DependentUpon>Frm_Menu.cs</DependentUpon>
     </Compile>
-
     <Compile Include="Frm_thongtincanho.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,7 +92,12 @@
     <Compile Include="Frm_thongtinBPCNV.Designer.cs">
       <DependentUpon>Frm_thongtinBPCNV.cs</DependentUpon>
     </Compile>
-
+    <Compile Include="Frm_ThongTinCuDan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ThongTinCuDan.Designer.cs">
+      <DependentUpon>Frm_ThongTinCuDan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -106,34 +115,33 @@
     <EmbeddedResource Include="Frm_CanHo.resx">
       <DependentUpon>Frm_CanHo.cs</DependentUpon>
     </EmbeddedResource>
-
     <EmbeddedResource Include="Frm_BPCNV.resx">
       <DependentUpon>Frm_BPCNV.cs</DependentUpon>
     </EmbeddedResource>
-
+    <EmbeddedResource Include="Frm_CuDan.resx">
+      <DependentUpon>Frm_CuDan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Login.resx">
       <DependentUpon>Frm_Login.cs</DependentUpon>
     </EmbeddedResource>
-
     <EmbeddedResource Include="Frm_Menu.resx">
       <DependentUpon>Frm_Menu.cs</DependentUpon>
     </EmbeddedResource>
-
     <EmbeddedResource Include="Frm_thongtincanho.resx">
       <DependentUpon>Frm_thongtincanho.cs</DependentUpon>
     </EmbeddedResource>
-
     <EmbeddedResource Include="Frm_thongtinBPCNV.resx">
       <DependentUpon>Frm_thongtinBPCNV.cs</DependentUpon>
     </EmbeddedResource>
-
+    <EmbeddedResource Include="Frm_ThongTinCuDan.resx">
+      <DependentUpon>Frm_ThongTinCuDan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
-
   <ItemGroup>
     <None Include="Resources\logo_HTQLCC.png" />
   </ItemGroup>
@@ -182,6 +190,74 @@
   <ItemGroup>
     <None Include="Resources\QlNS_DGNS.png" />
   </ItemGroup>
-
+  <ItemGroup>
+    <None Include="Resources\canho1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VietNam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cudan_bl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CuDan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cudan_bl1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\canho11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hoadon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visabasic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thongketchinh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baotrisuachua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garagecar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bangphancong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dgnhansu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keychange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\themcudan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WriteUser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deleteUser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
