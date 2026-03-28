@@ -132,6 +132,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_CuDan.resx">
       <DependentUpon>Frm_CuDan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_BaotruSuachua.resx">
       <DependentUpon>Frm_BaotruSuachua.cs</DependentUpon>
     </EmbeddedResource>
