@@ -169,14 +169,14 @@
             this.XepLoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NhanXet = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grp_TraCuNhanVien = new System.Windows.Forms.GroupBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
@@ -1719,6 +1719,30 @@
             this.grp_TraCuNhanVien.TabStop = false;
             this.grp_TraCuNhanVien.Text = "Tra Cú Thông Tin Nhân Viên";
             // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(191, 176);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(299, 30);
+            this.textBox4.TabIndex = 7;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(191, 135);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(299, 30);
+            this.textBox3.TabIndex = 6;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(191, 89);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(299, 30);
+            this.textBox2.TabIndex = 5;
+            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(191, 41);
@@ -1766,30 +1790,6 @@
             this.label3.Size = new System.Drawing.Size(153, 23);
             this.label3.TabIndex = 0;
             this.label3.Text = "Mã Số Nhân Viên :";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(191, 89);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(299, 30);
-            this.textBox2.TabIndex = 5;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(191, 135);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(299, 30);
-            this.textBox3.TabIndex = 6;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(191, 176);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(299, 30);
-            this.textBox4.TabIndex = 7;
             // 
             // frm_DanhGiaNhanSu
             // 
