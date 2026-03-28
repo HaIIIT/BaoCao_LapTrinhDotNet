@@ -220,6 +220,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_thongtincskh.resx">
       <DependentUpon>Frm_thongtincskh.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_thongtincongno.resx">
       <DependentUpon>Frm_thongtincongno.cs</DependentUpon>
     </EmbeddedResource>
