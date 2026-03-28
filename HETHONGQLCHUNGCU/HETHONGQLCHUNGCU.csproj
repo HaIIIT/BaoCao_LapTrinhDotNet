@@ -65,6 +65,7 @@
     </Compile>
     <Compile Include="Frm_CuDan.Designer.cs">
       <DependentUpon>Frm_CuDan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_BaotruSuachua.cs">
       <SubType>Form</SubType>
     </Compile>
