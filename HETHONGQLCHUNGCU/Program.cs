@@ -13,7 +13,11 @@ namespace HETHONGQLCHUNGCU
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             Application.Run(new Frm_CanHo());
+=======
+            Application.Run(new Frm_CSKH());
+>>>>>>> CSKH
         }
     }
 }
