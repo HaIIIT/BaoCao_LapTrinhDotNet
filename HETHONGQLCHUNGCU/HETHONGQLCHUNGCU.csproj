@@ -50,6 +50,7 @@
     </Compile>
     <Compile Include="Frm_CanHo.Designer.cs">
       <DependentUpon>Frm_CanHo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_BPCNV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +74,7 @@
     </Compile>
     <Compile Include="Frm_thongtincanho.Designer.cs">
       <DependentUpon>Frm_thongtincanho.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_thongtinBPCNV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +106,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_thongtincanho.resx">
       <DependentUpon>Frm_thongtincanho.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_thongtinBPCNV.resx">
       <DependentUpon>Frm_thongtinBPCNV.cs</DependentUpon>
     </EmbeddedResource>
