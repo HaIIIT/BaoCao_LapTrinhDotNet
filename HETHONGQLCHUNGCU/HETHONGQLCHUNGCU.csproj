@@ -57,6 +57,18 @@
     <Compile Include="Frm_Menu.Designer.cs">
       <DependentUpon>Frm_Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_ThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ThanhToan.Designer.cs">
+      <DependentUpon>Frm_ThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_TT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_TT.Designer.cs">
+      <DependentUpon>Frm_TT.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -74,6 +86,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Menu.resx">
       <DependentUpon>Frm_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ThanhToan.resx">
+      <DependentUpon>Frm_ThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_TT.resx">
+      <DependentUpon>Frm_TT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -128,6 +146,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\QlNS_DGNS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nút thoát.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
