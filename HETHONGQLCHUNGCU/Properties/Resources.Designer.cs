@@ -73,6 +73,16 @@ namespace HETHONGQLCHUNGCU.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap canho {
+            get {
+                object obj = ResourceManager.GetObject("canho", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Car {
             get {
                 object obj = ResourceManager.GetObject("Car", resourceCulture);
@@ -216,6 +226,16 @@ namespace HETHONGQLCHUNGCU.Properties {
         internal static System.Drawing.Bitmap THongKeTaiChinh {
             get {
                 object obj = ResourceManager.GetObject("THongKeTaiChinh", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vietnamflag_6355 {
+            get {
+                object obj = ResourceManager.GetObject("vietnamflag_6355", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

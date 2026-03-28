@@ -117,59 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="QLTN_CuDan" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\QLTN_CuDan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="THongKeTaiChinh" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\THongKeTaiChinh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Car" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Car.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="QLNS_ChamCong" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\QLNS_ChamCong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="QLTN_QLCanHo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\QLTN_QLCanHo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Password" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Password.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="canho" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\canho.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="QlNS_DGNS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\QlNS_DGNS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="QLTC_CongNo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\QLTC_CongNo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="QLTN_Account" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\QLTN_Account.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="QLTC_ThanhToan" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\QLTC_ThanhToan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="BaoTri" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BaoTri.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logo_HTQLCC" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo_HTQLCC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="QL_HoaDon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\QL_HoaDon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="QLDV_DkyDV" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\QLDV_DkyDV.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="QlNS_BangPC" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\QlNS_BangPC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CSKH" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CSKH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="vietnamflag_6355" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\vietnamflag_6355.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
 </root>
