@@ -45,6 +45,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Frm_CCcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_CCcs.Designer.cs">
+      <DependentUpon>Frm_CCcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ChamCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ChamCong.Designer.cs">
+      <DependentUpon>Frm_ChamCong.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +81,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Frm_CCcs.resx">
+      <DependentUpon>Frm_CCcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ChamCong.resx">
+      <DependentUpon>Frm_ChamCong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Login.resx">
       <DependentUpon>Frm_Login.cs</DependentUpon>
     </EmbeddedResource>
