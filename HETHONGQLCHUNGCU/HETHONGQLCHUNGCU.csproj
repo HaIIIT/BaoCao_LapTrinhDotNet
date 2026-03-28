@@ -96,6 +96,18 @@
     <Compile Include="frm_dgns.Designer.cs">
       <DependentUpon>frm_dgns.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_Dangkydichvu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Dangkydichvu.Designer.cs">
+      <DependentUpon>frm_Dangkydichvu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_dkdv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_dkdv.Designer.cs">
+      <DependentUpon>frm_dkdv.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +183,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_dgns.resx">
       <DependentUpon>frm_dgns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Dangkydichvu.resx">
+      <DependentUpon>frm_Dangkydichvu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_dkdv.resx">
+      <DependentUpon>frm_dkdv.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Login.resx">
       <DependentUpon>Frm_Login.cs</DependentUpon>
@@ -312,6 +330,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\delete.png" />
+    <None Include="Resources\dkdvu_sua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dkdvu_thoat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dkdvu_dkm+.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
