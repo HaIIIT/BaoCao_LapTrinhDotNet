@@ -38,6 +38,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -113,6 +114,17 @@
     </Compile>
     <Compile Include="Frm_CongNo.Designer.cs">
       <DependentUpon>Frm_CongNo.cs</DependentUpon>
+    <Compile Include="Frm_BaiXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_BaiXe.Designer.cs">
+      <DependentUpon>Frm_BaiXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_GuiXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_GuiXe.Designer.cs">
+      <DependentUpon>Frm_GuiXe.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_Login.cs">
       <SubType>Form</SubType>
@@ -155,6 +167,24 @@
     </Compile>
     <Compile Include="Frm_thongtincongno.Designer.cs">
       <DependentUpon>Frm_thongtincongno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ThongKeTaiChinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ThongKeTaiChinh.Designer.cs">
+      <DependentUpon>Frm_ThongKeTaiChinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ViTriBaiXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ViTriBaiXe.Designer.cs">
+      <DependentUpon>Frm_ViTriBaiXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Xe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Xe.Designer.cs">
+      <DependentUpon>Frm_Xe.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -203,6 +233,12 @@
     <EmbeddedResource Include="Frm_CongNo.resx">
       <DependentUpon>Frm_CongNo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_BaiXe.resx">
+      <DependentUpon>Frm_BaiXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_GuiXe.resx">
+      <DependentUpon>Frm_GuiXe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Login.resx">
       <DependentUpon>Frm_Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -223,6 +259,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_thongtincongno.resx">
       <DependentUpon>Frm_thongtincongno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ThongKeTaiChinh.resx">
+      <DependentUpon>Frm_ThongKeTaiChinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ViTriBaiXe.resx">
+      <DependentUpon>Frm_ViTriBaiXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Xe.resx">
+      <DependentUpon>Frm_Xe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -354,6 +399,10 @@
   <ItemGroup>
     <None Include="Resources\dkdvu_dkm+.png" />
     <None Include="Resources\QLCN_them+.png" />
+    <None Include="Resources\canho.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vietnamflag_6355.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
