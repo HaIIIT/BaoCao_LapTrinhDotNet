@@ -108,13 +108,18 @@
     <Compile Include="frm_dkdv.Designer.cs">
       <DependentUpon>frm_dkdv.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_CongNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_CongNo.Designer.cs">
+      <DependentUpon>Frm_CongNo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_Login.Designer.cs">
       <DependentUpon>Frm_Login.cs</DependentUpon>
     </Compile>
-
     <Compile Include="Frm_Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,7 +132,6 @@
     <Compile Include="Frm_thongtincanho.Designer.cs">
       <DependentUpon>Frm_thongtincanho.cs</DependentUpon>
     </Compile>
-
     <Compile Include="Frm_thongtinBPCNV.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +149,12 @@
     </Compile>
     <Compile Include="Frm_thongtincskh.Designer.cs">
       <DependentUpon>Frm_thongtincskh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_thongtincongno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_thongtincongno.Designer.cs">
+      <DependentUpon>Frm_thongtincongno.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -190,6 +200,9 @@
     <EmbeddedResource Include="frm_dkdv.resx">
       <DependentUpon>frm_dkdv.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_CongNo.resx">
+      <DependentUpon>Frm_CongNo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_Login.resx">
       <DependentUpon>Frm_Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -207,6 +220,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_thongtincskh.resx">
       <DependentUpon>Frm_thongtincskh.cs</DependentUpon>
+    <EmbeddedResource Include="Frm_thongtincongno.resx">
+      <DependentUpon>Frm_thongtincongno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -337,6 +352,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\dkdvu_dkm+.png" />
+    <None Include="Resources\QLCN_them+.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
