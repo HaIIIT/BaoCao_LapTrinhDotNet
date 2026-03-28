@@ -114,6 +114,7 @@
     </Compile>
     <Compile Include="Frm_CongNo.Designer.cs">
       <DependentUpon>Frm_CongNo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_BaiXe.cs">
       <SubType>Form</SubType>
     </Compile>
