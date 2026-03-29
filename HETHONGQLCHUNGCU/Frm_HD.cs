@@ -26,5 +26,10 @@ namespace HETHONGQLCHUNGCU
         {
             this.Close();
         }
+
+        private void Frm_HD_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

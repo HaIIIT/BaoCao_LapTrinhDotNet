@@ -20,7 +20,6 @@ namespace HETHONGQLCHUNGCU
         {
             grb_TraCuuThongTinXe.Visible = false;
             grb_TrangThaiBaiXe.Visible = false;
-            dgv_BaiXe.Visible = false;
         }
 
         private void AnTatCaFormCon()
@@ -57,7 +56,6 @@ namespace HETHONGQLCHUNGCU
 
             grb_TraCuuThongTinXe.Visible = false;
             grb_TrangThaiBaiXe.Visible = false;
-            dgv_BaiXe.Visible = false;  
         }
 
         private void vịTríBãiXeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -82,7 +80,6 @@ namespace HETHONGQLCHUNGCU
 
             grb_TraCuuThongTinXe.Visible = false;
             grb_TrangThaiBaiXe.Visible = false;
-            dgv_BaiXe.Visible = false;
         }
 
         private void thôngTinGửiXeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -107,7 +104,6 @@ namespace HETHONGQLCHUNGCU
 
             grb_TraCuuThongTinXe.Visible = false;
             grb_TrangThaiBaiXe.Visible = false;
-            dgv_BaiXe.Visible = false;
         }
 
         private void Frm_Xe_FormClosed(object sender, FormClosedEventArgs e)
@@ -115,7 +111,6 @@ namespace HETHONGQLCHUNGCU
             Frm_Xe = null;
             grb_TraCuuThongTinXe.Visible = true;
             grb_TrangThaiBaiXe.Visible = true;
-            dgv_BaiXe.Visible = true;
         }
 
         private void Frm_ViTriBaiXe_FormClosed(object sender, FormClosedEventArgs e)
@@ -123,7 +118,6 @@ namespace HETHONGQLCHUNGCU
             Frm_ViTriBaiXe = null;
             grb_TraCuuThongTinXe.Visible = true;
             grb_TrangThaiBaiXe.Visible = true;
-            dgv_BaiXe.Visible = true;
         }
 
         private void Frm_GuiXe_FormClosed(object sender, FormClosedEventArgs e)
@@ -131,7 +125,6 @@ namespace HETHONGQLCHUNGCU
             Frm_GuiXe = null;
             grb_TraCuuThongTinXe.Visible = true;
             grb_TrangThaiBaiXe.Visible = true;
-            dgv_BaiXe.Visible = true;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
