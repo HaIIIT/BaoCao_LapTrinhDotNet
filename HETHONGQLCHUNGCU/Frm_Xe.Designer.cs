@@ -163,7 +163,7 @@
             // txt_MaXe
             // 
             this.txt_MaXe.Location = new System.Drawing.Point(249, 43);
-            this.txt_MaXe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_MaXe.Margin = new System.Windows.Forms.Padding(4);
             this.txt_MaXe.Multiline = true;
             this.txt_MaXe.Name = "txt_MaXe";
             this.txt_MaXe.Size = new System.Drawing.Size(312, 35);
@@ -172,7 +172,7 @@
             // txt_BienSo
             // 
             this.txt_BienSo.Location = new System.Drawing.Point(249, 130);
-            this.txt_BienSo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_BienSo.Margin = new System.Windows.Forms.Padding(4);
             this.txt_BienSo.Multiline = true;
             this.txt_BienSo.Name = "txt_BienSo";
             this.txt_BienSo.Size = new System.Drawing.Size(312, 35);
@@ -181,7 +181,7 @@
             // txt_MaCuDan
             // 
             this.txt_MaCuDan.Location = new System.Drawing.Point(249, 87);
-            this.txt_MaCuDan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_MaCuDan.Margin = new System.Windows.Forms.Padding(4);
             this.txt_MaCuDan.Multiline = true;
             this.txt_MaCuDan.Name = "txt_MaCuDan";
             this.txt_MaCuDan.Size = new System.Drawing.Size(312, 35);
@@ -190,7 +190,7 @@
             // txt_HangXe
             // 
             this.txt_HangXe.Location = new System.Drawing.Point(249, 215);
-            this.txt_HangXe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_HangXe.Margin = new System.Windows.Forms.Padding(4);
             this.txt_HangXe.Multiline = true;
             this.txt_HangXe.Name = "txt_HangXe";
             this.txt_HangXe.Size = new System.Drawing.Size(312, 35);
@@ -199,7 +199,7 @@
             // txt_MauSac
             // 
             this.txt_MauSac.Location = new System.Drawing.Point(249, 258);
-            this.txt_MauSac.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_MauSac.Margin = new System.Windows.Forms.Padding(4);
             this.txt_MauSac.Multiline = true;
             this.txt_MauSac.Name = "txt_MauSac";
             this.txt_MauSac.Size = new System.Drawing.Size(312, 35);
@@ -209,7 +209,7 @@
             // 
             this.dtb_NgayDangKy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtb_NgayDangKy.Location = new System.Drawing.Point(249, 301);
-            this.dtb_NgayDangKy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtb_NgayDangKy.Margin = new System.Windows.Forms.Padding(4);
             this.dtb_NgayDangKy.Name = "dtb_NgayDangKy";
             this.dtb_NgayDangKy.Size = new System.Drawing.Size(312, 26);
             this.dtb_NgayDangKy.TabIndex = 18;
@@ -219,7 +219,7 @@
             this.cbx_LoaiXe.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbx_LoaiXe.FormattingEnabled = true;
             this.cbx_LoaiXe.Location = new System.Drawing.Point(249, 172);
-            this.cbx_LoaiXe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbx_LoaiXe.Margin = new System.Windows.Forms.Padding(4);
             this.cbx_LoaiXe.Name = "cbx_LoaiXe";
             this.cbx_LoaiXe.Size = new System.Drawing.Size(312, 36);
             this.cbx_LoaiXe.TabIndex = 19;
@@ -247,9 +247,9 @@
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Teal;
             this.groupBox1.Location = new System.Drawing.Point(36, 60);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(840, 436);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
@@ -260,7 +260,7 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton2.Location = new System.Drawing.Point(396, 346);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(119, 27);
             this.radioButton2.TabIndex = 25;
@@ -273,7 +273,7 @@
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton1.Location = new System.Drawing.Point(249, 348);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(107, 27);
             this.radioButton1.TabIndex = 24;
@@ -323,7 +323,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::HETHONGQLCHUNGCU.Properties.Resources.themcudan;
+            this.pictureBox3.Image = global::HETHONGQLCHUNGCU.Properties.Resources.add;
             this.pictureBox3.Location = new System.Drawing.Point(62, 33);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(43, 40);
@@ -333,7 +333,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::HETHONGQLCHUNGCU.Properties.Resources.WriteUser;
+            this.pictureBox2.Image = global::HETHONGQLCHUNGCU.Properties.Resources.pencil;
             this.pictureBox2.Location = new System.Drawing.Point(249, 33);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(43, 40);
@@ -402,7 +402,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frm_Xe";
             this.Text = "Frm_Xe";
             this.Load += new System.EventHandler(this.Frm_Xe_Load);

@@ -142,6 +142,12 @@
     <Compile Include="Frm_HD.Designer.cs">
       <DependentUpon>Frm_HD.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Hejthongkhoiphuctaikhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Hejthongkhoiphuctaikhoan.Designer.cs">
+      <DependentUpon>Frm_Hejthongkhoiphuctaikhoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_HoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -285,6 +291,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_HD.resx">
       <DependentUpon>Frm_HD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Hejthongkhoiphuctaikhoan.resx">
+      <DependentUpon>Frm_Hejthongkhoiphuctaikhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_HoaDon.resx">
       <DependentUpon>Frm_HoaDon.cs</DependentUpon>
@@ -481,6 +490,18 @@
   <ItemGroup>
     <None Include="Resources\thongtinguixe.png" />
     <None Include="Resources\nút thoát.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\removeinformation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visathanhtoan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CSKH1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cv.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

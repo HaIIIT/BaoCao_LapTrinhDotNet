@@ -70,7 +70,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.ForeColor = System.Drawing.Color.Teal;
-            this.label1.Location = new System.Drawing.Point(233, 22);
+            this.label1.Location = new System.Drawing.Point(283, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(295, 41);
             this.label1.TabIndex = 0;
@@ -232,7 +232,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label6.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label6.Location = new System.Drawing.Point(89, 245);
+            this.label6.Location = new System.Drawing.Point(89, 242);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(132, 23);
             this.label6.TabIndex = 4;
@@ -304,9 +304,11 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Image = global::HETHONGQLCHUNGCU.Properties.Resources._out;
             this.pictureBox4.Location = new System.Drawing.Point(623, 44);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(43, 40);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 7;
             this.pictureBox4.TabStop = false;
             // 
@@ -322,9 +324,11 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Image = global::HETHONGQLCHUNGCU.Properties.Resources.delete;
             this.pictureBox3.Location = new System.Drawing.Point(425, 44);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(43, 40);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
             // 
@@ -339,9 +343,11 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Image = global::HETHONGQLCHUNGCU.Properties.Resources.pencil;
             this.pictureBox2.Location = new System.Drawing.Point(221, 44);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(43, 40);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
@@ -356,9 +362,11 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::HETHONGQLCHUNGCU.Properties.Resources.add;
             this.pictureBox1.Location = new System.Drawing.Point(22, 44);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(43, 40);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 

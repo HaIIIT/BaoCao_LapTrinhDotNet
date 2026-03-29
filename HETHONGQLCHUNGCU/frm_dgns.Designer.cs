@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -58,7 +59,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -99,6 +99,14 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Bảng Đánh Giá Nhân Sự";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(612, 242);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(170, 31);
+            this.comboBox1.TabIndex = 19;
             // 
             // textBox8
             // 
@@ -317,7 +325,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::HETHONGQLCHUNGCU.Properties.Resources.themcudan;
+            this.pictureBox3.Image = global::HETHONGQLCHUNGCU.Properties.Resources.add;
             this.pictureBox3.Location = new System.Drawing.Point(62, 33);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(43, 40);
@@ -327,7 +335,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::HETHONGQLCHUNGCU.Properties.Resources.WriteUser;
+            this.pictureBox2.Image = global::HETHONGQLCHUNGCU.Properties.Resources.pencil;
             this.pictureBox2.Location = new System.Drawing.Point(249, 33);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(43, 40);
@@ -375,14 +383,6 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Thêm";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(612, 242);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(170, 31);
-            this.comboBox1.TabIndex = 19;
             // 
             // label11
             // 

@@ -36,6 +36,14 @@
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.button7 = new System.Windows.Forms.Button();
             this.dgvDSCC = new System.Windows.Forms.DataGridView();
+            this.MaChamCong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaNhanSu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayCham = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GioVao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GioRa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoGioLam = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button11 = new System.Windows.Forms.Button();
             this.gbxTTCC = new System.Windows.Forms.GroupBox();
             this.button16 = new System.Windows.Forms.Button();
@@ -51,6 +59,9 @@
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -83,17 +94,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.MaChamCong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaNhanSu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgayCham = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GioVao = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GioRa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoGioLam = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -104,6 +104,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -114,9 +117,6 @@
             this.pnlTTCC.SuspendLayout();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button10
@@ -226,6 +226,70 @@
             this.dgvDSCC.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDSCC.Size = new System.Drawing.Size(1228, 438);
             this.dgvDSCC.TabIndex = 26;
+            // 
+            // MaChamCong
+            // 
+            this.MaChamCong.DataPropertyName = "MaChamCong";
+            this.MaChamCong.HeaderText = "Mã Chấm Công";
+            this.MaChamCong.MinimumWidth = 6;
+            this.MaChamCong.Name = "MaChamCong";
+            this.MaChamCong.Width = 125;
+            // 
+            // MaNhanSu
+            // 
+            this.MaNhanSu.DataPropertyName = "MaNhanSu";
+            this.MaNhanSu.HeaderText = "Mã Nhân Sự:";
+            this.MaNhanSu.MinimumWidth = 6;
+            this.MaNhanSu.Name = "MaNhanSu";
+            this.MaNhanSu.Width = 125;
+            // 
+            // NgayCham
+            // 
+            this.NgayCham.DataPropertyName = "NgayCham";
+            this.NgayCham.HeaderText = "Ngày Chấm:";
+            this.NgayCham.MinimumWidth = 6;
+            this.NgayCham.Name = "NgayCham";
+            this.NgayCham.Width = 180;
+            // 
+            // GioVao
+            // 
+            this.GioVao.DataPropertyName = "GioRa";
+            this.GioVao.HeaderText = "Giờ Vào:";
+            this.GioVao.MinimumWidth = 6;
+            this.GioVao.Name = "GioVao";
+            this.GioVao.Width = 150;
+            // 
+            // GioRa
+            // 
+            this.GioRa.DataPropertyName = "GioRa";
+            this.GioRa.HeaderText = "Giờ Ra:";
+            this.GioRa.MinimumWidth = 6;
+            this.GioRa.Name = "GioRa";
+            this.GioRa.Width = 150;
+            // 
+            // TrangThai
+            // 
+            this.TrangThai.DataPropertyName = "TrangThai";
+            this.TrangThai.HeaderText = "Trạng Thái:";
+            this.TrangThai.MinimumWidth = 6;
+            this.TrangThai.Name = "TrangThai";
+            this.TrangThai.Width = 170;
+            // 
+            // SoGioLam
+            // 
+            this.SoGioLam.DataPropertyName = "SoGioLam";
+            this.SoGioLam.HeaderText = "Số Giờ Làm:";
+            this.SoGioLam.MinimumWidth = 6;
+            this.SoGioLam.Name = "SoGioLam";
+            this.SoGioLam.Width = 125;
+            // 
+            // GhiChu
+            // 
+            this.GhiChu.DataPropertyName = "GhiChu";
+            this.GhiChu.HeaderText = "Ghi Chú:";
+            this.GhiChu.MinimumWidth = 6;
+            this.GhiChu.Name = "GhiChu";
+            this.GhiChu.Width = 200;
             // 
             // button11
             // 
@@ -423,6 +487,35 @@
             this.panel1.Size = new System.Drawing.Size(218, 926);
             this.panel1.TabIndex = 19;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::HETHONGQLCHUNGCU.Properties.Resources.Home;
+            this.pictureBox1.Location = new System.Drawing.Point(9, 151);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(37, 39);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 32;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Teal;
+            this.panel3.Controls.Add(this.pictureBox15);
+            this.panel3.Location = new System.Drawing.Point(7, 2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(212, 74);
+            this.panel3.TabIndex = 31;
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = global::HETHONGQLCHUNGCU.Properties.Resources.canho1;
+            this.pictureBox15.Location = new System.Drawing.Point(53, 3);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(82, 68);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox15.TabIndex = 0;
+            this.pictureBox15.TabStop = false;
+            // 
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.Transparent;
@@ -618,7 +711,7 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(16, 9);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(396, 35);
+            this.label6.Size = new System.Drawing.Size(317, 28);
             this.label6.TabIndex = 6;
             this.label6.Text = "Tìm Kiếm Thông Tin Chấm Công";
             // 
@@ -639,18 +732,21 @@
             this.đổiMậtKhẩuToolStripMenuItem,
             this.toolStripMenuItem2,
             this.đăngXuấtToolStripMenuItem});
+            this.hệThốngQuảnLýToolStripMenuItem.Image = global::HETHONGQLCHUNGCU.Properties.Resources.VietNam;
             this.hệThốngQuảnLýToolStripMenuItem.Name = "hệThốngQuảnLýToolStripMenuItem";
-            this.hệThốngQuảnLýToolStripMenuItem.Size = new System.Drawing.Size(144, 29);
+            this.hệThốngQuảnLýToolStripMenuItem.Size = new System.Drawing.Size(164, 29);
             this.hệThốngQuảnLýToolStripMenuItem.Text = "Hệ Thống Quản Lý";
             // 
             // thôngTinTàiKhoảnToolStripMenuItem
             // 
+            this.thôngTinTàiKhoảnToolStripMenuItem.Image = global::HETHONGQLCHUNGCU.Properties.Resources.user;
             this.thôngTinTàiKhoảnToolStripMenuItem.Name = "thôngTinTàiKhoảnToolStripMenuItem";
             this.thôngTinTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(226, 26);
             this.thôngTinTàiKhoảnToolStripMenuItem.Text = "Thông Tin Tài Khoản";
             // 
             // đổiMậtKhẩuToolStripMenuItem
             // 
+            this.đổiMậtKhẩuToolStripMenuItem.Image = global::HETHONGQLCHUNGCU.Properties.Resources.keychange;
             this.đổiMậtKhẩuToolStripMenuItem.Name = "đổiMậtKhẩuToolStripMenuItem";
             this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(226, 26);
             this.đổiMậtKhẩuToolStripMenuItem.Text = "Đổi Mật Khẩu";
@@ -662,6 +758,7 @@
             // 
             // đăngXuấtToolStripMenuItem
             // 
+            this.đăngXuấtToolStripMenuItem.Image = global::HETHONGQLCHUNGCU.Properties.Resources._out;
             this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
             this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(226, 26);
             this.đăngXuấtToolStripMenuItem.Text = "Đăng Xuất";
@@ -674,38 +771,43 @@
             this.thoátToolStripMenuItem,
             this.hToolStripMenuItem,
             this.thoátToolStripMenuItem1});
+            this.quảnLýThanhToánToolStripMenuItem.Image = global::HETHONGQLCHUNGCU.Properties.Resources.check_list;
             this.quảnLýThanhToánToolStripMenuItem.Name = "quảnLýThanhToánToolStripMenuItem";
-            this.quảnLýThanhToánToolStripMenuItem.Size = new System.Drawing.Size(156, 29);
+            this.quảnLýThanhToánToolStripMenuItem.Size = new System.Drawing.Size(176, 29);
             this.quảnLýThanhToánToolStripMenuItem.Text = "Quản Lý Chấm Công";
             // 
             // thêmThôngTinThanhToánToolStripMenuItem
             // 
+            this.thêmThôngTinThanhToánToolStripMenuItem.Image = global::HETHONGQLCHUNGCU.Properties.Resources.add;
             this.thêmThôngTinThanhToánToolStripMenuItem.Name = "thêmThôngTinThanhToánToolStripMenuItem";
-            this.thêmThôngTinThanhToánToolStripMenuItem.Size = new System.Drawing.Size(309, 26);
+            this.thêmThôngTinThanhToánToolStripMenuItem.Size = new System.Drawing.Size(305, 26);
             this.thêmThôngTinThanhToánToolStripMenuItem.Text = "Thêm Thông Tin Chấm Công";
             this.thêmThôngTinThanhToánToolStripMenuItem.Click += new System.EventHandler(this.thêmThôngTinThanhToánToolStripMenuItem_Click);
             // 
             // cậpNhậtToolStripMenuItem
             // 
+            this.cậpNhậtToolStripMenuItem.Image = global::HETHONGQLCHUNGCU.Properties.Resources.pencil;
             this.cậpNhậtToolStripMenuItem.Name = "cậpNhậtToolStripMenuItem";
-            this.cậpNhậtToolStripMenuItem.Size = new System.Drawing.Size(309, 26);
-            this.cậpNhậtToolStripMenuItem.Text = " Cập Nhật Thông Tin Chấm Công";
+            this.cậpNhậtToolStripMenuItem.Size = new System.Drawing.Size(305, 26);
+            this.cậpNhậtToolStripMenuItem.Text = "Cập Nhật Thông Tin Chấm Công";
             // 
             // thoátToolStripMenuItem
             // 
+            this.thoátToolStripMenuItem.Image = global::HETHONGQLCHUNGCU.Properties.Resources.delete;
             this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
-            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(309, 26);
+            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(305, 26);
             this.thoátToolStripMenuItem.Text = "Xóa Thông Tin Chấm Công";
             // 
             // hToolStripMenuItem
             // 
             this.hToolStripMenuItem.Name = "hToolStripMenuItem";
-            this.hToolStripMenuItem.Size = new System.Drawing.Size(306, 6);
+            this.hToolStripMenuItem.Size = new System.Drawing.Size(302, 6);
             // 
             // thoátToolStripMenuItem1
             // 
+            this.thoátToolStripMenuItem1.Image = global::HETHONGQLCHUNGCU.Properties.Resources._out;
             this.thoátToolStripMenuItem1.Name = "thoátToolStripMenuItem1";
-            this.thoátToolStripMenuItem1.Size = new System.Drawing.Size(309, 26);
+            this.thoátToolStripMenuItem1.Size = new System.Drawing.Size(305, 26);
             this.thoátToolStripMenuItem1.Text = "Thoát";
             this.thoátToolStripMenuItem1.Click += new System.EventHandler(this.thoátToolStripMenuItem1_Click);
             // 
@@ -745,99 +847,6 @@
             this.menuStrip1.TabIndex = 21;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // MaChamCong
-            // 
-            this.MaChamCong.DataPropertyName = "MaChamCong";
-            this.MaChamCong.HeaderText = "Mã Chấm Công";
-            this.MaChamCong.MinimumWidth = 6;
-            this.MaChamCong.Name = "MaChamCong";
-            this.MaChamCong.Width = 125;
-            // 
-            // MaNhanSu
-            // 
-            this.MaNhanSu.DataPropertyName = "MaNhanSu";
-            this.MaNhanSu.HeaderText = "Mã Nhân Sự:";
-            this.MaNhanSu.MinimumWidth = 6;
-            this.MaNhanSu.Name = "MaNhanSu";
-            this.MaNhanSu.Width = 125;
-            // 
-            // NgayCham
-            // 
-            this.NgayCham.DataPropertyName = "NgayCham";
-            this.NgayCham.HeaderText = "Ngày Chấm:";
-            this.NgayCham.MinimumWidth = 6;
-            this.NgayCham.Name = "NgayCham";
-            this.NgayCham.Width = 180;
-            // 
-            // GioVao
-            // 
-            this.GioVao.DataPropertyName = "GioRa";
-            this.GioVao.HeaderText = "Giờ Vào:";
-            this.GioVao.MinimumWidth = 6;
-            this.GioVao.Name = "GioVao";
-            this.GioVao.Width = 150;
-            // 
-            // GioRa
-            // 
-            this.GioRa.DataPropertyName = "GioRa";
-            this.GioRa.HeaderText = "Giờ Ra:";
-            this.GioRa.MinimumWidth = 6;
-            this.GioRa.Name = "GioRa";
-            this.GioRa.Width = 150;
-            // 
-            // TrangThai
-            // 
-            this.TrangThai.DataPropertyName = "TrangThai";
-            this.TrangThai.HeaderText = "Trạng Thái:";
-            this.TrangThai.MinimumWidth = 6;
-            this.TrangThai.Name = "TrangThai";
-            this.TrangThai.Width = 170;
-            // 
-            // SoGioLam
-            // 
-            this.SoGioLam.DataPropertyName = "SoGioLam";
-            this.SoGioLam.HeaderText = "Số Giờ Làm:";
-            this.SoGioLam.MinimumWidth = 6;
-            this.SoGioLam.Name = "SoGioLam";
-            this.SoGioLam.Width = 125;
-            // 
-            // GhiChu
-            // 
-            this.GhiChu.DataPropertyName = "GhiChu";
-            this.GhiChu.HeaderText = "Ghi Chú:";
-            this.GhiChu.MinimumWidth = 6;
-            this.GhiChu.Name = "GhiChu";
-            this.GhiChu.Width = 200;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Teal;
-            this.panel3.Controls.Add(this.pictureBox15);
-            this.panel3.Location = new System.Drawing.Point(7, 2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(212, 74);
-            this.panel3.TabIndex = 31;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Image = global::HETHONGQLCHUNGCU.Properties.Resources.canho1;
-            this.pictureBox15.Location = new System.Drawing.Point(53, 3);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(82, 68);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox15.TabIndex = 0;
-            this.pictureBox15.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::HETHONGQLCHUNGCU.Properties.Resources.Home;
-            this.pictureBox1.Location = new System.Drawing.Point(9, 151);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(37, 39);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 32;
-            this.pictureBox1.TabStop = false;
-            // 
             // Frm_ChamCong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -868,6 +877,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -882,9 +894,6 @@
             this.panel2.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

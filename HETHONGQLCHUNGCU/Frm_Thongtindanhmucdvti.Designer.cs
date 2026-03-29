@@ -43,17 +43,17 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -84,7 +84,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::HETHONGQLCHUNGCU.Properties.Resources.themcudan;
+            this.pictureBox3.Image = global::HETHONGQLCHUNGCU.Properties.Resources.add;
             this.pictureBox3.Location = new System.Drawing.Point(64, 33);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(43, 40);
@@ -234,6 +234,60 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Danh Mục ";
             // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(423, 270);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(175, 27);
+            this.radioButton2.TabIndex = 20;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Ngưng hoạt động";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(279, 270);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(117, 27);
+            this.radioButton1.TabIndex = 19;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Hoạt động";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textBox4.Location = new System.Drawing.Point(279, 227);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(328, 30);
+            this.textBox4.TabIndex = 18;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textBox3.Location = new System.Drawing.Point(279, 181);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(328, 30);
+            this.textBox3.TabIndex = 17;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textBox2.Location = new System.Drawing.Point(279, 135);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(328, 30);
+            this.textBox2.TabIndex = 16;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.textBox1.Location = new System.Drawing.Point(279, 83);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(328, 30);
+            this.textBox1.TabIndex = 15;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -258,7 +312,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::HETHONGQLCHUNGCU.Properties.Resources.WriteUser;
+            this.pictureBox2.Image = global::HETHONGQLCHUNGCU.Properties.Resources.pencil;
             this.pictureBox2.Location = new System.Drawing.Point(251, 33);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(43, 40);
@@ -296,60 +350,6 @@
             this.label9.Size = new System.Drawing.Size(584, 38);
             this.label9.TabIndex = 27;
             this.label9.Text = "THÔNG TIN DANH MỤC DỊCH VỤ TIỆN ÍCH";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox1.Location = new System.Drawing.Point(279, 83);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(328, 30);
-            this.textBox1.TabIndex = 15;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox2.Location = new System.Drawing.Point(279, 135);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(328, 30);
-            this.textBox2.TabIndex = 16;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox3.Location = new System.Drawing.Point(279, 181);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(328, 30);
-            this.textBox3.TabIndex = 17;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox4.Location = new System.Drawing.Point(279, 227);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(328, 30);
-            this.textBox4.TabIndex = 18;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(279, 270);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(146, 34);
-            this.radioButton1.TabIndex = 19;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Hoạt động";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(423, 270);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(219, 34);
-            this.radioButton2.TabIndex = 20;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Ngưng hoạt động";
-            this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // Frm_Thongtindanhmucdvti
             // 

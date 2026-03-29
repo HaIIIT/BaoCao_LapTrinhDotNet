@@ -93,6 +93,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label32 = new System.Windows.Forms.Label();
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -124,26 +125,28 @@
             // 
             // btn_dangnhap
             // 
+            this.btn_dangnhap.BackColor = System.Drawing.Color.White;
             this.btn_dangnhap.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btn_dangnhap.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumTurquoise;
             this.btn_dangnhap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleTurquoise;
             this.btn_dangnhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_dangnhap.Location = new System.Drawing.Point(1728, 6);
+            this.btn_dangnhap.Location = new System.Drawing.Point(1481, 9);
             this.btn_dangnhap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_dangnhap.Name = "btn_dangnhap";
             this.btn_dangnhap.Size = new System.Drawing.Size(107, 30);
             this.btn_dangnhap.TabIndex = 1;
             this.btn_dangnhap.Text = "Đăng Nhập";
-            this.btn_dangnhap.UseVisualStyleBackColor = true;
+            this.btn_dangnhap.UseVisualStyleBackColor = false;
             this.btn_dangnhap.Click += new System.EventHandler(this.btn_dangnhap_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 9);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(3, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 25);
+            this.label1.Size = new System.Drawing.Size(102, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "☰ Menu";
             // 
@@ -154,7 +157,7 @@
             this.panel9.Controls.Add(this.label14);
             this.panel9.Controls.Add(this.label15);
             this.panel9.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.panel9.Location = new System.Drawing.Point(1477, 501);
+            this.panel9.Location = new System.Drawing.Point(1335, 502);
             this.panel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(383, 89);
@@ -189,7 +192,7 @@
             this.panel10.Controls.Add(this.label16);
             this.panel10.Controls.Add(this.label17);
             this.panel10.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.panel10.Location = new System.Drawing.Point(1020, 501);
+            this.panel10.Location = new System.Drawing.Point(924, 502);
             this.panel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(399, 89);
@@ -277,7 +280,7 @@
             this.panel8.Controls.Add(this.label12);
             this.panel8.Controls.Add(this.label13);
             this.panel8.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.panel8.Location = new System.Drawing.Point(1475, 314);
+            this.panel8.Location = new System.Drawing.Point(1333, 315);
             this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(383, 89);
@@ -312,7 +315,7 @@
             this.panel5.Controls.Add(this.label7);
             this.panel5.Controls.Add(this.label8);
             this.panel5.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.panel5.Location = new System.Drawing.Point(547, 314);
+            this.panel5.Location = new System.Drawing.Point(509, 314);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(399, 89);
@@ -400,7 +403,7 @@
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.label6);
             this.panel4.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.panel4.Location = new System.Drawing.Point(544, 126);
+            this.panel4.Location = new System.Drawing.Point(506, 126);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(383, 89);
@@ -486,42 +489,45 @@
             this.panel1.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackColor = System.Drawing.Color.Teal;
+            this.panel1.Controls.Add(this.label32);
             this.panel1.Controls.Add(this.btn_thoat);
             this.panel1.Controls.Add(this.btn_dangnhap);
             this.panel1.Controls.Add(this.cb_user);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(-1, 0);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(2320, 42);
+            this.panel1.Size = new System.Drawing.Size(1723, 53);
             this.panel1.TabIndex = 24;
             // 
             // btn_thoat
             // 
+            this.btn_thoat.BackColor = System.Drawing.Color.White;
             this.btn_thoat.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.btn_thoat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.MediumTurquoise;
             this.btn_thoat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleTurquoise;
             this.btn_thoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_thoat.ForeColor = System.Drawing.Color.Red;
-            this.btn_thoat.Location = new System.Drawing.Point(1840, 6);
+            this.btn_thoat.Location = new System.Drawing.Point(1594, 10);
             this.btn_thoat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_thoat.Name = "btn_thoat";
-            this.btn_thoat.Size = new System.Drawing.Size(107, 30);
+            this.btn_thoat.Size = new System.Drawing.Size(98, 29);
             this.btn_thoat.TabIndex = 2;
             this.btn_thoat.Text = "Thoát";
-            this.btn_thoat.UseVisualStyleBackColor = true;
+            this.btn_thoat.UseVisualStyleBackColor = false;
             this.btn_thoat.Click += new System.EventHandler(this.btn_thoat_Click);
             // 
             // cb_user
             // 
             this.cb_user.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cb_user.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_user.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_user.FormattingEnabled = true;
-            this.cb_user.Location = new System.Drawing.Point(1697, 9);
+            this.cb_user.Location = new System.Drawing.Point(1482, 9);
             this.cb_user.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cb_user.Name = "cb_user";
-            this.cb_user.Size = new System.Drawing.Size(225, 24);
+            this.cb_user.Size = new System.Drawing.Size(225, 31);
             this.cb_user.TabIndex = 3;
             this.cb_user.SelectedIndexChanged += new System.EventHandler(this.cb_user_SelectedIndexChanged_1);
             // 
@@ -532,7 +538,7 @@
             this.panel13.Controls.Add(this.label21);
             this.panel13.Controls.Add(this.label22);
             this.panel13.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.panel13.Location = new System.Drawing.Point(1021, 689);
+            this.panel13.Location = new System.Drawing.Point(925, 690);
             this.panel13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(397, 89);
@@ -567,7 +573,7 @@
             this.panel14.Controls.Add(this.label23);
             this.panel14.Controls.Add(this.label24);
             this.panel14.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.panel14.Location = new System.Drawing.Point(544, 689);
+            this.panel14.Location = new System.Drawing.Point(506, 689);
             this.panel14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(399, 89);
@@ -655,10 +661,10 @@
             this.panel17.Controls.Add(this.label28);
             this.panel17.Controls.Add(this.label29);
             this.panel17.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.panel17.Location = new System.Drawing.Point(1020, 314);
+            this.panel17.Location = new System.Drawing.Point(924, 315);
             this.panel17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(383, 89);
+            this.panel17.Size = new System.Drawing.Size(398, 89);
             this.panel17.TabIndex = 55;
             // 
             // label28
@@ -690,7 +696,7 @@
             this.panel18.Controls.Add(this.label30);
             this.panel18.Controls.Add(this.label31);
             this.panel18.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.panel18.Location = new System.Drawing.Point(544, 501);
+            this.panel18.Location = new System.Drawing.Point(506, 501);
             this.panel18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(399, 89);
@@ -722,7 +728,7 @@
             // 
             this.pictureBox13.BackColor = System.Drawing.Color.White;
             this.pictureBox13.Image = global::HETHONGQLCHUNGCU.Properties.Resources.QLDV_DkyDV;
-            this.pictureBox13.Location = new System.Drawing.Point(547, 505);
+            this.pictureBox13.Location = new System.Drawing.Point(509, 505);
             this.pictureBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(77, 84);
@@ -734,7 +740,7 @@
             // 
             this.pictureBox12.BackColor = System.Drawing.Color.White;
             this.pictureBox12.Image = global::HETHONGQLCHUNGCU.Properties.Resources.QLTC_CongNo;
-            this.pictureBox12.Location = new System.Drawing.Point(1021, 318);
+            this.pictureBox12.Location = new System.Drawing.Point(925, 319);
             this.pictureBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(77, 84);
@@ -746,7 +752,7 @@
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.White;
             this.pictureBox9.Image = global::HETHONGQLCHUNGCU.Properties.Resources.QlNS_DGNS;
-            this.pictureBox9.Location = new System.Drawing.Point(1024, 692);
+            this.pictureBox9.Location = new System.Drawing.Point(928, 693);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(77, 84);
@@ -758,7 +764,7 @@
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.White;
             this.pictureBox10.Image = global::HETHONGQLCHUNGCU.Properties.Resources.QlNS_BangPC;
-            this.pictureBox10.Location = new System.Drawing.Point(547, 692);
+            this.pictureBox10.Location = new System.Drawing.Point(509, 692);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(65, 84);
@@ -782,7 +788,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.White;
             this.pictureBox6.Image = global::HETHONGQLCHUNGCU.Properties.Resources.Car;
-            this.pictureBox6.Location = new System.Drawing.Point(1479, 505);
+            this.pictureBox6.Location = new System.Drawing.Point(1337, 506);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(77, 84);
@@ -794,7 +800,7 @@
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.White;
             this.pictureBox7.Image = global::HETHONGQLCHUNGCU.Properties.Resources.BaoTri;
-            this.pictureBox7.Location = new System.Drawing.Point(1021, 505);
+            this.pictureBox7.Location = new System.Drawing.Point(925, 506);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(77, 84);
@@ -818,7 +824,7 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.White;
             this.pictureBox5.Image = global::HETHONGQLCHUNGCU.Properties.Resources.THongKeTaiChinh;
-            this.pictureBox5.Location = new System.Drawing.Point(1477, 318);
+            this.pictureBox5.Location = new System.Drawing.Point(1335, 319);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(77, 84);
@@ -830,7 +836,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.Image = global::HETHONGQLCHUNGCU.Properties.Resources.QLTC_ThanhToan;
-            this.pictureBox3.Location = new System.Drawing.Point(548, 318);
+            this.pictureBox3.Location = new System.Drawing.Point(510, 318);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(77, 84);
@@ -854,7 +860,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.Image = global::HETHONGQLCHUNGCU.Properties.Resources.QLTN_QLCanHo;
-            this.pictureBox2.Location = new System.Drawing.Point(547, 128);
+            this.pictureBox2.Location = new System.Drawing.Point(509, 128);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(77, 84);
@@ -874,12 +880,23 @@
             this.pictureBox1.TabIndex = 28;
             this.pictureBox1.TabStop = false;
             // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.ForeColor = System.Drawing.Color.White;
+            this.label32.Location = new System.Drawing.Point(643, 5);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(445, 38);
+            this.label32.TabIndex = 4;
+            this.label32.Text = "HỆ THỐNG QUẢN LÝ CHUNG CƯ";
+            // 
             // Frm_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(1924, 846);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1722, 1058);
             this.Controls.Add(this.pictureBox13);
             this.Controls.Add(this.panel18);
             this.Controls.Add(this.pictureBox12);
@@ -915,6 +932,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Frm_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -1033,5 +1051,6 @@
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Button btn_thoat;
         private System.Windows.Forms.ComboBox cb_user;
+        private System.Windows.Forms.Label label32;
     }
 }

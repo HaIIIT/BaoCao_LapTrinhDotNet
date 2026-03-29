@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -45,7 +46,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btn_thoat = new System.Windows.Forms.Button();
@@ -99,6 +99,13 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Chi Tiết Hóa Đơn";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(262, 222);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(315, 38);
+            this.textBox7.TabIndex = 13;
             // 
             // textBox6
             // 
@@ -226,13 +233,6 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(262, 222);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(315, 38);
-            this.textBox7.TabIndex = 13;
-            // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.White;
@@ -275,7 +275,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::HETHONGQLCHUNGCU.Properties.Resources.themcudan;
+            this.pictureBox3.Image = global::HETHONGQLCHUNGCU.Properties.Resources.add;
             this.pictureBox3.Location = new System.Drawing.Point(62, 33);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(43, 40);
@@ -285,7 +285,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::HETHONGQLCHUNGCU.Properties.Resources.WriteUser;
+            this.pictureBox2.Image = global::HETHONGQLCHUNGCU.Properties.Resources.pencil;
             this.pictureBox2.Location = new System.Drawing.Point(249, 33);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(43, 40);

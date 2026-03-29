@@ -283,7 +283,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::HETHONGQLCHUNGCU.Properties.Resources.themcudan;
+            this.pictureBox3.Image = global::HETHONGQLCHUNGCU.Properties.Resources.add;
             this.pictureBox3.Location = new System.Drawing.Point(62, 33);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(43, 40);
@@ -293,7 +293,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::HETHONGQLCHUNGCU.Properties.Resources.WriteUser;
+            this.pictureBox2.Image = global::HETHONGQLCHUNGCU.Properties.Resources.pencil;
             this.pictureBox2.Location = new System.Drawing.Point(249, 33);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(43, 40);

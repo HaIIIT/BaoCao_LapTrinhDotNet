@@ -39,6 +39,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -48,7 +49,7 @@
             // txt_mk
             // 
             this.txt_mk.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_mk.Location = new System.Drawing.Point(326, 331);
+            this.txt_mk.Location = new System.Drawing.Point(326, 313);
             this.txt_mk.Margin = new System.Windows.Forms.Padding(4);
             this.txt_mk.Multiline = true;
             this.txt_mk.Name = "txt_mk";
@@ -72,7 +73,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(299, 297);
+            this.label2.Location = new System.Drawing.Point(299, 279);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(125, 33);
@@ -91,7 +92,8 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel1.BackColor = System.Drawing.Color.Teal;
+            this.panel1.Controls.Add(this.linkLabel1);
             this.panel1.Controls.Add(this.btn_cancel);
             this.panel1.Controls.Add(this.btn_dn);
             this.panel1.Controls.Add(this.label3);
@@ -102,10 +104,10 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txt_mk);
             this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Location = new System.Drawing.Point(572, 205);
+            this.panel1.Location = new System.Drawing.Point(248, 109);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(891, 497);
+            this.panel1.Size = new System.Drawing.Size(891, 453);
             this.panel1.TabIndex = 0;
             // 
             // btn_cancel
@@ -113,7 +115,7 @@
             this.btn_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.btn_cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cancel.ForeColor = System.Drawing.Color.Red;
-            this.btn_cancel.Location = new System.Drawing.Point(475, 392);
+            this.btn_cancel.Location = new System.Drawing.Point(475, 380);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(100, 32);
             this.btn_cancel.TabIndex = 4;
@@ -126,7 +128,7 @@
             this.btn_dn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btn_dn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Blue;
             this.btn_dn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_dn.Location = new System.Drawing.Point(326, 391);
+            this.btn_dn.Location = new System.Drawing.Point(326, 379);
             this.btn_dn.Name = "btn_dn";
             this.btn_dn.Size = new System.Drawing.Size(132, 33);
             this.btn_dn.TabIndex = 3;
@@ -161,7 +163,7 @@
             // 
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Image = global::HETHONGQLCHUNGCU.Properties.Resources.Password;
-            this.pictureBox2.Location = new System.Drawing.Point(266, 297);
+            this.pictureBox2.Location = new System.Drawing.Point(266, 279);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(39, 37);
@@ -172,22 +174,34 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::HETHONGQLCHUNGCU.Properties.Resources.logo_HTQLCC;
-            this.pictureBox3.Location = new System.Drawing.Point(338, 72);
+            this.pictureBox3.Image = global::HETHONGQLCHUNGCU.Properties.Resources.canho1;
+            this.pictureBox3.Location = new System.Drawing.Point(354, 79);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(189, 166);
+            this.pictureBox3.Size = new System.Drawing.Size(192, 124);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.Location = new System.Drawing.Point(459, 354);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(116, 20);
+            this.linkLabel1.TabIndex = 10;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Quên mật khẩu?";
             // 
             // Frm_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(2411, 1104);
+            this.ClientSize = new System.Drawing.Size(1397, 702);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frm_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -215,5 +229,6 @@
         private System.Windows.Forms.Button btn_dn;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button btn_cancel;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

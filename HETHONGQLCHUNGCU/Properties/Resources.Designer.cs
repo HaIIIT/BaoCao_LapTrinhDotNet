@@ -173,6 +173,16 @@ namespace HETHONGQLCHUNGCU.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CSKH1 {
+            get {
+                object obj = ResourceManager.GetObject("CSKH1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CuDan {
             get {
                 object obj = ResourceManager.GetObject("CuDan", resourceCulture);
@@ -196,6 +206,16 @@ namespace HETHONGQLCHUNGCU.Properties {
         internal static System.Drawing.Bitmap cudan_bl1 {
             get {
                 object obj = ResourceManager.GetObject("cudan_bl1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cv {
+            get {
+                object obj = ResourceManager.GetObject("cv", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -286,16 +306,6 @@ namespace HETHONGQLCHUNGCU.Properties {
         internal static System.Drawing.Bitmap logo_HTQLCC {
             get {
                 object obj = ResourceManager.GetObject("logo_HTQLCC", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap nút_thoát {
-            get {
-                object obj = ResourceManager.GetObject("nút thoát", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -423,6 +433,16 @@ namespace HETHONGQLCHUNGCU.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap removeinformation {
+            get {
+                object obj = ResourceManager.GetObject("removeinformation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap themcudan {
             get {
                 object obj = ResourceManager.GetObject("themcudan", resourceCulture);
@@ -496,6 +516,16 @@ namespace HETHONGQLCHUNGCU.Properties {
         internal static System.Drawing.Bitmap visabasic {
             get {
                 object obj = ResourceManager.GetObject("visabasic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap visathanhtoan {
+            get {
+                object obj = ResourceManager.GetObject("visathanhtoan", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
