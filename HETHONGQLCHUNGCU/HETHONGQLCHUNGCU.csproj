@@ -214,6 +214,18 @@
     <Compile Include="Frm_Xe.Designer.cs">
       <DependentUpon>Frm_Xe.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_ThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ThanhToan.Designer.cs">
+      <DependentUpon>Frm_ThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_TT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_TT.Designer.cs">
+      <DependentUpon>Frm_TT.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -310,6 +322,12 @@
     <EmbeddedResource Include="Frm_Xe.resx">
       <DependentUpon>Frm_Xe.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ThanhToan.resx">
+      <DependentUpon>Frm_ThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_TT.resx">
+      <DependentUpon>Frm_TT.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -365,6 +383,7 @@
     <None Include="Resources\QlNS_DGNS.png" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <None Include="Resources\canho1.png" />
   </ItemGroup>
   <ItemGroup>
@@ -462,6 +481,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\thongtinguixe.png" />
+=======
+    <None Include="Resources\nút thoát.png" />
+>>>>>>> ThanhToan
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
