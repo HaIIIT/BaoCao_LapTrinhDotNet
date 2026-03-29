@@ -63,5 +63,10 @@ namespace HETHONGQLCHUNGCU
             grp_TraCuNhanVien.Visible = true;
             dgv_ThongTinNs.Visible = true;
         }
+
+        private void dgv_ThongTinNs_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

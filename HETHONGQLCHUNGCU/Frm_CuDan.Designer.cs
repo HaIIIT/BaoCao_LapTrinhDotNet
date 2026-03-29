@@ -105,6 +105,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.pnl_title = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
@@ -181,7 +182,7 @@
             this.button14.ForeColor = System.Drawing.Color.White;
             this.button14.Location = new System.Drawing.Point(39, 122);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(183, 39);
+            this.button14.Size = new System.Drawing.Size(175, 39);
             this.button14.TabIndex = 34;
             this.button14.Text = "Trang Chủ";
             this.button14.UseVisualStyleBackColor = false;
@@ -206,7 +207,7 @@
             this.button11.ForeColor = System.Drawing.Color.White;
             this.button11.Location = new System.Drawing.Point(39, 802);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(183, 39);
+            this.button11.Size = new System.Drawing.Size(176, 39);
             this.button11.TabIndex = 32;
             this.button11.Text = "Bảng Đánh Giá ";
             this.button11.UseVisualStyleBackColor = false;
@@ -231,7 +232,7 @@
             this.button12.ForeColor = System.Drawing.Color.White;
             this.button12.Location = new System.Drawing.Point(39, 757);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(183, 39);
+            this.button12.Size = new System.Drawing.Size(176, 39);
             this.button12.TabIndex = 30;
             this.button12.Text = "Bảng Phân Công ";
             this.button12.UseVisualStyleBackColor = false;
@@ -256,7 +257,7 @@
             this.button13.ForeColor = System.Drawing.Color.White;
             this.button13.Location = new System.Drawing.Point(39, 712);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(183, 39);
+            this.button13.Size = new System.Drawing.Size(175, 39);
             this.button13.TabIndex = 28;
             this.button13.Text = "Chấm Công";
             this.button13.UseVisualStyleBackColor = false;
@@ -281,7 +282,7 @@
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(39, 638);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(183, 39);
+            this.button3.Size = new System.Drawing.Size(175, 39);
             this.button3.TabIndex = 26;
             this.button3.Text = "Bãi Xe";
             this.button3.UseVisualStyleBackColor = false;
@@ -306,7 +307,7 @@
             this.button8.ForeColor = System.Drawing.Color.White;
             this.button8.Location = new System.Drawing.Point(39, 593);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(183, 39);
+            this.button8.Size = new System.Drawing.Size(175, 39);
             this.button8.TabIndex = 24;
             this.button8.Text = "Bảo Trì - Sửa Chữa";
             this.button8.UseVisualStyleBackColor = false;
@@ -331,7 +332,7 @@
             this.button9.ForeColor = System.Drawing.Color.White;
             this.button9.Location = new System.Drawing.Point(39, 548);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(183, 39);
+            this.button9.Size = new System.Drawing.Size(175, 39);
             this.button9.TabIndex = 22;
             this.button9.Text = "Đăng Ký Dịch Vụ";
             this.button9.UseVisualStyleBackColor = false;
@@ -346,7 +347,7 @@
             this.button10.ForeColor = System.Drawing.Color.White;
             this.button10.Location = new System.Drawing.Point(39, 503);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(183, 39);
+            this.button10.Size = new System.Drawing.Size(175, 39);
             this.button10.TabIndex = 21;
             this.button10.Text = "CSKH";
             this.button10.UseVisualStyleBackColor = false;
@@ -381,7 +382,7 @@
             this.button7.ForeColor = System.Drawing.Color.White;
             this.button7.Location = new System.Drawing.Point(39, 431);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(183, 39);
+            this.button7.Size = new System.Drawing.Size(175, 39);
             this.button7.TabIndex = 18;
             this.button7.Text = "Thống Kê Tài Chính";
             this.button7.UseVisualStyleBackColor = false;
@@ -406,7 +407,7 @@
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Location = new System.Drawing.Point(39, 386);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(183, 39);
+            this.button4.Size = new System.Drawing.Size(175, 39);
             this.button4.TabIndex = 16;
             this.button4.Text = "Công Nợ";
             this.button4.UseVisualStyleBackColor = false;
@@ -431,7 +432,7 @@
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Location = new System.Drawing.Point(39, 341);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(183, 39);
+            this.button5.Size = new System.Drawing.Size(175, 39);
             this.button5.TabIndex = 14;
             this.button5.Text = "Thanh Toán";
             this.button5.UseVisualStyleBackColor = false;
@@ -446,7 +447,7 @@
             this.button6.ForeColor = System.Drawing.Color.White;
             this.button6.Location = new System.Drawing.Point(39, 296);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(183, 39);
+            this.button6.Size = new System.Drawing.Size(176, 39);
             this.button6.TabIndex = 13;
             this.button6.Text = "Hóa Đơn";
             this.button6.UseVisualStyleBackColor = false;
@@ -481,7 +482,7 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(39, 229);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(183, 39);
+            this.button2.Size = new System.Drawing.Size(175, 39);
             this.button2.TabIndex = 8;
             this.button2.Text = "Căn Hộ";
             this.button2.UseVisualStyleBackColor = false;
@@ -564,6 +565,7 @@
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.DarkCyan;
+            this.panel4.Controls.Add(this.label11);
             this.panel4.Controls.Add(this.label1);
             this.panel4.Location = new System.Drawing.Point(219, 0);
             this.panel4.Name = "panel4";
@@ -994,13 +996,28 @@
             // 
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(3, 8);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(217, 31);
+            this.label13.Size = new System.Drawing.Size(192, 28);
             this.label13.TabIndex = 0;
             this.label13.Text = "Danh Sách Căn Hộ ";
+            // 
+            // label11
+            // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(1041, 12);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(587, 50);
+            this.label11.TabIndex = 3;
+            this.label11.Text = "HỆ THỐNG QUẢN LÝ CHUNG CƯ";
             // 
             // Frm_CuDan
             // 
@@ -1136,5 +1153,6 @@
         private System.Windows.Forms.ToolStripMenuItem thoátToolStripMenuItem;
         private System.Windows.Forms.Panel pnl_title;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label11;
     }
 }
