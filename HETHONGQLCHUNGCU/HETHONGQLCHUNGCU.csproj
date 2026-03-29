@@ -383,7 +383,6 @@
     <None Include="Resources\QlNS_DGNS.png" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <None Include="Resources\canho1.png" />
   </ItemGroup>
   <ItemGroup>
@@ -481,9 +480,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\thongtinguixe.png" />
-=======
     <None Include="Resources\nút thoát.png" />
->>>>>>> ThanhToan
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
