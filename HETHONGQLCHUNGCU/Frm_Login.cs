@@ -17,7 +17,6 @@ namespace HETHONGQLCHUNGCU
         public Frm_Login()
         {
             InitializeComponent();
-            this.WindowState = FormWindowState.Maximized;
         }
         GraphicsPath BoGocPanel(Rectangle r, int radius)
         {
@@ -39,14 +38,16 @@ namespace HETHONGQLCHUNGCU
             txt_tk.Region = new Region(BoGocPanel(txt_tk.ClientRectangle, 8));
             txt_mk.Region = new Region(BoGocPanel(txt_mk.ClientRectangle, 8));
             btn_cancel.BackColor = Color.Transparent;
+            this.AcceptButton = btn_dn;
+            this.CancelButton = btn_cancel;
+            txt_mk.PasswordChar = '*';
         }
 
         private void btn_cancel_Click(object sender, EventArgs e)
         {
-            if(MessageBox.Show("Bạn có chắc muốn thoát đăng nhập không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if(MessageBox.Show("Bạn có chắc muốn thoát đăng nhập không?", "Hệ Thống Quản Lý Chung Cư - Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                Frm_Menu frm = new Frm_Menu();
-                frm.Show();
+                this.DialogResult = DialogResult.Cancel;
                 this.Close();
             }
             
@@ -56,15 +57,22 @@ namespace HETHONGQLCHUNGCU
         {
             if (txt_tk.Text == "Admin" && txt_mk.Text == "123")
             {
-                MessageBox.Show("Đăng Nhập Thành công!!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);               
-                    TenDangNhap = txt_tk.Text;
-                    this.DialogResult = DialogResult.Yes;
-                    this.Close();
+                cls_chcecklogin.DaDangNhap = true;
+                DialogResult  = MessageBox.Show("Đăng Nhập Thành công!!", "Hệ Thống Quản Lý Chung Cư - Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                TenDangNhap = txt_tk.Text;          
+                this.Close();
             }else{
-                MessageBox.Show("Tài Khoản hoặc Mật Khẩu Không Đúng!!!"+"\n Nếu bạn chưa có tài khoản vui lòng liên hệ Ban Quản Trị để được hỗ trợ"+"\nTrân trọng cảm ơn quý khách hàng!!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Tài Khoản hoặc Mật Khẩu Không Đúng!!!"+"\n Nếu bạn chưa có tài khoản vui lòng liên hệ Ban Quản Trị để được hỗ trợ"+"\nTrân trọng cảm ơn quý khách hàng!!", "Hệ Thống Quản Lý Chung Cư - Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txt_tk.Clear();
                 txt_mk.Clear();
             }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            Frm_Hejthongkhoiphuctaikhoan khoiphuctaikhoan = new Frm_Hejthongkhoiphuctaikhoan();
+            khoiphuctaikhoan.ShowDialog();
         }
     }   
 }

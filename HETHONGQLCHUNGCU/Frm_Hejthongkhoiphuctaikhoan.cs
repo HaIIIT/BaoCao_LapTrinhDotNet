@@ -89,11 +89,20 @@ namespace HETHONGQLCHUNGCU
             }
             else
             {
-                MessageBox.Show("Mật khẩu đã được đặt lại thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                DialogResult result =MessageBox.Show("Mật khẩu đã được đặt lại thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 grb_xacthuc.Visible = false;
                 grb_changePwd.Visible = false;
                 linkLabel1.ForeColor = Color.Red;
+                this.DialogResult = DialogResult.OK;
+                this.Close();
             }  
+        }
+
+        private void linkLabel1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Frm_Login login = new Frm_Login();
+            login.ShowDialog();
         }
     }
 }

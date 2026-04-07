@@ -45,9 +45,9 @@
             this.btn_thoat = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_delete = new System.Windows.Forms.Button();
+            this.btn_update = new System.Windows.Forms.Button();
+            this.btn_add = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -243,36 +243,36 @@
             this.pictureBox1.TabIndex = 30;
             this.pictureBox1.TabStop = false;
             // 
-            // button3
+            // btn_delete
             // 
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(491, 33);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(128, 40);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Xóa";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_delete.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_delete.Location = new System.Drawing.Point(491, 33);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.Size = new System.Drawing.Size(128, 40);
+            this.btn_delete.TabIndex = 2;
+            this.btn_delete.Text = "Xóa";
+            this.btn_delete.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btn_update
             // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(291, 33);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(128, 40);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Cập Nhật";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_update.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_update.Location = new System.Drawing.Point(291, 33);
+            this.btn_update.Name = "btn_update";
+            this.btn_update.Size = new System.Drawing.Size(128, 40);
+            this.btn_update.TabIndex = 1;
+            this.btn_update.Text = "Cập Nhật";
+            this.btn_update.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btn_add
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Teal;
-            this.button1.Location = new System.Drawing.Point(99, 33);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(128, 40);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Thêm";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_add.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add.ForeColor = System.Drawing.Color.Teal;
+            this.btn_add.Location = new System.Drawing.Point(99, 33);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.Size = new System.Drawing.Size(128, 40);
+            this.btn_add.TabIndex = 0;
+            this.btn_add.Text = "Thêm";
+            this.btn_add.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -282,9 +282,9 @@
             this.groupBox2.Controls.Add(this.pictureBox3);
             this.groupBox2.Controls.Add(this.pictureBox2);
             this.groupBox2.Controls.Add(this.pictureBox1);
-            this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.btn_delete);
+            this.groupBox2.Controls.Add(this.btn_update);
+            this.groupBox2.Controls.Add(this.btn_add);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.Teal;
             this.groupBox2.Location = new System.Drawing.Point(22, 451);
@@ -448,9 +448,9 @@
         private System.Windows.Forms.Button btn_thoat;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_delete;
+        private System.Windows.Forms.Button btn_update;
+        private System.Windows.Forms.Button btn_add;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.TextBox textBox2;

@@ -60,9 +60,9 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_delete = new System.Windows.Forms.Button();
+            this.btn_update = new System.Windows.Forms.Button();
+            this.btn_add = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -117,14 +117,13 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Cá Nhân";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // radioButton6
             // 
             this.radioButton6.AutoSize = true;
             this.radioButton6.Location = new System.Drawing.Point(622, 443);
             this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(175, 34);
+            this.radioButton6.Size = new System.Drawing.Size(140, 27);
             this.radioButton6.TabIndex = 29;
             this.radioButton6.TabStop = true;
             this.radioButton6.Text = "Đã Chuyển Đi";
@@ -135,7 +134,7 @@
             this.radioButton5.AutoSize = true;
             this.radioButton5.Location = new System.Drawing.Point(469, 443);
             this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(140, 34);
+            this.radioButton5.Size = new System.Drawing.Size(112, 27);
             this.radioButton5.TabIndex = 28;
             this.radioButton5.TabStop = true;
             this.radioButton5.Text = "Tạm Vắng";
@@ -146,7 +145,7 @@
             this.radioButton4.AutoSize = true;
             this.radioButton4.Location = new System.Drawing.Point(336, 443);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(121, 34);
+            this.radioButton4.Size = new System.Drawing.Size(97, 27);
             this.radioButton4.TabIndex = 27;
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "Tạm Trú";
@@ -157,7 +156,7 @@
             this.radioButton3.AutoSize = true;
             this.radioButton3.Location = new System.Drawing.Point(217, 443);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(113, 34);
+            this.radioButton3.Size = new System.Drawing.Size(90, 27);
             this.radioButton3.TabIndex = 26;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Đang ở";
@@ -179,7 +178,7 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(374, 161);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(69, 34);
+            this.radioButton2.Size = new System.Drawing.Size(55, 27);
             this.radioButton2.TabIndex = 24;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Nữ";
@@ -190,7 +189,7 @@
             this.radioButton1.AutoSize = true;
             this.radioButton1.Location = new System.Drawing.Point(218, 160);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(86, 34);
+            this.radioButton1.Size = new System.Drawing.Size(69, 27);
             this.radioButton1.TabIndex = 23;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Nam";
@@ -211,7 +210,7 @@
             // 
             this.textBox8.Location = new System.Drawing.Point(215, 396);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(386, 38);
+            this.textBox8.Size = new System.Drawing.Size(386, 30);
             this.textBox8.TabIndex = 21;
             // 
             // label7
@@ -229,7 +228,7 @@
             // 
             this.textBox7.Location = new System.Drawing.Point(215, 344);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(386, 38);
+            this.textBox7.Size = new System.Drawing.Size(386, 30);
             this.textBox7.TabIndex = 19;
             // 
             // label6
@@ -247,7 +246,7 @@
             // 
             this.textBox6.Location = new System.Drawing.Point(215, 293);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(386, 38);
+            this.textBox6.Size = new System.Drawing.Size(386, 30);
             this.textBox6.TabIndex = 17;
             // 
             // label5
@@ -265,7 +264,7 @@
             // 
             this.textBox5.Location = new System.Drawing.Point(215, 244);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(386, 38);
+            this.textBox5.Size = new System.Drawing.Size(386, 30);
             this.textBox5.TabIndex = 15;
             // 
             // label4
@@ -283,7 +282,7 @@
             // 
             this.textBox4.Location = new System.Drawing.Point(215, 201);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(386, 38);
+            this.textBox4.Size = new System.Drawing.Size(386, 30);
             this.textBox4.TabIndex = 13;
             // 
             // label3
@@ -301,7 +300,7 @@
             // 
             this.textBox3.Location = new System.Drawing.Point(215, 121);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(386, 38);
+            this.textBox3.Size = new System.Drawing.Size(386, 30);
             this.textBox3.TabIndex = 11;
             // 
             // label2
@@ -319,14 +318,14 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(215, 79);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(386, 38);
+            this.textBox2.Size = new System.Drawing.Size(386, 30);
             this.textBox2.TabIndex = 9;
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(215, 37);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(386, 38);
+            this.textBox1.Size = new System.Drawing.Size(386, 30);
             this.textBox1.TabIndex = 8;
             // 
             // label17
@@ -359,9 +358,9 @@
             this.groupBox2.Controls.Add(this.pictureBox3);
             this.groupBox2.Controls.Add(this.pictureBox2);
             this.groupBox2.Controls.Add(this.pictureBox1);
-            this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.btn_delete);
+            this.groupBox2.Controls.Add(this.btn_update);
+            this.groupBox2.Controls.Add(this.btn_add);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.Teal;
             this.groupBox2.Location = new System.Drawing.Point(26, 555);
@@ -422,36 +421,36 @@
             this.pictureBox1.TabIndex = 30;
             this.pictureBox1.TabStop = false;
             // 
-            // button3
+            // btn_delete
             // 
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(491, 33);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(128, 40);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Xóa";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_delete.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_delete.Location = new System.Drawing.Point(491, 33);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.Size = new System.Drawing.Size(128, 40);
+            this.btn_delete.TabIndex = 2;
+            this.btn_delete.Text = "Xóa";
+            this.btn_delete.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btn_update
             // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(291, 33);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(128, 40);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Cập Nhật";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_update.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_update.Location = new System.Drawing.Point(291, 33);
+            this.btn_update.Name = "btn_update";
+            this.btn_update.Size = new System.Drawing.Size(128, 40);
+            this.btn_update.TabIndex = 1;
+            this.btn_update.Text = "Cập Nhật";
+            this.btn_update.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btn_add
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Teal;
-            this.button1.Location = new System.Drawing.Point(99, 33);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(128, 40);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Thêm";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_add.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add.ForeColor = System.Drawing.Color.Teal;
+            this.btn_add.Location = new System.Drawing.Point(99, 33);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.Size = new System.Drawing.Size(128, 40);
+            this.btn_add.TabIndex = 0;
+            this.btn_add.Text = "Thêm";
+            this.btn_add.UseVisualStyleBackColor = true;
             // 
             // Frm_ThongTinCuDan
             // 
@@ -511,9 +510,9 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_delete;
+        private System.Windows.Forms.Button btn_update;
+        private System.Windows.Forms.Button btn_add;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button btn_thoat;
     }

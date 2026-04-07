@@ -33,13 +33,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txt_tk = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.btn_cancel = new System.Windows.Forms.Button();
             this.btn_dn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -48,11 +48,13 @@
             // 
             // txt_mk
             // 
-            this.txt_mk.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_mk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_mk.ForeColor = System.Drawing.Color.Black;
             this.txt_mk.Location = new System.Drawing.Point(326, 313);
             this.txt_mk.Margin = new System.Windows.Forms.Padding(4);
             this.txt_mk.Multiline = true;
             this.txt_mk.Name = "txt_mk";
+            this.txt_mk.PasswordChar = '*';
             this.txt_mk.Size = new System.Drawing.Size(249, 36);
             this.txt_mk.TabIndex = 2;
             // 
@@ -76,13 +78,14 @@
             this.label2.Location = new System.Drawing.Point(299, 279);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 33);
+            this.label2.Size = new System.Drawing.Size(122, 33);
             this.label2.TabIndex = 3;
-            this.label2.Text = "PassWord";
+            this.label2.Text = "Password";
             // 
             // txt_tk
             // 
             this.txt_tk.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_tk.ForeColor = System.Drawing.Color.Black;
             this.txt_tk.Location = new System.Drawing.Point(326, 240);
             this.txt_tk.Margin = new System.Windows.Forms.Padding(4);
             this.txt_tk.Multiline = true;
@@ -104,11 +107,23 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txt_mk);
             this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Location = new System.Drawing.Point(248, 109);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(891, 453);
+            this.panel1.Size = new System.Drawing.Size(891, 431);
             this.panel1.TabIndex = 0;
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.Location = new System.Drawing.Point(459, 354);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(116, 20);
+            this.linkLabel1.TabIndex = 4;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Quên mật khẩu?";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // btn_cancel
             // 
@@ -118,7 +133,7 @@
             this.btn_cancel.Location = new System.Drawing.Point(475, 380);
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.Size = new System.Drawing.Size(100, 32);
-            this.btn_cancel.TabIndex = 4;
+            this.btn_cancel.TabIndex = 5;
             this.btn_cancel.Text = "Cancel";
             this.btn_cancel.UseVisualStyleBackColor = true;
             this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
@@ -182,24 +197,13 @@
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
             // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(459, 354);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(116, 20);
-            this.linkLabel1.TabIndex = 10;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Quên mật khẩu?";
-            // 
             // Frm_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1397, 702);
+            this.ClientSize = new System.Drawing.Size(887, 430);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
