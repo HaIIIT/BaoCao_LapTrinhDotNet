@@ -1179,7 +1179,7 @@
             this.toolStripMenuItem6});
             this.menuStrip2.Location = new System.Drawing.Point(217, 74);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(1818, 50);
+            this.menuStrip2.Size = new System.Drawing.Size(1464, 50);
             this.menuStrip2.TabIndex = 8;
             this.menuStrip2.Text = "menuStrip1";
             // 
@@ -1295,7 +1295,7 @@
             this.panel8.Controls.Add(this.label4);
             this.panel8.Location = new System.Drawing.Point(218, 0);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(2705, 74);
+            this.panel8.Size = new System.Drawing.Size(1463, 74);
             this.panel8.TabIndex = 7;
             // 
             // grp_trangthai

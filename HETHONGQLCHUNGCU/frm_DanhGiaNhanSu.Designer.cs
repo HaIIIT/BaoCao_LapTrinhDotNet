@@ -137,9 +137,9 @@
             this.pictureBox30 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.pnl_tiltle1 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
+            this.pnl_tiltle2 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.grp_ThongTinNhanSu.SuspendLayout();
@@ -180,8 +180,8 @@
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
             this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel9.SuspendLayout();
+            this.pnl_tiltle1.SuspendLayout();
+            this.pnl_tiltle2.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -264,6 +264,7 @@
             this.cậpNhậtĐánhGiáToolStripMenuItem.Name = "cậpNhậtĐánhGiáToolStripMenuItem";
             this.cậpNhậtĐánhGiáToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.cậpNhậtĐánhGiáToolStripMenuItem.Text = "Cập Nhật Đánh Giá";
+            this.cậpNhậtĐánhGiáToolStripMenuItem.Click += new System.EventHandler(this.cậpNhậtĐánhGiáToolStripMenuItem_Click);
             // 
             // xóaĐánhGiáToolStripMenuItem
             // 
@@ -271,6 +272,7 @@
             this.xóaĐánhGiáToolStripMenuItem.Name = "xóaĐánhGiáToolStripMenuItem";
             this.xóaĐánhGiáToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.xóaĐánhGiáToolStripMenuItem.Text = "Xóa Đánh Giá";
+            this.xóaĐánhGiáToolStripMenuItem.Click += new System.EventHandler(this.xóaĐánhGiáToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
@@ -296,7 +298,7 @@
             this.grp_ThongTinNhanSu.Controls.Add(this.label5);
             this.grp_ThongTinNhanSu.Controls.Add(this.label4);
             this.grp_ThongTinNhanSu.Controls.Add(this.lbl_tongsonv);
-            this.grp_ThongTinNhanSu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.grp_ThongTinNhanSu.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.grp_ThongTinNhanSu.ForeColor = System.Drawing.Color.Teal;
             this.grp_ThongTinNhanSu.Location = new System.Drawing.Point(256, 177);
             this.grp_ThongTinNhanSu.Name = "grp_ThongTinNhanSu";
@@ -400,14 +402,14 @@
             this.TongDiem,
             this.XepLoai,
             this.NhanXet});
-            this.dgv_ThongTinNs.Location = new System.Drawing.Point(328, 469);
+            this.dgv_ThongTinNs.Location = new System.Drawing.Point(256, 456);
             this.dgv_ThongTinNs.Name = "dgv_ThongTinNs";
             this.dgv_ThongTinNs.ReadOnly = true;
             this.dgv_ThongTinNs.RowHeadersVisible = false;
             this.dgv_ThongTinNs.RowHeadersWidth = 51;
             this.dgv_ThongTinNs.RowTemplate.Height = 24;
             this.dgv_ThongTinNs.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_ThongTinNs.Size = new System.Drawing.Size(1202, 403);
+            this.dgv_ThongTinNs.Size = new System.Drawing.Size(1353, 403);
             this.dgv_ThongTinNs.TabIndex = 4;
             // 
             // MaDanhGia
@@ -504,20 +506,20 @@
             this.grp_TraCuNhanVien.Controls.Add(this.textBox1);
             this.grp_TraCuNhanVien.Controls.Add(this.label7);
             this.grp_TraCuNhanVien.Controls.Add(this.label3);
-            this.grp_TraCuNhanVien.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.grp_TraCuNhanVien.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.grp_TraCuNhanVien.ForeColor = System.Drawing.Color.Teal;
             this.grp_TraCuNhanVien.Location = new System.Drawing.Point(789, 177);
             this.grp_TraCuNhanVien.Name = "grp_TraCuNhanVien";
             this.grp_TraCuNhanVien.Size = new System.Drawing.Size(820, 215);
             this.grp_TraCuNhanVien.TabIndex = 5;
             this.grp_TraCuNhanVien.TabStop = false;
-            this.grp_TraCuNhanVien.Text = "Tra Cứu Thông Tin Nhân Sự";
+            this.grp_TraCuNhanVien.Text = "Tra Cứu Thông Tin Đánh Giá Nhân Sự";
             // 
             // button29
             // 
-            this.button29.Location = new System.Drawing.Point(507, 171);
+            this.button29.Location = new System.Drawing.Point(505, 168);
             this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(124, 37);
+            this.button29.Size = new System.Drawing.Size(150, 37);
             this.button29.TabIndex = 13;
             this.button29.Text = "Tra cứu";
             this.button29.UseVisualStyleBackColor = true;
@@ -527,7 +529,7 @@
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(191, 171);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(299, 36);
+            this.comboBox2.Size = new System.Drawing.Size(299, 31);
             this.comboBox2.TabIndex = 12;
             // 
             // comboBox1
@@ -535,7 +537,7 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(191, 130);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(299, 36);
+            this.comboBox1.Size = new System.Drawing.Size(299, 31);
             this.comboBox1.TabIndex = 11;
             // 
             // label9
@@ -1492,43 +1494,43 @@
             this.label14.TabIndex = 2;
             this.label14.Text = "HỆ THỐNG QUẢN LÝ CHUNG CƯ";
             // 
-            // panel8
+            // pnl_tiltle1
             // 
-            this.panel8.BackColor = System.Drawing.Color.Teal;
-            this.panel8.Controls.Add(this.label15);
-            this.panel8.Location = new System.Drawing.Point(256, 128);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1353, 49);
-            this.panel8.TabIndex = 10;
+            this.pnl_tiltle1.BackColor = System.Drawing.Color.Teal;
+            this.pnl_tiltle1.Controls.Add(this.label15);
+            this.pnl_tiltle1.Location = new System.Drawing.Point(256, 128);
+            this.pnl_tiltle1.Name = "pnl_tiltle1";
+            this.pnl_tiltle1.Size = new System.Drawing.Size(1353, 49);
+            this.pnl_tiltle1.TabIndex = 10;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(3, 8);
+            this.label15.Location = new System.Drawing.Point(5, 12);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(566, 31);
+            this.label15.Size = new System.Drawing.Size(426, 23);
             this.label15.TabIndex = 0;
             this.label15.Text = "Trạng Thái - Tìm Kiếm Thông Tin Đánh Giá Nhân Sự";
             // 
-            // panel9
+            // pnl_tiltle2
             // 
-            this.panel9.BackColor = System.Drawing.Color.Teal;
-            this.panel9.Controls.Add(this.label16);
-            this.panel9.Location = new System.Drawing.Point(256, 421);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1353, 49);
-            this.panel9.TabIndex = 11;
+            this.pnl_tiltle2.BackColor = System.Drawing.Color.Teal;
+            this.pnl_tiltle2.Controls.Add(this.label16);
+            this.pnl_tiltle2.Location = new System.Drawing.Point(256, 408);
+            this.pnl_tiltle2.Name = "pnl_tiltle2";
+            this.pnl_tiltle2.Size = new System.Drawing.Size(1353, 49);
+            this.pnl_tiltle2.TabIndex = 11;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(3, 9);
+            this.label16.Location = new System.Drawing.Point(5, 13);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(329, 31);
+            this.label16.Size = new System.Drawing.Size(245, 23);
             this.label16.TabIndex = 1;
             this.label16.Text = "Danh Sách Đánh Giá Nhân Sự";
             // 
@@ -1537,8 +1539,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1644, 884);
-            this.Controls.Add(this.panel9);
-            this.Controls.Add(this.panel8);
+            this.Controls.Add(this.pnl_tiltle2);
+            this.Controls.Add(this.pnl_tiltle1);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.grp_TraCuNhanVien);
@@ -1553,7 +1555,6 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_DanhGiaNhanSu";
-            this.Load += new System.EventHandler(this.frm_DanhGiaNhanSu_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.grp_ThongTinNhanSu.ResumeLayout(false);
@@ -1599,10 +1600,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
+            this.pnl_tiltle1.ResumeLayout(false);
+            this.pnl_tiltle1.PerformLayout();
+            this.pnl_tiltle2.ResumeLayout(false);
+            this.pnl_tiltle2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1717,8 +1718,8 @@
         private System.Windows.Forms.ToolStripMenuItem xóaĐánhGiáToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem thoátToolStripMenuItem;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel pnl_tiltle1;
+        private System.Windows.Forms.Panel pnl_tiltle2;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
     }

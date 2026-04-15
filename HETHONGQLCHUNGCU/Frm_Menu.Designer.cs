@@ -94,6 +94,9 @@
             this.pic_hoadon = new System.Windows.Forms.PictureBox();
             this.pic_canho = new System.Windows.Forms.PictureBox();
             this.pic_cudan = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pnl_canhbao = new System.Windows.Forms.Panel();
             this.pnl_baixe.SuspendLayout();
             this.pnl_baotri.SuspendLayout();
             this.pnl_cskh.SuspendLayout();
@@ -121,6 +124,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic_hoadon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_canho)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_cudan)).BeginInit();
+            this.pnl_canhbao.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_dangnhap
@@ -158,7 +162,7 @@
             this.pnl_baixe.Controls.Add(this.lbl_bx1);
             this.pnl_baixe.Controls.Add(this.lbl_bx);
             this.pnl_baixe.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.pnl_baixe.Location = new System.Drawing.Point(1174, 530);
+            this.pnl_baixe.Location = new System.Drawing.Point(1176, 550);
             this.pnl_baixe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnl_baixe.Name = "pnl_baixe";
             this.pnl_baixe.Size = new System.Drawing.Size(335, 89);
@@ -196,7 +200,7 @@
             this.pnl_baotri.Controls.Add(this.lbl_btsc1);
             this.pnl_baotri.Controls.Add(this.lbl_btsc);
             this.pnl_baotri.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.pnl_baotri.Location = new System.Drawing.Point(803, 531);
+            this.pnl_baotri.Location = new System.Drawing.Point(805, 551);
             this.pnl_baotri.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnl_baotri.Name = "pnl_baotri";
             this.pnl_baotri.Size = new System.Drawing.Size(351, 89);
@@ -233,7 +237,7 @@
             this.pnl_cskh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnl_cskh.Controls.Add(this.lbl_cskh1);
             this.pnl_cskh.Controls.Add(this.lbl_cskh);
-            this.pnl_cskh.Location = new System.Drawing.Point(81, 531);
+            this.pnl_cskh.Location = new System.Drawing.Point(83, 551);
             this.pnl_cskh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnl_cskh.Name = "pnl_cskh";
             this.pnl_cskh.Size = new System.Drawing.Size(335, 89);
@@ -268,7 +272,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(39, 471);
+            this.label20.Location = new System.Drawing.Point(41, 491);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(435, 36);
             this.label20.TabIndex = 41;
@@ -277,7 +281,7 @@
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.Tomato;
-            this.panel12.Location = new System.Drawing.Point(25, 471);
+            this.panel12.Location = new System.Drawing.Point(27, 491);
             this.panel12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(8, 150);
@@ -290,7 +294,7 @@
             this.pnl_thongketc.Controls.Add(this.lbl_tk1);
             this.pnl_thongketc.Controls.Add(this.lbl_tk);
             this.pnl_thongketc.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.pnl_thongketc.Location = new System.Drawing.Point(1172, 343);
+            this.pnl_thongketc.Location = new System.Drawing.Point(1174, 363);
             this.pnl_thongketc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnl_thongketc.Name = "pnl_thongketc";
             this.pnl_thongketc.Size = new System.Drawing.Size(335, 89);
@@ -328,7 +332,7 @@
             this.pnl_thanhtoan.Controls.Add(this.lbl_tt1);
             this.pnl_thanhtoan.Controls.Add(this.lbl_tt);
             this.pnl_thanhtoan.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.pnl_thanhtoan.Location = new System.Drawing.Point(437, 345);
+            this.pnl_thanhtoan.Location = new System.Drawing.Point(439, 365);
             this.pnl_thanhtoan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnl_thanhtoan.Name = "pnl_thanhtoan";
             this.pnl_thanhtoan.Size = new System.Drawing.Size(351, 89);
@@ -365,7 +369,7 @@
             this.pnl_hoadon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnl_hoadon.Controls.Add(this.lbl_hoadon1);
             this.pnl_hoadon.Controls.Add(this.lbl_hoadon);
-            this.pnl_hoadon.Location = new System.Drawing.Point(88, 344);
+            this.pnl_hoadon.Location = new System.Drawing.Point(90, 364);
             this.pnl_hoadon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnl_hoadon.Name = "pnl_hoadon";
             this.pnl_hoadon.Size = new System.Drawing.Size(328, 89);
@@ -400,7 +404,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(39, 284);
+            this.label11.Location = new System.Drawing.Point(41, 304);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(316, 36);
             this.label11.TabIndex = 33;
@@ -409,7 +413,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.panel7.Location = new System.Drawing.Point(25, 284);
+            this.panel7.Location = new System.Drawing.Point(27, 304);
             this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(8, 150);
@@ -422,7 +426,7 @@
             this.pnl_canho.Controls.Add(this.lbl_canho1);
             this.pnl_canho.Controls.Add(this.lbl_canho);
             this.pnl_canho.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.pnl_canho.Location = new System.Drawing.Point(434, 157);
+            this.pnl_canho.Location = new System.Drawing.Point(436, 177);
             this.pnl_canho.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnl_canho.Name = "pnl_canho";
             this.pnl_canho.Size = new System.Drawing.Size(335, 89);
@@ -459,7 +463,7 @@
             this.pnl_cudan.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnl_cudan.Controls.Add(this.lbl_cudan1);
             this.pnl_cudan.Controls.Add(this.lbl_cudan);
-            this.pnl_cudan.Location = new System.Drawing.Point(81, 156);
+            this.pnl_cudan.Location = new System.Drawing.Point(83, 176);
             this.pnl_cudan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnl_cudan.Name = "pnl_cudan";
             this.pnl_cudan.Size = new System.Drawing.Size(335, 89);
@@ -494,7 +498,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(39, 94);
+            this.label2.Location = new System.Drawing.Point(41, 114);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(300, 36);
             this.label2.TabIndex = 26;
@@ -503,7 +507,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel2.Location = new System.Drawing.Point(25, 94);
+            this.panel2.Location = new System.Drawing.Point(27, 114);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(8, 150);
@@ -516,6 +520,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Teal;
+            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.label32);
             this.panel1.Controls.Add(this.btn_thoat);
             this.panel1.Controls.Add(this.btn_dangnhap);
@@ -576,7 +581,7 @@
             this.pnl_bangdanhgia.Controls.Add(this.lbl_dg1);
             this.pnl_bangdanhgia.Controls.Add(this.lbl_dg);
             this.pnl_bangdanhgia.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.pnl_bangdanhgia.Location = new System.Drawing.Point(804, 720);
+            this.pnl_bangdanhgia.Location = new System.Drawing.Point(806, 740);
             this.pnl_bangdanhgia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnl_bangdanhgia.Name = "pnl_bangdanhgia";
             this.pnl_bangdanhgia.Size = new System.Drawing.Size(349, 89);
@@ -614,7 +619,7 @@
             this.pnl_bangphancong.Controls.Add(this.lbl_pc1);
             this.pnl_bangphancong.Controls.Add(this.lbl_pc);
             this.pnl_bangphancong.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.pnl_bangphancong.Location = new System.Drawing.Point(434, 720);
+            this.pnl_bangphancong.Location = new System.Drawing.Point(436, 740);
             this.pnl_bangphancong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnl_bangphancong.Name = "pnl_bangphancong";
             this.pnl_bangphancong.Size = new System.Drawing.Size(351, 89);
@@ -651,7 +656,7 @@
             this.pnl_chamcong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnl_chamcong.Controls.Add(this.lbl_cc1);
             this.pnl_chamcong.Controls.Add(this.lbl_cc);
-            this.pnl_chamcong.Location = new System.Drawing.Point(81, 720);
+            this.pnl_chamcong.Location = new System.Drawing.Point(83, 740);
             this.pnl_chamcong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnl_chamcong.Name = "pnl_chamcong";
             this.pnl_chamcong.Size = new System.Drawing.Size(335, 89);
@@ -686,7 +691,7 @@
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(39, 658);
+            this.label27.Location = new System.Drawing.Point(41, 678);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(303, 36);
             this.label27.TabIndex = 49;
@@ -695,7 +700,7 @@
             // panel16
             // 
             this.panel16.BackColor = System.Drawing.Color.Gold;
-            this.panel16.Location = new System.Drawing.Point(25, 658);
+            this.panel16.Location = new System.Drawing.Point(27, 678);
             this.panel16.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(8, 150);
@@ -708,7 +713,7 @@
             this.pnl_congno.Controls.Add(this.lbl_cn1);
             this.pnl_congno.Controls.Add(this.lbl_cn);
             this.pnl_congno.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.pnl_congno.Location = new System.Drawing.Point(803, 344);
+            this.pnl_congno.Location = new System.Drawing.Point(805, 364);
             this.pnl_congno.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnl_congno.Name = "pnl_congno";
             this.pnl_congno.Size = new System.Drawing.Size(350, 89);
@@ -746,7 +751,7 @@
             this.pnl_dkdv.Controls.Add(this.lbl_dk1);
             this.pnl_dkdv.Controls.Add(this.lbl_dk);
             this.pnl_dkdv.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.pnl_dkdv.Location = new System.Drawing.Point(434, 532);
+            this.pnl_dkdv.Location = new System.Drawing.Point(436, 552);
             this.pnl_dkdv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnl_dkdv.Name = "pnl_dkdv";
             this.pnl_dkdv.Size = new System.Drawing.Size(351, 89);
@@ -781,7 +786,7 @@
             // 
             this.pic_dkdv.BackColor = System.Drawing.Color.White;
             this.pic_dkdv.Image = global::HETHONGQLCHUNGCU.Properties.Resources.QLDV_DkyDV;
-            this.pic_dkdv.Location = new System.Drawing.Point(437, 536);
+            this.pic_dkdv.Location = new System.Drawing.Point(439, 556);
             this.pic_dkdv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pic_dkdv.Name = "pic_dkdv";
             this.pic_dkdv.Size = new System.Drawing.Size(77, 84);
@@ -794,7 +799,7 @@
             // 
             this.pic_congno.BackColor = System.Drawing.Color.White;
             this.pic_congno.Image = global::HETHONGQLCHUNGCU.Properties.Resources.QLTC_CongNo;
-            this.pic_congno.Location = new System.Drawing.Point(804, 348);
+            this.pic_congno.Location = new System.Drawing.Point(807, 367);
             this.pic_congno.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pic_congno.Name = "pic_congno";
             this.pic_congno.Size = new System.Drawing.Size(77, 84);
@@ -807,7 +812,7 @@
             // 
             this.pic_bangdanhgia.BackColor = System.Drawing.Color.White;
             this.pic_bangdanhgia.Image = global::HETHONGQLCHUNGCU.Properties.Resources.QlNS_DGNS;
-            this.pic_bangdanhgia.Location = new System.Drawing.Point(807, 722);
+            this.pic_bangdanhgia.Location = new System.Drawing.Point(809, 742);
             this.pic_bangdanhgia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pic_bangdanhgia.Name = "pic_bangdanhgia";
             this.pic_bangdanhgia.Size = new System.Drawing.Size(77, 84);
@@ -820,7 +825,7 @@
             // 
             this.pic_bangphancong.BackColor = System.Drawing.Color.White;
             this.pic_bangphancong.Image = global::HETHONGQLCHUNGCU.Properties.Resources.QlNS_BangPC;
-            this.pic_bangphancong.Location = new System.Drawing.Point(437, 722);
+            this.pic_bangphancong.Location = new System.Drawing.Point(439, 742);
             this.pic_bangphancong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pic_bangphancong.Name = "pic_bangphancong";
             this.pic_bangphancong.Size = new System.Drawing.Size(65, 84);
@@ -833,7 +838,7 @@
             // 
             this.pic_chamcong.BackColor = System.Drawing.Color.White;
             this.pic_chamcong.Image = global::HETHONGQLCHUNGCU.Properties.Resources.check_list;
-            this.pic_chamcong.Location = new System.Drawing.Point(85, 722);
+            this.pic_chamcong.Location = new System.Drawing.Point(87, 742);
             this.pic_chamcong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pic_chamcong.Name = "pic_chamcong";
             this.pic_chamcong.Size = new System.Drawing.Size(80, 85);
@@ -846,7 +851,7 @@
             // 
             this.pic_xe.BackColor = System.Drawing.Color.White;
             this.pic_xe.Image = global::HETHONGQLCHUNGCU.Properties.Resources.Car;
-            this.pic_xe.Location = new System.Drawing.Point(1176, 534);
+            this.pic_xe.Location = new System.Drawing.Point(1178, 554);
             this.pic_xe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pic_xe.Name = "pic_xe";
             this.pic_xe.Size = new System.Drawing.Size(77, 84);
@@ -859,7 +864,7 @@
             // 
             this.pic_btsc.BackColor = System.Drawing.Color.White;
             this.pic_btsc.Image = global::HETHONGQLCHUNGCU.Properties.Resources.BaoTri;
-            this.pic_btsc.Location = new System.Drawing.Point(804, 535);
+            this.pic_btsc.Location = new System.Drawing.Point(807, 554);
             this.pic_btsc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pic_btsc.Name = "pic_btsc";
             this.pic_btsc.Size = new System.Drawing.Size(77, 84);
@@ -872,7 +877,7 @@
             // 
             this.pic_CSKH.BackColor = System.Drawing.Color.White;
             this.pic_CSKH.Image = global::HETHONGQLCHUNGCU.Properties.Resources.CSKH;
-            this.pic_CSKH.Location = new System.Drawing.Point(83, 533);
+            this.pic_CSKH.Location = new System.Drawing.Point(85, 553);
             this.pic_CSKH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pic_CSKH.Name = "pic_CSKH";
             this.pic_CSKH.Size = new System.Drawing.Size(80, 85);
@@ -885,7 +890,7 @@
             // 
             this.pic_thongketc.BackColor = System.Drawing.Color.White;
             this.pic_thongketc.Image = global::HETHONGQLCHUNGCU.Properties.Resources.THongKeTaiChinh;
-            this.pic_thongketc.Location = new System.Drawing.Point(1174, 347);
+            this.pic_thongketc.Location = new System.Drawing.Point(1176, 367);
             this.pic_thongketc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pic_thongketc.Name = "pic_thongketc";
             this.pic_thongketc.Size = new System.Drawing.Size(77, 84);
@@ -898,7 +903,7 @@
             // 
             this.pic_thanhtoan.BackColor = System.Drawing.Color.White;
             this.pic_thanhtoan.Image = global::HETHONGQLCHUNGCU.Properties.Resources.QLTC_ThanhToan;
-            this.pic_thanhtoan.Location = new System.Drawing.Point(440, 349);
+            this.pic_thanhtoan.Location = new System.Drawing.Point(442, 369);
             this.pic_thanhtoan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pic_thanhtoan.Name = "pic_thanhtoan";
             this.pic_thanhtoan.Size = new System.Drawing.Size(77, 84);
@@ -911,7 +916,7 @@
             // 
             this.pic_hoadon.BackColor = System.Drawing.Color.White;
             this.pic_hoadon.Image = global::HETHONGQLCHUNGCU.Properties.Resources.QL_HoaDon;
-            this.pic_hoadon.Location = new System.Drawing.Point(91, 346);
+            this.pic_hoadon.Location = new System.Drawing.Point(93, 366);
             this.pic_hoadon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pic_hoadon.Name = "pic_hoadon";
             this.pic_hoadon.Size = new System.Drawing.Size(80, 85);
@@ -924,7 +929,7 @@
             // 
             this.pic_canho.BackColor = System.Drawing.Color.White;
             this.pic_canho.Image = global::HETHONGQLCHUNGCU.Properties.Resources.QLTN_QLCanHo;
-            this.pic_canho.Location = new System.Drawing.Point(437, 159);
+            this.pic_canho.Location = new System.Drawing.Point(439, 179);
             this.pic_canho.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pic_canho.Name = "pic_canho";
             this.pic_canho.Size = new System.Drawing.Size(77, 84);
@@ -937,7 +942,7 @@
             // 
             this.pic_cudan.BackColor = System.Drawing.Color.White;
             this.pic_cudan.Image = global::HETHONGQLCHUNGCU.Properties.Resources.QLTN_CuDan;
-            this.pic_cudan.Location = new System.Drawing.Point(83, 157);
+            this.pic_cudan.Location = new System.Drawing.Point(85, 177);
             this.pic_cudan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pic_cudan.Name = "pic_cudan";
             this.pic_cudan.Size = new System.Drawing.Size(81, 84);
@@ -946,12 +951,39 @@
             this.pic_cudan.TabStop = false;
             this.pic_cudan.Click += new System.EventHandler(this.ptrb_cudan_Click);
             // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(116, 62);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1569, 31);
+            this.panel3.TabIndex = 59;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(10, 6);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(477, 23);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Bạn cần đăng nhập để sử dụng các chức năng của hệ thống!";
+            // 
+            // pnl_canhbao
+            // 
+            this.pnl_canhbao.Controls.Add(this.label3);
+            this.pnl_canhbao.Location = new System.Drawing.Point(25, 67);
+            this.pnl_canhbao.Name = "pnl_canhbao";
+            this.pnl_canhbao.Size = new System.Drawing.Size(1501, 35);
+            this.pnl_canhbao.TabIndex = 60;
+            // 
             // Frm_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1603, 908);
+            this.Controls.Add(this.pnl_canhbao);
             this.Controls.Add(this.pic_dkdv);
             this.Controls.Add(this.pnl_dkdv);
             this.Controls.Add(this.pic_congno);
@@ -1034,6 +1066,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic_hoadon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_canho)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_cudan)).EndInit();
+            this.pnl_canhbao.ResumeLayout(false);
+            this.pnl_canhbao.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1107,5 +1141,8 @@
         private System.Windows.Forms.Button btn_thoat;
         private System.Windows.Forms.ComboBox cb_user;
         private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel pnl_canhbao;
     }
 }

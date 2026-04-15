@@ -16,18 +16,13 @@ namespace HETHONGQLCHUNGCU
         {
             InitializeComponent();
         }
-
-        private void txt_cp_TextChanged(object sender, EventArgs e)
+        public void settrangthaibutton(bool them, bool sua, bool xoa)
         {
-            decimal chiPhi;
-            if (!decimal.TryParse(txt_cp.Text, out chiPhi))
-            {
-                MessageBox.Show("Chi phí không hợp lệ!");
-                return;
-            }
+            btn_add.Enabled = them;
+            btn_update.Enabled = sua;
+            btn_delete.Enabled = xoa;
         }
-
-        private void btn_moi_Click(object sender, EventArgs e)
+        private void btn_thoat_Click(object sender, EventArgs e)
         {
             this.Close();
         }

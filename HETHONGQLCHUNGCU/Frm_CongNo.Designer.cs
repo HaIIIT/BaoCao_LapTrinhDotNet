@@ -37,8 +37,8 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýCôngNợToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mãCôngNợToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mãCănHộToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.themcongnotool = new System.Windows.Forms.ToolStripMenuItem();
+            this.suattcongnotool = new System.Windows.Forms.ToolStripMenuItem();
             this.xóaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.thoátToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,16 +57,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.pnl_titel2 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.MaCongNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaCanHo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaHoaDon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoTienNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgayPhatSinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HanNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pnl_data = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_trangchu = new System.Windows.Forms.Button();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
@@ -99,13 +89,20 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dgv_dscongno = new System.Windows.Forms.DataGridView();
+            this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HanNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayPhatSinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoTienNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaHoaDon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaCanHo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaCongNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.pnl_titel.SuspendLayout();
             this.pnl_find.SuspendLayout();
             this.pnl_titel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.pnl_data.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
@@ -123,6 +120,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_dscongno)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -201,8 +199,8 @@
             // quảnLýCôngNợToolStripMenuItem
             // 
             this.quảnLýCôngNợToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mãCôngNợToolStripMenuItem,
-            this.mãCănHộToolStripMenuItem,
+            this.themcongnotool,
+            this.suattcongnotool,
             this.xóaToolStripMenuItem,
             this.toolStripMenuItem2,
             this.thoátToolStripMenuItem});
@@ -211,38 +209,40 @@
             this.quảnLýCôngNợToolStripMenuItem.Size = new System.Drawing.Size(158, 29);
             this.quảnLýCôngNợToolStripMenuItem.Text = "Quản Lý Công Nợ";
             // 
-            // mãCôngNợToolStripMenuItem
+            // themcongnotool
             // 
-            this.mãCôngNợToolStripMenuItem.Image = global::HETHONGQLCHUNGCU.Properties.Resources.add;
-            this.mãCôngNợToolStripMenuItem.Name = "mãCôngNợToolStripMenuItem";
-            this.mãCôngNợToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
-            this.mãCôngNợToolStripMenuItem.Text = "Thêm Công Nợ";
-            this.mãCôngNợToolStripMenuItem.Click += new System.EventHandler(this.mãCôngNợToolStripMenuItem_Click);
+            this.themcongnotool.Image = global::HETHONGQLCHUNGCU.Properties.Resources.add;
+            this.themcongnotool.Name = "themcongnotool";
+            this.themcongnotool.Size = new System.Drawing.Size(224, 26);
+            this.themcongnotool.Text = "Thêm Công Nợ";
+            this.themcongnotool.Click += new System.EventHandler(this.themcongnotool_Click);
             // 
-            // mãCănHộToolStripMenuItem
+            // suattcongnotool
             // 
-            this.mãCănHộToolStripMenuItem.Image = global::HETHONGQLCHUNGCU.Properties.Resources.pencil;
-            this.mãCănHộToolStripMenuItem.Name = "mãCănHộToolStripMenuItem";
-            this.mãCănHộToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
-            this.mãCănHộToolStripMenuItem.Text = "Sửa Công Nợ";
+            this.suattcongnotool.Image = global::HETHONGQLCHUNGCU.Properties.Resources.pencil;
+            this.suattcongnotool.Name = "suattcongnotool";
+            this.suattcongnotool.Size = new System.Drawing.Size(224, 26);
+            this.suattcongnotool.Text = "Sửa Công Nợ";
+            this.suattcongnotool.Click += new System.EventHandler(this.suattcongnotool_Click);
             // 
             // xóaToolStripMenuItem
             // 
             this.xóaToolStripMenuItem.Image = global::HETHONGQLCHUNGCU.Properties.Resources.delete;
             this.xóaToolStripMenuItem.Name = "xóaToolStripMenuItem";
-            this.xóaToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
+            this.xóaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.xóaToolStripMenuItem.Text = "Xóa Công Nợ";
+            this.xóaToolStripMenuItem.Click += new System.EventHandler(this.xóaToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(189, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(221, 6);
             // 
             // thoátToolStripMenuItem
             // 
             this.thoátToolStripMenuItem.Image = global::HETHONGQLCHUNGCU.Properties.Resources._out;
             this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
-            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(192, 26);
+            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.thoátToolStripMenuItem.Text = "Thoát";
             this.thoátToolStripMenuItem.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
             // 
@@ -251,9 +251,9 @@
             this.pnl_titel.BackColor = System.Drawing.Color.DarkCyan;
             this.pnl_titel.Controls.Add(this.panel5);
             this.pnl_titel.Controls.Add(this.label3);
-            this.pnl_titel.Location = new System.Drawing.Point(261, 130);
+            this.pnl_titel.Location = new System.Drawing.Point(244, 123);
             this.pnl_titel.Name = "pnl_titel";
-            this.pnl_titel.Size = new System.Drawing.Size(1359, 39);
+            this.pnl_titel.Size = new System.Drawing.Size(1406, 39);
             this.pnl_titel.TabIndex = 4;
             // 
             // panel5
@@ -286,9 +286,9 @@
             this.pnl_find.Controls.Add(this.textBox1);
             this.pnl_find.Controls.Add(this.label5);
             this.pnl_find.Controls.Add(this.label4);
-            this.pnl_find.Location = new System.Drawing.Point(261, 167);
+            this.pnl_find.Location = new System.Drawing.Point(244, 160);
             this.pnl_find.Name = "pnl_find";
-            this.pnl_find.Size = new System.Drawing.Size(1359, 153);
+            this.pnl_find.Size = new System.Drawing.Size(1406, 198);
             this.pnl_find.TabIndex = 5;
             // 
             // button15
@@ -296,9 +296,9 @@
             this.button15.BackColor = System.Drawing.Color.White;
             this.button15.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.button15.ForeColor = System.Drawing.Color.Teal;
-            this.button15.Location = new System.Drawing.Point(883, 74);
+            this.button15.Location = new System.Drawing.Point(875, 74);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(100, 39);
+            this.button15.Size = new System.Drawing.Size(125, 39);
             this.button15.TabIndex = 8;
             this.button15.Text = "Tìm Kiếm";
             this.button15.UseVisualStyleBackColor = false;
@@ -377,9 +377,9 @@
             // 
             this.pnl_titel2.BackColor = System.Drawing.Color.Teal;
             this.pnl_titel2.Controls.Add(this.label8);
-            this.pnl_titel2.Location = new System.Drawing.Point(261, 371);
+            this.pnl_titel2.Location = new System.Drawing.Point(244, 364);
             this.pnl_titel2.Name = "pnl_titel2";
-            this.pnl_titel2.Size = new System.Drawing.Size(1359, 39);
+            this.pnl_titel2.Size = new System.Drawing.Size(1406, 39);
             this.pnl_titel2.TabIndex = 6;
             // 
             // label8
@@ -392,109 +392,6 @@
             this.label8.Size = new System.Drawing.Size(188, 28);
             this.label8.TabIndex = 0;
             this.label8.Text = "Danh Sách Công Nợ";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaCongNo,
-            this.MaCanHo,
-            this.MaHoaDon,
-            this.SoTienNo,
-            this.NgayPhatSinh,
-            this.HanNo,
-            this.TrangThai,
-            this.GhiChu});
-            this.dataGridView1.Location = new System.Drawing.Point(93, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1163, 391);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // MaCongNo
-            // 
-            this.MaCongNo.DataPropertyName = "MaCongNo";
-            this.MaCongNo.HeaderText = "Mã Công Nợ";
-            this.MaCongNo.MinimumWidth = 6;
-            this.MaCongNo.Name = "MaCongNo";
-            this.MaCongNo.ReadOnly = true;
-            this.MaCongNo.Width = 125;
-            // 
-            // MaCanHo
-            // 
-            this.MaCanHo.DataPropertyName = "MaCanHo";
-            this.MaCanHo.HeaderText = "Mã Căn Hộ";
-            this.MaCanHo.MinimumWidth = 6;
-            this.MaCanHo.Name = "MaCanHo";
-            this.MaCanHo.ReadOnly = true;
-            this.MaCanHo.Width = 125;
-            // 
-            // MaHoaDon
-            // 
-            this.MaHoaDon.DataPropertyName = "MaHoaDon";
-            this.MaHoaDon.HeaderText = "Mã Hóa Đơn ";
-            this.MaHoaDon.MinimumWidth = 6;
-            this.MaHoaDon.Name = "MaHoaDon";
-            this.MaHoaDon.ReadOnly = true;
-            this.MaHoaDon.Width = 125;
-            // 
-            // SoTienNo
-            // 
-            this.SoTienNo.DataPropertyName = "SoTienNo";
-            this.SoTienNo.HeaderText = "Số Tiền Nợ";
-            this.SoTienNo.MinimumWidth = 6;
-            this.SoTienNo.Name = "SoTienNo";
-            this.SoTienNo.ReadOnly = true;
-            this.SoTienNo.Width = 150;
-            // 
-            // NgayPhatSinh
-            // 
-            this.NgayPhatSinh.DataPropertyName = "NgayPhatSinh";
-            this.NgayPhatSinh.HeaderText = "Ngày Phát Sinh";
-            this.NgayPhatSinh.MinimumWidth = 6;
-            this.NgayPhatSinh.Name = "NgayPhatSinh";
-            this.NgayPhatSinh.ReadOnly = true;
-            this.NgayPhatSinh.Width = 160;
-            // 
-            // HanNo
-            // 
-            this.HanNo.DataPropertyName = "HanNo";
-            this.HanNo.HeaderText = "Hạn Nợ";
-            this.HanNo.MinimumWidth = 6;
-            this.HanNo.Name = "HanNo";
-            this.HanNo.ReadOnly = true;
-            this.HanNo.Width = 150;
-            // 
-            // TrangThai
-            // 
-            this.TrangThai.DataPropertyName = "TrangThai";
-            this.TrangThai.HeaderText = "Trạng Thái";
-            this.TrangThai.MinimumWidth = 6;
-            this.TrangThai.Name = "TrangThai";
-            this.TrangThai.ReadOnly = true;
-            this.TrangThai.Width = 125;
-            // 
-            // GhiChu
-            // 
-            this.GhiChu.DataPropertyName = "GhiChu";
-            this.GhiChu.HeaderText = "Ghi Chú";
-            this.GhiChu.MinimumWidth = 6;
-            this.GhiChu.Name = "GhiChu";
-            this.GhiChu.ReadOnly = true;
-            this.GhiChu.Width = 200;
-            // 
-            // pnl_data
-            // 
-            this.pnl_data.BackColor = System.Drawing.Color.White;
-            this.pnl_data.Controls.Add(this.dataGridView1);
-            this.pnl_data.Location = new System.Drawing.Point(261, 411);
-            this.pnl_data.Name = "pnl_data";
-            this.pnl_data.Size = new System.Drawing.Size(1359, 431);
-            this.pnl_data.TabIndex = 7;
             // 
             // panel1
             // 
@@ -929,13 +826,107 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // dgv_dscongno
+            // 
+            this.dgv_dscongno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_dscongno.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaCongNo,
+            this.MaCanHo,
+            this.MaHoaDon,
+            this.SoTienNo,
+            this.NgayPhatSinh,
+            this.HanNo,
+            this.TrangThai,
+            this.GhiChu});
+            this.dgv_dscongno.Location = new System.Drawing.Point(244, 401);
+            this.dgv_dscongno.Name = "dgv_dscongno";
+            this.dgv_dscongno.ReadOnly = true;
+            this.dgv_dscongno.RowHeadersVisible = false;
+            this.dgv_dscongno.RowHeadersWidth = 51;
+            this.dgv_dscongno.RowTemplate.Height = 24;
+            this.dgv_dscongno.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_dscongno.Size = new System.Drawing.Size(1403, 455);
+            this.dgv_dscongno.TabIndex = 0;
+            // 
+            // GhiChu
+            // 
+            this.GhiChu.DataPropertyName = "GhiChu";
+            this.GhiChu.HeaderText = "Ghi Chú";
+            this.GhiChu.MinimumWidth = 6;
+            this.GhiChu.Name = "GhiChu";
+            this.GhiChu.ReadOnly = true;
+            this.GhiChu.Width = 200;
+            // 
+            // TrangThai
+            // 
+            this.TrangThai.DataPropertyName = "TrangThai";
+            this.TrangThai.HeaderText = "Trạng Thái";
+            this.TrangThai.MinimumWidth = 6;
+            this.TrangThai.Name = "TrangThai";
+            this.TrangThai.ReadOnly = true;
+            this.TrangThai.Width = 125;
+            // 
+            // HanNo
+            // 
+            this.HanNo.DataPropertyName = "HanNo";
+            this.HanNo.HeaderText = "Hạn Nợ";
+            this.HanNo.MinimumWidth = 6;
+            this.HanNo.Name = "HanNo";
+            this.HanNo.ReadOnly = true;
+            this.HanNo.Width = 150;
+            // 
+            // NgayPhatSinh
+            // 
+            this.NgayPhatSinh.DataPropertyName = "NgayPhatSinh";
+            this.NgayPhatSinh.HeaderText = "Ngày Phát Sinh";
+            this.NgayPhatSinh.MinimumWidth = 6;
+            this.NgayPhatSinh.Name = "NgayPhatSinh";
+            this.NgayPhatSinh.ReadOnly = true;
+            this.NgayPhatSinh.Width = 160;
+            // 
+            // SoTienNo
+            // 
+            this.SoTienNo.DataPropertyName = "SoTienNo";
+            this.SoTienNo.HeaderText = "Số Tiền Nợ";
+            this.SoTienNo.MinimumWidth = 6;
+            this.SoTienNo.Name = "SoTienNo";
+            this.SoTienNo.ReadOnly = true;
+            this.SoTienNo.Width = 150;
+            // 
+            // MaHoaDon
+            // 
+            this.MaHoaDon.DataPropertyName = "MaHoaDon";
+            this.MaHoaDon.HeaderText = "Mã Hóa Đơn ";
+            this.MaHoaDon.MinimumWidth = 6;
+            this.MaHoaDon.Name = "MaHoaDon";
+            this.MaHoaDon.ReadOnly = true;
+            this.MaHoaDon.Width = 125;
+            // 
+            // MaCanHo
+            // 
+            this.MaCanHo.DataPropertyName = "MaCanHo";
+            this.MaCanHo.HeaderText = "Mã Căn Hộ";
+            this.MaCanHo.MinimumWidth = 6;
+            this.MaCanHo.Name = "MaCanHo";
+            this.MaCanHo.ReadOnly = true;
+            this.MaCanHo.Width = 125;
+            // 
+            // MaCongNo
+            // 
+            this.MaCongNo.DataPropertyName = "MaCongNo";
+            this.MaCongNo.HeaderText = "Mã Công Nợ";
+            this.MaCongNo.MinimumWidth = 6;
+            this.MaCongNo.Name = "MaCongNo";
+            this.MaCongNo.ReadOnly = true;
+            this.MaCongNo.Width = 125;
+            // 
             // Frm_CongNo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(1662, 907);
-            this.Controls.Add(this.pnl_data);
+            this.Controls.Add(this.dgv_dscongno);
             this.Controls.Add(this.pnl_titel2);
             this.Controls.Add(this.pnl_find);
             this.Controls.Add(this.pnl_titel);
@@ -959,8 +950,6 @@
             this.pnl_find.PerformLayout();
             this.pnl_titel2.ResumeLayout(false);
             this.pnl_titel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.pnl_data.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
@@ -979,6 +968,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_dscongno)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -993,8 +983,8 @@
         private System.Windows.Forms.ToolStripMenuItem đổiMậtKhẩuToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mãCôngNợToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mãCănHộToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem themcongnotool;
+        private System.Windows.Forms.ToolStripMenuItem suattcongnotool;
         private System.Windows.Forms.ToolStripMenuItem xóaToolStripMenuItem;
         private System.Windows.Forms.Panel pnl_titel;
         private System.Windows.Forms.Label label3;
@@ -1013,16 +1003,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem thoátToolStripMenuItem;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaCongNo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaCanHo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaHoaDon;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SoTienNo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NgayPhatSinh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HanNo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TrangThai;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GhiChu;
-        private System.Windows.Forms.Panel pnl_data;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_trangchu;
         private System.Windows.Forms.PictureBox pictureBox15;
@@ -1055,5 +1035,14 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridView dgv_dscongno;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaCongNo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaCanHo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaHoaDon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoTienNo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayPhatSinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HanNo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TrangThai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GhiChu;
     }
 }

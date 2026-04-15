@@ -31,7 +31,7 @@ namespace HETHONGQLCHUNGCU
                 frmthongtincanho = new Frm_thongtincanho();
                 frmthongtincanho.MdiParent = this;
                 frmthongtincanho.StartPosition = FormStartPosition.Manual;
-                frmthongtincanho.Location = new Point(324, 170);
+                frmthongtincanho.Location = new Point(164, 145);
                 frmthongtincanho.FormBorderStyle = FormBorderStyle.None;
                 frmthongtincanho.FormClosed += frmthongtincanho_FormClosed;
                 frmthongtincanho.Show();
@@ -54,7 +54,7 @@ namespace HETHONGQLCHUNGCU
                 frmthongtincanho = new Frm_thongtincanho();
                 frmthongtincanho.MdiParent = this;
                 frmthongtincanho.StartPosition = FormStartPosition.Manual;
-                frmthongtincanho.Location = new Point(324, 170);
+                frmthongtincanho.Location = new Point(164, 145);
                 frmthongtincanho.FormBorderStyle = FormBorderStyle.None;
                 frmthongtincanho.FormClosed += frmthongtincanho_FormClosed;
                 frmthongtincanho.Show();
@@ -77,7 +77,7 @@ namespace HETHONGQLCHUNGCU
                 frmthongtincanho = new Frm_thongtincanho();
                 frmthongtincanho.MdiParent = this;
                 frmthongtincanho.StartPosition = FormStartPosition.Manual;
-                frmthongtincanho.Location = new Point(324, 170);
+                frmthongtincanho.Location = new Point(164, 145);
                 frmthongtincanho.FormBorderStyle = FormBorderStyle.None;
                 frmthongtincanho.FormClosed += frmthongtincanho_FormClosed;
                 frmthongtincanho.Show();
@@ -186,7 +186,7 @@ namespace HETHONGQLCHUNGCU
 
         private void btn_btsc_Click(object sender, EventArgs e)
         {
-            Frm_BaotruSuachua baotri = new Frm_BaotruSuachua(menu);
+            Frm_BaoTriSuaChua baotri = new Frm_BaoTriSuaChua(menu);
             baotri.Show();
             this.Close();
         }

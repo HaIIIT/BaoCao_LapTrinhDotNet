@@ -145,7 +145,7 @@
             this.pnlDSHD.BackColor = System.Drawing.Color.DarkCyan;
             this.pnlDSHD.Controls.Add(this.lblDSHD);
             this.pnlDSHD.ForeColor = System.Drawing.Color.White;
-            this.pnlDSHD.Location = new System.Drawing.Point(235, 362);
+            this.pnlDSHD.Location = new System.Drawing.Point(235, 374);
             this.pnlDSHD.Name = "pnlDSHD";
             this.pnlDSHD.Size = new System.Drawing.Size(1386, 52);
             this.pnlDSHD.TabIndex = 15;
@@ -167,7 +167,7 @@
             this.pnlTKHD.BackColor = System.Drawing.Color.DarkCyan;
             this.pnlTKHD.Controls.Add(this.label6);
             this.pnlTKHD.ForeColor = System.Drawing.Color.White;
-            this.pnlTKHD.Location = new System.Drawing.Point(235, 130);
+            this.pnlTKHD.Location = new System.Drawing.Point(235, 107);
             this.pnlTKHD.Name = "pnlTKHD";
             this.pnlTKHD.Size = new System.Drawing.Size(1385, 52);
             this.pnlTKHD.TabIndex = 14;
@@ -238,6 +238,7 @@
             this.cậpNhậtToolStripMenuItem.Name = "cậpNhậtToolStripMenuItem";
             this.cậpNhậtToolStripMenuItem.Size = new System.Drawing.Size(292, 26);
             this.cậpNhậtToolStripMenuItem.Text = " Cập Nhật Thông Tin Hóa Đơn";
+            this.cậpNhậtToolStripMenuItem.Click += new System.EventHandler(this.cậpNhậtToolStripMenuItem_Click);
             // 
             // thoátToolStripMenuItem
             // 
@@ -245,6 +246,7 @@
             this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
             this.thoátToolStripMenuItem.Size = new System.Drawing.Size(292, 26);
             this.thoátToolStripMenuItem.Text = "Xóa Thông Tin Hóa Đơn";
+            this.thoátToolStripMenuItem.Click += new System.EventHandler(this.xoathongtinhoadon);
             // 
             // hToolStripMenuItem
             // 
@@ -268,7 +270,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.hệThốngQuảnLýToolStripMenuItem,
             this.quảnLýThanhToánToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(222, 72);
+            this.menuStrip1.Location = new System.Drawing.Point(220, 68);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1410, 30);
             this.menuStrip1.TabIndex = 12;
@@ -738,7 +740,6 @@
             this.label3.Size = new System.Drawing.Size(174, 23);
             this.label3.TabIndex = 0;
             this.label3.Text = "Mã Chi Tiết Hóa Đơn:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label5
             // 
@@ -784,9 +785,9 @@
             this.gbx_Tracuuthongtin.Controls.Add(this.label3);
             this.gbx_Tracuuthongtin.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.gbx_Tracuuthongtin.ForeColor = System.Drawing.Color.Teal;
-            this.gbx_Tracuuthongtin.Location = new System.Drawing.Point(235, 188);
+            this.gbx_Tracuuthongtin.Location = new System.Drawing.Point(235, 162);
             this.gbx_Tracuuthongtin.Name = "gbx_Tracuuthongtin";
-            this.gbx_Tracuuthongtin.Size = new System.Drawing.Size(1385, 147);
+            this.gbx_Tracuuthongtin.Size = new System.Drawing.Size(1385, 194);
             this.gbx_Tracuuthongtin.TabIndex = 13;
             this.gbx_Tracuuthongtin.TabStop = false;
             this.gbx_Tracuuthongtin.Text = "Tra Cứu Thông Tin Hóa Đơn";
@@ -804,13 +805,13 @@
             this.DonGia,
             this.ThanhTien,
             this.GhiChu});
-            this.dgvDSHD.Location = new System.Drawing.Point(335, 414);
+            this.dgvDSHD.Location = new System.Drawing.Point(235, 426);
             this.dgvDSHD.Name = "dgvDSHD";
             this.dgvDSHD.RowHeadersVisible = false;
             this.dgvDSHD.RowHeadersWidth = 51;
             this.dgvDSHD.RowTemplate.Height = 24;
             this.dgvDSHD.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDSHD.Size = new System.Drawing.Size(1186, 419);
+            this.dgvDSHD.Size = new System.Drawing.Size(1383, 419);
             this.dgvDSHD.TabIndex = 17;
             // 
             // MaChiTietHoaDon
@@ -891,6 +892,7 @@
             this.Controls.Add(this.pnlDSHD);
             this.Controls.Add(this.button15);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.IsMdiContainer = true;
             this.Name = "Frm_HoaDon";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_HoaDon";

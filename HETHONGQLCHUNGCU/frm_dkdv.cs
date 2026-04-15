@@ -16,80 +16,14 @@ namespace HETHONGQLCHUNGCU
         {
             InitializeComponent();
         }
-
-        private void btn_luu_Click(object sender, EventArgs e)
+        public void settrangthaibutton(bool them, bool sua, bool xoa)
         {
-        
-            // Kiểm tra dữ liệu
-            if (txt_mdk.Text.Trim() == "")
-            {
-                MessageBox.Show("Vui lòng nhập mã đăng ký!");
-                txt_mdk.Focus();
-                return;
-            }
-
-            if (cbx_mch.SelectedIndex == -1)
-            {
-                MessageBox.Show("Chọn mã căn hộ!");
-                return;
-            }
-
-            if (cbx_mdv.SelectedIndex == -1)
-            {
-                MessageBox.Show("Chọn dịch vụ!");
-                return;
-            }
-
-            string maDK = txt_mdk.Text;
-            string maCanHo = cbx_mch.SelectedValue.ToString();
-            string maDV = cbx_mdv.SelectedValue.ToString();
-            DateTime ngayDK = dtp_ngay.Value;
-            int soLuong = (int) nud_sl.Value;
-            string trangThai = cbx_tt.Text;
-            string ghiChu = txt_gc.Text;
-
-            MessageBox.Show("Lưu thành công!");
+            btn_add.Enabled = them;
+            btn_update.Enabled = sua;
+            btn_delete.Enabled = xoa;
         }
 
-        private void btn_huy_Click(object sender, EventArgs e)
-        {         
-            txt_mdk.Clear();
-            cbx_mch.SelectedIndex = -1;
-            cbx_mdv.SelectedIndex = -1;
-            dtp_ngay.Value = DateTime.Now;
-            nud_sl.Value = 0;
-            cbx_tt.SelectedIndex = -1;
-            txt_gc.Clear();
-        }
-
-        private void cbx_mch_SelectedIndexChanged(object sender, EventArgs e)
-        {
-           
-            if (cbx_mch.SelectedIndex != -1)
-            {
-                string maCanHo = cbx_mch.SelectedValue.ToString();
-
-            }
-        }
-
-        private void cbx_mdv_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cbx_mdv.SelectedIndex != -1)
-            {
-                nud_sl.Value = 1;
-            }
-        }
-
-        private void nud_sl_ValueChanged(object sender, EventArgs e)
-        {
-            if (nud_sl.Value <= 0)
-            {
-                MessageBox.Show("Số lượng phải > 0");
-                nud_sl.Value = 1;
-            }
-        }
-
-        private void btn_th_Click(object sender, EventArgs e)
+        private void btn_thoat_Click(object sender, EventArgs e)
         {
             this.Close();
         }

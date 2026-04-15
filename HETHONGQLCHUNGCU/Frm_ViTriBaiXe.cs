@@ -19,29 +19,19 @@ namespace HETHONGQLCHUNGCU
         {
             InitializeComponent();
         }
-
-        private void txt_MaViTri_TextChanged(object sender, EventArgs e)
+        public void settrangthaibutton(bool them, bool sua, bool xoa)
         {
-
+            btn_add.Enabled = them;
+            btn_update.Enabled = sua;
+            btn_delete.Enabled = xoa;
         }
 
-        private void Frm_ViTriBaiXe_Load(object sender, EventArgs e)
+        private void btn_thoat_Click(object sender, EventArgs e)
         {
-            cbx_LoaiCho.Items.Clear();
-            cbx_LoaiCho.Items.Add("Xe máy");
-            cbx_LoaiCho.Items.Add("Ô tô");
-            cbx_LoaiCho.Items.Add("Xe đạp");
-
-       
-
-            cbx_LoaiCho.DropDownStyle = ComboBoxStyle.DropDownList;
-
-            if (cbx_LoaiCho.Items.Count > 0)
-            {
-                cbx_LoaiCho.SelectedIndex = 0;
-            }
-
+            this.Close();
         }
+
+        /*
         private bool KiemTraDuLieu()
         {
             if (txt_MaViTri.Text.Trim() == "")
@@ -344,6 +334,7 @@ namespace HETHONGQLCHUNGCU
         {
             this.Close();
         }
+        */
     }
 }
 

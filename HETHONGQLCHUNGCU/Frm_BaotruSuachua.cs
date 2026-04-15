@@ -17,7 +17,7 @@ namespace HETHONGQLCHUNGCU
         public Frm_BaotruSuachua()
         {
             InitializeComponent();
-           
+
         }
         public Frm_BaotruSuachua(Frm_Menu menu)
         {
@@ -25,8 +25,7 @@ namespace HETHONGQLCHUNGCU
             Menu = menu;
         }
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
+        { 
             this.Hide();
             Frm_Menu menu = new Frm_Menu();
             menu.Show();
