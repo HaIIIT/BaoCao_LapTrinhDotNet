@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_CanHo));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button14 = new System.Windows.Forms.Button();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.button11 = new System.Windows.Forms.Button();
@@ -62,15 +63,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.hệThốngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.đổiMậtKhẩuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
-            this.đăngXuấtToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.quảnLýThôngTInCưDânToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.thêmCưDânToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cậpNhậtThôngTinCưDânToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -130,13 +122,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.dgv_thongtincudan = new System.Windows.Forms.DataGridView();
-            this.MaCanHo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoCan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaCuDAn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VaiTro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grp_BoLoc = new System.Windows.Forms.GroupBox();
             this.button29 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -150,6 +135,14 @@
             this.pnl_title = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.pnl_data = new System.Windows.Forms.Panel();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.MaCanHo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoCan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DienTich = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
@@ -167,7 +160,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
@@ -193,6 +185,7 @@
             this.grp_BoLoc.SuspendLayout();
             this.pnl_title.SuspendLayout();
             this.pnl_data.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button14
@@ -622,82 +615,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.AutoSize = false;
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.hệThốngToolStripMenuItem,
-            this.quảnLýThôngTInCưDânToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(-406, -188);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1818, 50);
-            this.menuStrip1.TabIndex = 5;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // hệThốngToolStripMenuItem
-            // 
-            this.hệThốngToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.đăngXuấtToolStripMenuItem,
-            this.đổiMậtKhẩuToolStripMenuItem,
-            this.toolStripMenuItem1,
-            this.đăngXuấtToolStripMenuItem1});
-            this.hệThốngToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("hệThốngToolStripMenuItem.Image")));
-            this.hệThốngToolStripMenuItem.Name = "hệThốngToolStripMenuItem";
-            this.hệThốngToolStripMenuItem.Size = new System.Drawing.Size(164, 46);
-            this.hệThốngToolStripMenuItem.Text = "Hệ Thống Quản Lý";
-            // 
-            // đăngXuấtToolStripMenuItem
-            // 
-            this.đăngXuấtToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("đăngXuấtToolStripMenuItem.Image")));
-            this.đăngXuấtToolStripMenuItem.Name = "đăngXuấtToolStripMenuItem";
-            this.đăngXuấtToolStripMenuItem.Size = new System.Drawing.Size(226, 26);
-            this.đăngXuấtToolStripMenuItem.Text = "Thông Tin Tài Khoản";
-            // 
-            // đổiMậtKhẩuToolStripMenuItem
-            // 
-            this.đổiMậtKhẩuToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("đổiMậtKhẩuToolStripMenuItem.Image")));
-            this.đổiMậtKhẩuToolStripMenuItem.Name = "đổiMậtKhẩuToolStripMenuItem";
-            this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(226, 26);
-            this.đổiMậtKhẩuToolStripMenuItem.Text = "Đổi Mật Khẩu";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(223, 6);
-            // 
-            // đăngXuấtToolStripMenuItem1
-            // 
-            this.đăngXuấtToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("đăngXuấtToolStripMenuItem1.Image")));
-            this.đăngXuấtToolStripMenuItem1.Name = "đăngXuấtToolStripMenuItem1";
-            this.đăngXuấtToolStripMenuItem1.Size = new System.Drawing.Size(226, 26);
-            this.đăngXuấtToolStripMenuItem1.Text = "Đăng Xuất";
-            // 
-            // quảnLýThôngTInCưDânToolStripMenuItem
-            // 
-            this.quảnLýThôngTInCưDânToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.thêmCưDânToolStripMenuItem,
-            this.cậpNhậtThôngTinCưDânToolStripMenuItem});
-            this.quảnLýThôngTInCưDânToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("quảnLýThôngTInCưDânToolStripMenuItem.Image")));
-            this.quảnLýThôngTInCưDânToolStripMenuItem.Name = "quảnLýThôngTInCưDânToolStripMenuItem";
-            this.quảnLýThôngTInCưDânToolStripMenuItem.Size = new System.Drawing.Size(218, 46);
-            this.quảnLýThôngTInCưDânToolStripMenuItem.Text = "Quản Lý Thông TIn Cư Dân";
-            // 
-            // thêmCưDânToolStripMenuItem
-            // 
-            this.thêmCưDânToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("thêmCưDânToolStripMenuItem.Image")));
-            this.thêmCưDânToolStripMenuItem.Name = "thêmCưDânToolStripMenuItem";
-            this.thêmCưDânToolStripMenuItem.Size = new System.Drawing.Size(264, 26);
-            this.thêmCưDânToolStripMenuItem.Text = "Thêm Cư Dân";
-            // 
-            // cậpNhậtThôngTinCưDânToolStripMenuItem
-            // 
-            this.cậpNhậtThôngTinCưDânToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cậpNhậtThôngTinCưDânToolStripMenuItem.Image")));
-            this.cậpNhậtThôngTinCưDânToolStripMenuItem.Name = "cậpNhậtThôngTinCưDânToolStripMenuItem";
-            this.cậpNhậtThôngTinCưDânToolStripMenuItem.Size = new System.Drawing.Size(264, 26);
-            this.cậpNhậtThôngTinCưDânToolStripMenuItem.Text = "Cập nhật thông tin cư dân";
             // 
             // label1
             // 
@@ -1408,90 +1325,34 @@
             // 
             // dgv_thongtincudan
             // 
+            this.dgv_thongtincudan.AllowUserToAddRows = false;
+            this.dgv_thongtincudan.AllowUserToDeleteRows = false;
             this.dgv_thongtincudan.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_thongtincudan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_thongtincudan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_thongtincudan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaCanHo,
             this.SoCan,
-            this.MaCuDAn,
-            this.VaiTro,
             this.Tang,
+            this.DienTich,
             this.TrangThai,
             this.GhiChu});
-            this.dgv_thongtincudan.Location = new System.Drawing.Point(30, 3);
+            this.dgv_thongtincudan.Location = new System.Drawing.Point(3, 3);
             this.dgv_thongtincudan.Name = "dgv_thongtincudan";
             this.dgv_thongtincudan.ReadOnly = true;
             this.dgv_thongtincudan.RowHeadersVisible = false;
             this.dgv_thongtincudan.RowHeadersWidth = 51;
             this.dgv_thongtincudan.RowTemplate.Height = 24;
             this.dgv_thongtincudan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_thongtincudan.Size = new System.Drawing.Size(1363, 436);
+            this.dgv_thongtincudan.Size = new System.Drawing.Size(1422, 436);
             this.dgv_thongtincudan.TabIndex = 10;
-            // 
-            // MaCanHo
-            // 
-            this.MaCanHo.DataPropertyName = "MaCanHo";
-            this.MaCanHo.HeaderText = "Mã Căn Hộ";
-            this.MaCanHo.MinimumWidth = 6;
-            this.MaCanHo.Name = "MaCanHo";
-            this.MaCanHo.ReadOnly = true;
-            this.MaCanHo.Width = 125;
-            // 
-            // SoCan
-            // 
-            this.SoCan.DataPropertyName = "SoCan";
-            this.SoCan.HeaderText = "Số Căn";
-            this.SoCan.MinimumWidth = 6;
-            this.SoCan.Name = "SoCan";
-            this.SoCan.ReadOnly = true;
-            this.SoCan.Width = 125;
-            // 
-            // MaCuDAn
-            // 
-            this.MaCuDAn.DataPropertyName = "MaCuDAn";
-            this.MaCuDAn.HeaderText = "Mã Cư Dân";
-            this.MaCuDAn.MinimumWidth = 6;
-            this.MaCuDAn.Name = "MaCuDAn";
-            this.MaCuDAn.ReadOnly = true;
-            this.MaCuDAn.Width = 125;
-            // 
-            // VaiTro
-            // 
-            this.VaiTro.DataPropertyName = "VaiTro";
-            this.VaiTro.HeaderText = "Vai Trò";
-            this.VaiTro.MinimumWidth = 6;
-            this.VaiTro.Name = "VaiTro";
-            this.VaiTro.ReadOnly = true;
-            this.VaiTro.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.VaiTro.Width = 170;
-            // 
-            // Tang
-            // 
-            this.Tang.DataPropertyName = "Tang";
-            this.Tang.HeaderText = "Tầng";
-            this.Tang.MinimumWidth = 6;
-            this.Tang.Name = "Tang";
-            this.Tang.ReadOnly = true;
-            this.Tang.Width = 125;
-            // 
-            // TrangThai
-            // 
-            this.TrangThai.DataPropertyName = "TrangThai";
-            this.TrangThai.HeaderText = "Trạng Thái";
-            this.TrangThai.MinimumWidth = 6;
-            this.TrangThai.Name = "TrangThai";
-            this.TrangThai.ReadOnly = true;
-            this.TrangThai.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.TrangThai.Width = 200;
-            // 
-            // GhiChu
-            // 
-            this.GhiChu.DataPropertyName = "GhiChu";
-            this.GhiChu.HeaderText = "Ghi Chú";
-            this.GhiChu.MinimumWidth = 6;
-            this.GhiChu.Name = "GhiChu";
-            this.GhiChu.ReadOnly = true;
-            this.GhiChu.Width = 250;
             // 
             // grp_BoLoc
             // 
@@ -1621,10 +1482,80 @@
             // 
             this.pnl_data.BackColor = System.Drawing.Color.White;
             this.pnl_data.Controls.Add(this.dgv_thongtincudan);
-            this.pnl_data.Location = new System.Drawing.Point(237, 386);
+            this.pnl_data.Location = new System.Drawing.Point(231, 386);
             this.pnl_data.Name = "pnl_data";
-            this.pnl_data.Size = new System.Drawing.Size(1422, 442);
+            this.pnl_data.Size = new System.Drawing.Size(1428, 442);
             this.pnl_data.TabIndex = 14;
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 851);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1677, 26);
+            this.statusStrip1.TabIndex = 16;
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(247, 20);
+            this.toolStripStatusLabel1.Text = "Phát triển bởi Lê Chí Hải - 24004190";
+            // 
+            // MaCanHo
+            // 
+            this.MaCanHo.DataPropertyName = "MaCanHo";
+            this.MaCanHo.HeaderText = "Mã Căn Hộ";
+            this.MaCanHo.MinimumWidth = 6;
+            this.MaCanHo.Name = "MaCanHo";
+            this.MaCanHo.ReadOnly = true;
+            this.MaCanHo.Width = 125;
+            // 
+            // SoCan
+            // 
+            this.SoCan.DataPropertyName = "SoCan";
+            this.SoCan.HeaderText = "Số Căn";
+            this.SoCan.MinimumWidth = 6;
+            this.SoCan.Name = "SoCan";
+            this.SoCan.ReadOnly = true;
+            this.SoCan.Width = 125;
+            // 
+            // Tang
+            // 
+            this.Tang.DataPropertyName = "Tang";
+            this.Tang.HeaderText = "Tầng";
+            this.Tang.MinimumWidth = 6;
+            this.Tang.Name = "Tang";
+            this.Tang.ReadOnly = true;
+            this.Tang.Width = 125;
+            // 
+            // DienTich
+            // 
+            this.DienTich.HeaderText = "Diện Tích";
+            this.DienTich.MinimumWidth = 6;
+            this.DienTich.Name = "DienTich";
+            this.DienTich.ReadOnly = true;
+            this.DienTich.Width = 125;
+            // 
+            // TrangThai
+            // 
+            this.TrangThai.DataPropertyName = "TrangThai";
+            this.TrangThai.HeaderText = "Trạng Thái";
+            this.TrangThai.MinimumWidth = 6;
+            this.TrangThai.Name = "TrangThai";
+            this.TrangThai.ReadOnly = true;
+            this.TrangThai.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.TrangThai.Width = 200;
+            // 
+            // GhiChu
+            // 
+            this.GhiChu.DataPropertyName = "GhiChu";
+            this.GhiChu.HeaderText = "Ghi Chú";
+            this.GhiChu.MinimumWidth = 6;
+            this.GhiChu.Name = "GhiChu";
+            this.GhiChu.ReadOnly = true;
+            this.GhiChu.Width = 250;
             // 
             // Frm_CanHo
             // 
@@ -1633,6 +1564,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1677, 877);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.pnl_data);
             this.Controls.Add(this.pnl_title);
             this.Controls.Add(this.grp_trangthai);
@@ -1641,7 +1573,6 @@
             this.Controls.Add(this.menuStrip2);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.panel4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;
@@ -1668,8 +1599,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -1702,7 +1631,10 @@
             this.pnl_title.ResumeLayout(false);
             this.pnl_title.PerformLayout();
             this.pnl_data.ResumeLayout(false);
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1741,15 +1673,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem hệThốngToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem đổiMậtKhẩuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem quảnLýThôngTInCưDânToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem thêmCưDânToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cậpNhậtThôngTinCưDânToolStripMenuItem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
@@ -1790,13 +1713,6 @@
         private System.Windows.Forms.Panel pnl_data;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem9;
         private System.Windows.Forms.ToolStripMenuItem thoátToolStripMenuItem;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaCanHo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SoCan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaCuDAn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn VaiTro;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Tang;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TrangThai;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GhiChu;
         private System.Windows.Forms.Button btn_trangchu;
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.Button btn_bangdanhgia;
@@ -1829,5 +1745,13 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.PictureBox pictureBox30;
         private System.Windows.Forms.ToolStripMenuItem đăngXuấtToolStripMenuItem2;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaCanHo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoCan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DienTich;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TrangThai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GhiChu;
     }
 }

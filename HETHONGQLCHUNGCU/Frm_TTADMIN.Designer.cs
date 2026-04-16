@@ -182,7 +182,6 @@
             this.label9.Size = new System.Drawing.Size(94, 23);
             this.label9.TabIndex = 7;
             this.label9.Text = "Trạng Thái:";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label5
             // 
@@ -233,7 +232,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.ForeColor = System.Drawing.Color.Teal;
-            this.label1.Location = new System.Drawing.Point(165, 5);
+            this.label1.Location = new System.Drawing.Point(152, 5);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(455, 38);
             this.label1.TabIndex = 9;

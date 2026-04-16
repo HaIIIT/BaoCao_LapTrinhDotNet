@@ -10,7 +10,7 @@ namespace HETHONGQLCHUNGCU
 {
     public class Connection
     {
-        string connStr = "server= HWI, database=QLChungCU, uid=sa, pwd=hieu1234";
+        string connStr = "server= HWI; database=QLChungCU; uid=sa; pwd=hieu1234";
         public SqlConnection conn { get; set; }
         public SqlCommand cmd { get; set; }
         public Connection()

@@ -106,12 +106,6 @@
     <Compile Include="Frm_CuDan.Designer.cs">
       <DependentUpon>Frm_CuDan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_BaotruSuachua.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frm_BaotruSuachua.Designer.cs">
-      <DependentUpon>Frm_BaotruSuachua.cs</DependentUpon>
-    </Compile>
     <Compile Include="frm_btsc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -268,6 +262,36 @@
     <Compile Include="Frm_Thongtindanhmucdvti.Designer.cs">
       <DependentUpon>Frm_Thongtindanhmucdvti.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Thongtintaikhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Thongtintaikhoan.Designer.cs">
+      <DependentUpon>Frm_Thongtintaikhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_TTADMIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_TTADMIN.Designer.cs">
+      <DependentUpon>Frm_TTADMIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_TTBaiXe_CuDan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_TTBaiXe_CuDan.Designer.cs">
+      <DependentUpon>Frm_TTBaiXe_CuDan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_TTCanHo_CuDan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_TTCanHo_CuDan.Designer.cs">
+      <DependentUpon>Frm_TTCanHo_CuDan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_TTCongNo_CUDAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_TTCongNo_CUDAN.Designer.cs">
+      <DependentUpon>Frm_TTCongNo_CUDAN.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_TTCuDan._quyenCD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -291,6 +315,18 @@
     </Compile>
     <Compile Include="Frm_TTHD_CUDAN.Designer.cs">
       <DependentUpon>Frm_TTHD_CUDAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_TTPCNV_NhanSu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_TTPCNV_NhanSu.Designer.cs">
+      <DependentUpon>Frm_TTPCNV_NhanSu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_TTThanhToan_CuDan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_TTThanhToan_CuDan.Designer.cs">
+      <DependentUpon>Frm_TTThanhToan_CuDan.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_ViTriBaiXe.cs">
       <SubType>Form</SubType>
@@ -342,9 +378,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_CuDan.resx">
       <DependentUpon>Frm_CuDan.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Frm_BaotruSuachua.resx">
-      <DependentUpon>Frm_BaotruSuachua.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_btsc.resx">
       <DependentUpon>frm_btsc.cs</DependentUpon>
@@ -424,6 +457,21 @@
     <EmbeddedResource Include="Frm_Thongtindanhmucdvti.resx">
       <DependentUpon>Frm_Thongtindanhmucdvti.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Thongtintaikhoan.resx">
+      <DependentUpon>Frm_Thongtintaikhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_TTADMIN.resx">
+      <DependentUpon>Frm_TTADMIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_TTBaiXe_CuDan.resx">
+      <DependentUpon>Frm_TTBaiXe_CuDan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_TTCanHo_CuDan.resx">
+      <DependentUpon>Frm_TTCanHo_CuDan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_TTCongNo_CUDAN.resx">
+      <DependentUpon>Frm_TTCongNo_CUDAN.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_TTCuDan._quyenCD.resx">
       <DependentUpon>Frm_TTCuDan._quyenCD.cs</DependentUpon>
     </EmbeddedResource>
@@ -435,6 +483,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_TTHD_CUDAN.resx">
       <DependentUpon>Frm_TTHD_CUDAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_TTPCNV_NhanSu.resx">
+      <DependentUpon>Frm_TTPCNV_NhanSu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_TTThanhToan_CuDan.resx">
+      <DependentUpon>Frm_TTThanhToan_CuDan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_ViTriBaiXe.resx">
       <DependentUpon>Frm_ViTriBaiXe.cs</DependentUpon>

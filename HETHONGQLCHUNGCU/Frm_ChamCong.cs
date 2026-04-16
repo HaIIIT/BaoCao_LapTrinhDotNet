@@ -205,7 +205,7 @@ namespace HETHONGQLCHUNGCU
         }
         private void btn_btsc_Click(object sender, EventArgs e)
         {
-            Frm_BaotruSuachua baotri = new Frm_BaotruSuachua(menu);
+            Frm_BaoTriSuaChua baotri = new Frm_BaoTriSuaChua(menu);
             baotri.Show();
             this.Close();
         }

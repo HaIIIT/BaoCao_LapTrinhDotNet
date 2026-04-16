@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HETHONGQLCHUNGCU
 {
-    public partial class Frm_TTADMIN : Form
+    public partial class Frm_TTPCNV_NhanSu : Form
     {
-        public Frm_TTADMIN()
+        public Frm_TTPCNV_NhanSu()
         {
             InitializeComponent();
         }
