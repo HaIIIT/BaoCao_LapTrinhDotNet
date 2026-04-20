@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
@@ -55,19 +56,64 @@ namespace HETHONGQLCHUNGCU
 
         private void btn_dn_Click(object sender, EventArgs e)
         {
-            if (txt_tk.Text == "Admin" && txt_mk.Text == "123")
+            Connection ketnoi = new Connection();
+            try
             {
-                cls_chcecklogin.DaDangNhap = true;
-                DialogResult  = MessageBox.Show("Đăng Nhập Thành công!!", "Hệ Thống Quản Lý Chung Cư - Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                TenDangNhap = txt_tk.Text;          
-                this.Close();
-            }else{
-                MessageBox.Show("Tài Khoản hoặc Mật Khẩu Không Đúng!!!"+"\n Nếu bạn chưa có tài khoản vui lòng liên hệ Ban Quản Trị để được hỗ trợ"+"\nTrân trọng cảm ơn quý khách hàng!!", "Hệ Thống Quản Lý Chung Cư - Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txt_tk.Clear();
-                txt_mk.Clear();
+                if (ketnoi.moketnoi())
+                {
+                    string sql = @"SELECT tk.TenDangNhap, tk.MatKhau, cd.HoTen AS HoTenCuDan , nv.HoTen AS HoTenNhanSu,tk.Quyen, cd.MaCuDan, tk.MaNHanVien, tk.TrangThai 
+                                FROM TaiKhoanNguoiDung tk
+                                LEFT JOIN NhanSu nv ON tk.MaNhanVien = nv.MaNhanSu
+                                LEFT JOIN CuDan cd ON tk.MaCuDan = cd.MaCuDan
+                                WHERE tk.TenDangNhap = N'" + txt_tk.Text.Trim() + "' AND tk.MatKhau = '" + txt_mk.Text.Trim() + "'";
+                    SqlDataReader rdr = ketnoi.truyvan(sql);
+                    if (rdr.Read())
+                    {
+                        if(rdr["TrangThai"] != DBNull.Value && Convert.ToInt32(rdr["TrangThai"]) == 1)
+                        {
+                            MessageBox.Show("Tài khoản của bạn đã bị khóa. Vui lòng liên hệ Ban Quản Trị để được hỗ trợ.", "Hệ Thống Quản Lý Chung Cư - Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            txt_tk.Clear();
+                            txt_mk.Clear();
+                            txt_tk.Focus();
+                            return;
+                        }
+                        cls_chcecklogin.DaDangNhap = true;
+                        cls_chcecklogin.TenDangNhap = rdr["TenDangNhap"].ToString();
+                        cls_chcecklogin.Quyen = Convert.ToInt32(rdr["Quyen"]);  
+                        if (rdr["MaCuDan"] != DBNull.Value)
+                        {
+                            cls_chcecklogin.MaCuDan = rdr["MaCuDan"].ToString();
+                            cls_chcecklogin.MaNhanVien = "";
+                            cls_chcecklogin.TenHienThi = rdr["HoTenCuDan"].ToString();
+                        }
+                        else if (rdr["MaNhanVien"] != DBNull.Value)
+                        {
+                            cls_chcecklogin.MaNhanVien = rdr["MaNhanVien"].ToString();
+                            cls_chcecklogin.MaCuDan = "";
+                            cls_chcecklogin.TenHienThi = rdr["HoTenNhanSu"].ToString();
+                        }
+                        MessageBox.Show("Đăng Nhập Thành công!!", "Hệ Thống Quản Lý Chung Cư - Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Tài Khoản hoặc Mật Khẩu Không Đúng!!!" + 
+                            "\n Nếu bạn chưa có tài khoản vui lòng liên hệ Ban Quản Trị để được hỗ trợ" + 
+                            "\nTrân trọng cảm ơn quý khách hàng!!", "Hệ Thống Quản Lý Chung Cư - Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        txt_tk.Clear();
+                        txt_mk.Clear();
+                        txt_tk.Focus();
+                    }
+                    rdr.Close();
+                }
+                ketnoi.dongketnoi();
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi kết nối cơ sở dữ liệu: " + ex.Message, "Hệ Thống Quản Lý Chung Cư - Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+           
         }
-
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();

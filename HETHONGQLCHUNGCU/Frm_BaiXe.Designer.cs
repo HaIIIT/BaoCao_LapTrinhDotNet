@@ -71,9 +71,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_trangchu = new System.Windows.Forms.Button();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.btn_danhgia = new System.Windows.Forms.Button();
+            this.btn_bdgns = new System.Windows.Forms.Button();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.btn_bpc = new System.Windows.Forms.Button();
+            this.btn_bpcnv = new System.Windows.Forms.Button();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.btn_chamcong = new System.Windows.Forms.Button();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
@@ -559,9 +559,9 @@
             this.panel1.BackColor = System.Drawing.Color.Gray;
             this.panel1.Controls.Add(this.btn_trangchu);
             this.panel1.Controls.Add(this.pictureBox15);
-            this.panel1.Controls.Add(this.btn_danhgia);
+            this.panel1.Controls.Add(this.btn_bdgns);
             this.panel1.Controls.Add(this.pictureBox12);
-            this.panel1.Controls.Add(this.btn_bpc);
+            this.panel1.Controls.Add(this.btn_bpcnv);
             this.panel1.Controls.Add(this.pictureBox13);
             this.panel1.Controls.Add(this.btn_chamcong);
             this.panel1.Controls.Add(this.pictureBox14);
@@ -619,21 +619,21 @@
             this.pictureBox15.TabIndex = 33;
             this.pictureBox15.TabStop = false;
             // 
-            // btn_danhgia
+            // btn_bdgns
             // 
-            this.btn_danhgia.BackColor = System.Drawing.Color.Transparent;
-            this.btn_danhgia.FlatAppearance.BorderSize = 0;
-            this.btn_danhgia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.btn_danhgia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_danhgia.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_danhgia.ForeColor = System.Drawing.Color.White;
-            this.btn_danhgia.Location = new System.Drawing.Point(39, 802);
-            this.btn_danhgia.Name = "btn_danhgia";
-            this.btn_danhgia.Size = new System.Drawing.Size(176, 39);
-            this.btn_danhgia.TabIndex = 32;
-            this.btn_danhgia.Text = "Bảng Đánh Giá ";
-            this.btn_danhgia.UseVisualStyleBackColor = false;
-            this.btn_danhgia.Click += new System.EventHandler(this.btn_danhgia_Click);
+            this.btn_bdgns.BackColor = System.Drawing.Color.Transparent;
+            this.btn_bdgns.FlatAppearance.BorderSize = 0;
+            this.btn_bdgns.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.btn_bdgns.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_bdgns.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_bdgns.ForeColor = System.Drawing.Color.White;
+            this.btn_bdgns.Location = new System.Drawing.Point(39, 802);
+            this.btn_bdgns.Name = "btn_bdgns";
+            this.btn_bdgns.Size = new System.Drawing.Size(176, 39);
+            this.btn_bdgns.TabIndex = 32;
+            this.btn_bdgns.Text = "Bảng Đánh Giá ";
+            this.btn_bdgns.UseVisualStyleBackColor = false;
+            this.btn_bdgns.Click += new System.EventHandler(this.btn_danhgia_Click);
             // 
             // pictureBox12
             // 
@@ -645,21 +645,21 @@
             this.pictureBox12.TabIndex = 31;
             this.pictureBox12.TabStop = false;
             // 
-            // btn_bpc
+            // btn_bpcnv
             // 
-            this.btn_bpc.BackColor = System.Drawing.Color.Transparent;
-            this.btn_bpc.FlatAppearance.BorderSize = 0;
-            this.btn_bpc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.btn_bpc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_bpc.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_bpc.ForeColor = System.Drawing.Color.White;
-            this.btn_bpc.Location = new System.Drawing.Point(39, 757);
-            this.btn_bpc.Name = "btn_bpc";
-            this.btn_bpc.Size = new System.Drawing.Size(176, 39);
-            this.btn_bpc.TabIndex = 30;
-            this.btn_bpc.Text = "Bảng Phân Công ";
-            this.btn_bpc.UseVisualStyleBackColor = false;
-            this.btn_bpc.Click += new System.EventHandler(this.btn_bpc_Click);
+            this.btn_bpcnv.BackColor = System.Drawing.Color.Transparent;
+            this.btn_bpcnv.FlatAppearance.BorderSize = 0;
+            this.btn_bpcnv.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.btn_bpcnv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_bpcnv.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_bpcnv.ForeColor = System.Drawing.Color.White;
+            this.btn_bpcnv.Location = new System.Drawing.Point(39, 757);
+            this.btn_bpcnv.Name = "btn_bpcnv";
+            this.btn_bpcnv.Size = new System.Drawing.Size(176, 39);
+            this.btn_bpcnv.TabIndex = 30;
+            this.btn_bpcnv.Text = "Bảng Phân Công ";
+            this.btn_bpcnv.UseVisualStyleBackColor = false;
+            this.btn_bpcnv.Click += new System.EventHandler(this.btn_bpc_Click);
             // 
             // pictureBox13
             // 
@@ -1217,6 +1217,7 @@
             this.MaViTri.HeaderText = "Mã Vị Trí";
             this.MaViTri.MinimumWidth = 6;
             this.MaViTri.Name = "MaViTri";
+            this.MaViTri.ReadOnly = true;
             this.MaViTri.Width = 125;
             // 
             // KhuVuc
@@ -1225,6 +1226,7 @@
             this.KhuVuc.HeaderText = "Khu Vực";
             this.KhuVuc.MinimumWidth = 6;
             this.KhuVuc.Name = "KhuVuc";
+            this.KhuVuc.ReadOnly = true;
             this.KhuVuc.Width = 125;
             // 
             // LoaiCho
@@ -1233,6 +1235,7 @@
             this.LoaiCho.HeaderText = "Loại Chỗ";
             this.LoaiCho.MinimumWidth = 6;
             this.LoaiCho.Name = "LoaiCho";
+            this.LoaiCho.ReadOnly = true;
             this.LoaiCho.Width = 125;
             // 
             // Tang
@@ -1241,6 +1244,7 @@
             this.Tang.HeaderText = "Tầng";
             this.Tang.MinimumWidth = 6;
             this.Tang.Name = "Tang";
+            this.Tang.ReadOnly = true;
             this.Tang.Width = 125;
             // 
             // TrangThai1
@@ -1249,6 +1253,7 @@
             this.TrangThai1.HeaderText = "TrangThai";
             this.TrangThai1.MinimumWidth = 6;
             this.TrangThai1.Name = "TrangThai1";
+            this.TrangThai1.ReadOnly = true;
             this.TrangThai1.Width = 125;
             // 
             // Frm_BaiXe
@@ -1332,9 +1337,9 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_trangchu;
         private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.Button btn_danhgia;
+        private System.Windows.Forms.Button btn_bdgns;
         private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.Button btn_bpc;
+        private System.Windows.Forms.Button btn_bpcnv;
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.Button btn_chamcong;
         private System.Windows.Forms.PictureBox pictureBox14;

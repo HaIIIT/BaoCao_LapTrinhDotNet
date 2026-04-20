@@ -51,9 +51,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_trangchu = new System.Windows.Forms.Button();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.btn_danhgia = new System.Windows.Forms.Button();
+            this.btn_bdgns = new System.Windows.Forms.Button();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.btn_bpc = new System.Windows.Forms.Button();
+            this.btn_bpcnv = new System.Windows.Forms.Button();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.btn_chamcong = new System.Windows.Forms.Button();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
@@ -148,6 +148,9 @@
             // 
             // pnl_titleyc
             // 
+            this.pnl_titleyc.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnl_titleyc.BackColor = System.Drawing.Color.DarkCyan;
             this.pnl_titleyc.Controls.Add(this.panel5);
             this.pnl_titleyc.Controls.Add(this.label3);
@@ -354,6 +357,9 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.DarkCyan;
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(219, 1);
@@ -374,12 +380,15 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Gray;
             this.panel1.Controls.Add(this.btn_trangchu);
             this.panel1.Controls.Add(this.pictureBox15);
-            this.panel1.Controls.Add(this.btn_danhgia);
+            this.panel1.Controls.Add(this.btn_bdgns);
             this.panel1.Controls.Add(this.pictureBox12);
-            this.panel1.Controls.Add(this.btn_bpc);
+            this.panel1.Controls.Add(this.btn_bpcnv);
             this.panel1.Controls.Add(this.pictureBox13);
             this.panel1.Controls.Add(this.btn_chamcong);
             this.panel1.Controls.Add(this.pictureBox14);
@@ -436,21 +445,21 @@
             this.pictureBox15.TabIndex = 63;
             this.pictureBox15.TabStop = false;
             // 
-            // btn_danhgia
+            // btn_bdgns
             // 
-            this.btn_danhgia.BackColor = System.Drawing.Color.Transparent;
-            this.btn_danhgia.FlatAppearance.BorderSize = 0;
-            this.btn_danhgia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.btn_danhgia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_danhgia.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_danhgia.ForeColor = System.Drawing.Color.White;
-            this.btn_danhgia.Location = new System.Drawing.Point(40, 827);
-            this.btn_danhgia.Name = "btn_danhgia";
-            this.btn_danhgia.Size = new System.Drawing.Size(176, 39);
-            this.btn_danhgia.TabIndex = 62;
-            this.btn_danhgia.Text = "Bảng Đánh Giá ";
-            this.btn_danhgia.UseVisualStyleBackColor = false;
-            this.btn_danhgia.Click += new System.EventHandler(this.btn_danhgia_Click);
+            this.btn_bdgns.BackColor = System.Drawing.Color.Transparent;
+            this.btn_bdgns.FlatAppearance.BorderSize = 0;
+            this.btn_bdgns.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.btn_bdgns.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_bdgns.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_bdgns.ForeColor = System.Drawing.Color.White;
+            this.btn_bdgns.Location = new System.Drawing.Point(40, 827);
+            this.btn_bdgns.Name = "btn_bdgns";
+            this.btn_bdgns.Size = new System.Drawing.Size(176, 39);
+            this.btn_bdgns.TabIndex = 62;
+            this.btn_bdgns.Text = "Bảng Đánh Giá ";
+            this.btn_bdgns.UseVisualStyleBackColor = false;
+            this.btn_bdgns.Click += new System.EventHandler(this.btn_danhgia_Click);
             // 
             // pictureBox12
             // 
@@ -462,21 +471,21 @@
             this.pictureBox12.TabIndex = 61;
             this.pictureBox12.TabStop = false;
             // 
-            // btn_bpc
+            // btn_bpcnv
             // 
-            this.btn_bpc.BackColor = System.Drawing.Color.Transparent;
-            this.btn_bpc.FlatAppearance.BorderSize = 0;
-            this.btn_bpc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.btn_bpc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_bpc.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_bpc.ForeColor = System.Drawing.Color.White;
-            this.btn_bpc.Location = new System.Drawing.Point(40, 782);
-            this.btn_bpc.Name = "btn_bpc";
-            this.btn_bpc.Size = new System.Drawing.Size(176, 39);
-            this.btn_bpc.TabIndex = 60;
-            this.btn_bpc.Text = "Bảng Phân Công ";
-            this.btn_bpc.UseVisualStyleBackColor = false;
-            this.btn_bpc.Click += new System.EventHandler(this.btn_bpc_Click);
+            this.btn_bpcnv.BackColor = System.Drawing.Color.Transparent;
+            this.btn_bpcnv.FlatAppearance.BorderSize = 0;
+            this.btn_bpcnv.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.btn_bpcnv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_bpcnv.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_bpcnv.ForeColor = System.Drawing.Color.White;
+            this.btn_bpcnv.Location = new System.Drawing.Point(40, 782);
+            this.btn_bpcnv.Name = "btn_bpcnv";
+            this.btn_bpcnv.Size = new System.Drawing.Size(176, 39);
+            this.btn_bpcnv.TabIndex = 60;
+            this.btn_bpcnv.Text = "Bảng Phân Công ";
+            this.btn_bpcnv.UseVisualStyleBackColor = false;
+            this.btn_bpcnv.Click += new System.EventHandler(this.btn_bpc_Click);
             // 
             // pictureBox13
             // 
@@ -788,6 +797,9 @@
             // 
             // panel3
             // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.Teal;
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Location = new System.Drawing.Point(1, 26);
@@ -809,6 +821,9 @@
             // 
             this.dgv_ttcskh.AllowUserToAddRows = false;
             this.dgv_ttcskh.AllowUserToDeleteRows = false;
+            this.dgv_ttcskh.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_ttcskh.BackgroundColor = System.Drawing.Color.White;
             this.dgv_ttcskh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_ttcskh.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -925,6 +940,9 @@
             // 
             // pnl_titlelist
             // 
+            this.pnl_titlelist.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnl_titlelist.BackColor = System.Drawing.Color.Teal;
             this.pnl_titlelist.Controls.Add(this.label8);
             this.pnl_titlelist.Location = new System.Drawing.Point(231, 469);
@@ -934,6 +952,9 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.menuStrip1.AutoSize = false;
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -1002,7 +1023,7 @@
             // 
             this.themyctool.Image = global::HETHONGQLCHUNGCU.Properties.Resources.add;
             this.themyctool.Name = "themyctool";
-            this.themyctool.Size = new System.Drawing.Size(224, 26);
+            this.themyctool.Size = new System.Drawing.Size(185, 26);
             this.themyctool.Text = "Thêm Yêu Cầu";
             this.themyctool.Click += new System.EventHandler(this.themyctool_Click);
             // 
@@ -1010,7 +1031,7 @@
             // 
             this.suayctool.Image = global::HETHONGQLCHUNGCU.Properties.Resources.pencil;
             this.suayctool.Name = "suayctool";
-            this.suayctool.Size = new System.Drawing.Size(224, 26);
+            this.suayctool.Size = new System.Drawing.Size(185, 26);
             this.suayctool.Text = "Sửa Yêu Cầu";
             this.suayctool.Click += new System.EventHandler(this.suayctool_Click);
             // 
@@ -1018,25 +1039,28 @@
             // 
             this.xóaToolStripMenuItem.Image = global::HETHONGQLCHUNGCU.Properties.Resources.delete;
             this.xóaToolStripMenuItem.Name = "xóaToolStripMenuItem";
-            this.xóaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.xóaToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.xóaToolStripMenuItem.Text = "Xóa Yêu Cầu";
             this.xóaToolStripMenuItem.Click += new System.EventHandler(this.xóaToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(221, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(182, 6);
             // 
             // thoátToolStripMenuItem
             // 
             this.thoátToolStripMenuItem.Image = global::HETHONGQLCHUNGCU.Properties.Resources._out;
             this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
-            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(185, 26);
             this.thoátToolStripMenuItem.Text = "Thoát";
             this.thoátToolStripMenuItem.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
             // 
             // gpb_trangthai
             // 
+            this.gpb_trangthai.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gpb_trangthai.Controls.Add(this.label13);
             this.gpb_trangthai.Controls.Add(this.label19);
             this.gpb_trangthai.Controls.Add(this.label20);
@@ -1209,6 +1233,9 @@
             // 
             // gpb_timkiem
             // 
+            this.gpb_timkiem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gpb_timkiem.Controls.Add(this.textBox6);
             this.gpb_timkiem.Controls.Add(this.label4);
             this.gpb_timkiem.Controls.Add(this.label5);
@@ -1337,9 +1364,9 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Button btn_trangchu;
         private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.Button btn_danhgia;
+        private System.Windows.Forms.Button btn_bdgns;
         private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.Button btn_bpc;
+        private System.Windows.Forms.Button btn_bpcnv;
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.Button btn_chamcong;
         private System.Windows.Forms.PictureBox pictureBox14;

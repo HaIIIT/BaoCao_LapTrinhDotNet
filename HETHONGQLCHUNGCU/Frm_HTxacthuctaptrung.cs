@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Net;
@@ -25,7 +26,37 @@ namespace HETHONGQLCHUNGCU
         {
             InitializeComponent();
         }
-
+        string LayTenNguoiDung()
+        {
+            string hoten = "";
+            Connection ketnoi = new Connection();
+            try
+            {
+                if (ketnoi.moketnoi())
+                {
+                    if (!string.IsNullOrEmpty(cls_chcecklogin.MaCuDan))
+                    {
+                        string sel = "SELECT HoTen FROM CuDan WHERE MaCuDan = '" + cls_chcecklogin.MaCuDan + "'";
+                        SqlDataReader rdr = ketnoi.truyvan(sel);
+                        if (rdr.Read())
+                            hoten = rdr["HoTen"].ToString();
+                        rdr.Close();
+                    }
+                    else if (!string.IsNullOrEmpty(cls_chcecklogin.MaNhanVien))
+                    {
+                        string sel = "SELECT HoTen FROM NhanSu WHERE MaNhanSu = '" + cls_chcecklogin.MaNhanVien + "'";
+                        SqlDataReader rdr = ketnoi.truyvan(sel);
+                        if (rdr.Read())
+                            hoten = rdr["HoTen"].ToString();
+                        rdr.Close();
+                    }
+                    ketnoi.dongketnoi();
+                }
+            }
+            catch { }
+            if (hoten == "") hoten = "Người dùng";
+            return hoten;
+        }
         private void Frm_HTxacthuctaptrung_Load(object sender, EventArgs e)
         {
             grb_changePwd.Visible = false;
@@ -43,16 +74,25 @@ namespace HETHONGQLCHUNGCU
                     "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            else if (!(txt_email.Text.Trim() == "24004190@st.vlute.edu.vn" && txt_tk.Text.Trim() == "Admin" && txt_mkcu.Text.Trim() == "12345"))
+            Connection ketnoi = new Connection();
+            try
             {
-                MessageBox.Show("Vui lòng kiểm tra lại thông tin, Thông tin vừa nhập không đúng!",
-                    "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txt_tk.Focus();
-            }
-            else
-            {
-                try
+                if (ketnoi.moketnoi())
                 {
+                    string sel = "SELECT Email FROM TaiKhoanNguoiDung " +
+                         "WHERE TenDangNhap = N'" + txt_tk.Text.Trim() + "' " +
+                         "AND MatKhau = N'" + txt_mkcu.Text.Trim() + "' " +
+                         "AND Email = N'" + txt_email.Text.Trim() + "'";
+                    SqlDataReader rdr = ketnoi.truyvan(sel);
+                    if (!rdr.Read())
+                    {
+                        rdr.Close();
+                        MessageBox.Show("Vui lòng kiểm tra lại thông tin, thông tin vừa nhập không đúng!",
+                            "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        txt_tk.Focus();
+                        return;
+                    }
+                    rdr.Close();
                     otp = rd.Next(100000, 999999);
                     TgianOTP = DateTime.Now;
                     var fromAddress = new MailAddress("hethongquanlychungcu@gmail.com", "Hệ Thống Xác Thực Tập Trung");
@@ -60,9 +100,10 @@ namespace HETHONGQLCHUNGCU
                     const string frompass = "hgsi mdwb lbng qywi";
                     const string subjet = "Mã Xác Thực - OTP Code";
                     string body = otp.ToString() +
+                                "\n\nVui lòng không chia sẻ mã này cho bất kỳ ai." +
                                 "\n------------------------" +
                                 "\nHệ Thống Quản Lý Chung Cư" +
-                                "\nHệ Thống Xác Thực Tập Trung" +
+                                "\nEmail hỗ trợ: support@hethong.com" +
                                 "\nĐây là email tự động, vui lòng không trả lời về mail này!";
                     var smtp = new SmtpClient()
                     {
@@ -86,18 +127,21 @@ namespace HETHONGQLCHUNGCU
                     countdown = 30;
                     btn_otp.Text = "Gửi Lại OTP (" + countdown + "s)";
                     timer.Start();
-                    DialogResult rs= MessageBox.Show("OTP đã được gửi qua email: " + txt_email.Text, "Hệ Thống Quản Lý Chung Cư - Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    if(rs == DialogResult.OK)
+                    DialogResult rs = MessageBox.Show("OTP đã được gửi qua email: " + txt_email.Text, "Hệ Thống Quản Lý Chung Cư - Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if (rs == DialogResult.OK)
                     {
                         txt_otp.Enabled = true;
                         txt_otp.Focus();
                         btn_xacnhanotp.Enabled = true;
                     }
+                    ketnoi.dongketnoi();
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi kết nối: " + ex.Message,
+                "Hệ Thống Quản Lý Chung Cư - Lỗi",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void Timer_Tick(object sender, EventArgs e)
@@ -175,56 +219,82 @@ namespace HETHONGQLCHUNGCU
             {
                 MessageBox.Show("Mật khẩu xác nhận không khớp! Vui lòng kiểm tra lại.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txt_comform.Clear();
+                txt_comform.Focus();
             }
-            else
+            Connection ketnoi = new Connection();
+            try
             {
-                DialogResult rs = MessageBox.Show("Mật khẩu đã được đặt lại thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                try
+                if (ketnoi.moketnoi())
                 {
-                    var fromAddress = new MailAddress("hethongquanlychungcu@gmail.com", "Trung Tâm Xác Thực Tập Trung");
-                    var toAddress = new MailAddress(txt_email.ToString());
-                    const string frompass = "hgsi mdwb lbng qywi";
-                    const string subjet = "Cảnh Báo Thay Đổi Mật Khẩu";
-                    string body = "Tài khoản bạn vừa được đặt lại mật khẩu! Nếu không phải bạn thực hiện hãy liên hệ bộ phận chăm sóc khách hàng để được hộ trợ sớm nhất!" +
-                                "\nTrân Trọng!" +
-                                "\n------------------------" +
-                                "\nHệ Thống Quản Lý Chung Cư" +
-                                "\nHệ Thống Xác Thực Tập Trung" +
-                                "\nemail hỗ trợ: suport@hethong.com" +
-                                "\nĐây là email tự động, vui lòng không phản hồi về mail này!";
-                    var smtp = new SmtpClient()
+                    string upStr = "UPDATE TaiKhoanNguoiDung SET " +
+                                   "MatKhau = N'" + txt_newmk.Text.Trim() + "' " +
+                                   "WHERE TenDangNhap = N'" + txt_tk.Text.Trim() + "' " +
+                                   "AND Email = N'" + txt_email.Text.Trim() + "'";
+                    int ketqua = ketnoi.capnhat(upStr);
+                    if (ketqua > 0)
                     {
-                        Host = "smtp.gmail.com",
-                        Port = 587,
-                        EnableSsl = true,
-                        DeliveryMethod = SmtpDeliveryMethod.Network,
-                        UseDefaultCredentials = true,
-                        Credentials = new NetworkCredential(fromAddress.Address, frompass),
-                        Timeout = 200000
-                    };
-                    using (var message = new MailMessage(fromAddress, toAddress)
-                    {
-                        Subject = subjet,
-                        Body = body
-                    })
-                    {
-                        smtp.Send(message);
+                        string hoten = LayTenNguoiDung();
+                        try
+                        {
+                            var fromAddress = new MailAddress("hethongquanlychungcu@gmail.com", "Hể Thống Xác Thực Tập Trung");
+                            var toAddress = new MailAddress(txt_email.ToString());
+                            const string frompass = "hgsi mdwb lbng qywi";
+                            const string subjet = "Cảnh Báo Thay Đổi Mật Khẩu";
+                            string body ="Xin Chào, "+hoten+ 
+                                        "\nTài khoản bạn vừa được đặt lại mật khẩu! Nếu không phải bạn thực hiện hãy liên hệ bộ phận chăm sóc khách hàng để được hộ trợ sớm nhất!" +
+                                        "\nTrân Trọng!" +
+                                        "\n------------------------" +
+                                        "\nHệ Thống Quản Lý Chung Cư" +
+                                        "\nHệ Thống Xác Thực Tập Trung" +
+                                        "\nemail hỗ trợ: suport@hethong.com" +
+                                        "\nĐây là email tự động, vui lòng không phản hồi về mail này!";
+                            var smtp = new SmtpClient()
+                            {
+                                Host = "smtp.gmail.com",
+                                Port = 587,
+                                EnableSsl = true,
+                                DeliveryMethod = SmtpDeliveryMethod.Network,
+                                UseDefaultCredentials = false,
+                                Credentials = new NetworkCredential(fromAddress.Address, frompass),
+                                Timeout = 200000
+                            };
+                            using (var message = new MailMessage(fromAddress, toAddress))
+                            {
+                                message.Subject = subjet;
+                                message.Body = body;
+                                smtp.Send(message);
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Đổi mật khẩu thành công nhưng gửi mail thất bại: " + ex.Message);
+                        }
+                        DialogResult rs = MessageBox.Show("Mật khẩu đã được đặt lại thành công!",
+                            "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        grb_xacthuc.Enabled = false;
+                        grb_changePwd.Enabled = false;
+                        if (rs == DialogResult.OK)
+                        {
+                            cls_chcecklogin.DaDangNhap = false;
+                            DangXuatSauDoiMK?.Invoke();
+                            this.Close();
+                        }
                     }
-                    grb_xacthuc.Enabled = false;
-                    grb_changePwd.Enabled = false;
+                    else
+                    {
+                        MessageBox.Show("Đổi mật khẩu thất bại!",
+                            "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-                if (rs == DialogResult.OK)
-                {
-                    cls_chcecklogin.DaDangNhap = false;
-                    DangXuatSauDoiMK?.Invoke(); // báo ra ngoài
-                    this.Close();
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi kết nối: " + ex.Message,
+                            "Hệ Thống Quản Lý Chung Cư - Lỗi",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        
         private void lbl_back_Click(object sender, EventArgs e)
         {
             this.Close();

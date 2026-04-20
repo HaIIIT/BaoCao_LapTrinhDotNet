@@ -193,5 +193,11 @@ namespace HETHONGQLCHUNGCU
             this.Close();
         }
         //----------------------------------------
+        private void Frm_HoaDon_Load(object sender, EventArgs e)
+        {
+            //1.Phân Quyền Chức Năng
+
+        }
+        
     }
 }

@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea14 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend14 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_trangchu = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.btn_danhgia = new System.Windows.Forms.Button();
+            this.btn_bdgns = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btn_bpc = new System.Windows.Forms.Button();
+            this.btn_bpcnv = new System.Windows.Forms.Button();
             this.btn_cudan = new System.Windows.Forms.Button();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.btn_canho = new System.Windows.Forms.Button();
@@ -112,11 +112,11 @@
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.pictureBox15);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.btn_danhgia);
+            this.panel2.Controls.Add(this.btn_bdgns);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.pictureBox12);
             this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Controls.Add(this.btn_bpc);
+            this.panel2.Controls.Add(this.btn_bpcnv);
             this.panel2.Controls.Add(this.btn_cudan);
             this.panel2.Controls.Add(this.pictureBox13);
             this.panel2.Controls.Add(this.btn_canho);
@@ -201,21 +201,21 @@
             this.label3.TabIndex = 36;
             this.label3.Text = "Chức Năng";
             // 
-            // btn_danhgia
+            // btn_bdgns
             // 
-            this.btn_danhgia.BackColor = System.Drawing.Color.Transparent;
-            this.btn_danhgia.FlatAppearance.BorderSize = 0;
-            this.btn_danhgia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.btn_danhgia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_danhgia.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_danhgia.ForeColor = System.Drawing.Color.White;
-            this.btn_danhgia.Location = new System.Drawing.Point(39, 802);
-            this.btn_danhgia.Name = "btn_danhgia";
-            this.btn_danhgia.Size = new System.Drawing.Size(176, 39);
-            this.btn_danhgia.TabIndex = 62;
-            this.btn_danhgia.Text = "Bảng Đánh Giá ";
-            this.btn_danhgia.UseVisualStyleBackColor = false;
-            this.btn_danhgia.Click += new System.EventHandler(this.btn_danhgia_Click);
+            this.btn_bdgns.BackColor = System.Drawing.Color.Transparent;
+            this.btn_bdgns.FlatAppearance.BorderSize = 0;
+            this.btn_bdgns.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.btn_bdgns.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_bdgns.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_bdgns.ForeColor = System.Drawing.Color.White;
+            this.btn_bdgns.Location = new System.Drawing.Point(39, 802);
+            this.btn_bdgns.Name = "btn_bdgns";
+            this.btn_bdgns.Size = new System.Drawing.Size(176, 39);
+            this.btn_bdgns.TabIndex = 62;
+            this.btn_bdgns.Text = "Bảng Đánh Giá ";
+            this.btn_bdgns.UseVisualStyleBackColor = false;
+            this.btn_bdgns.Click += new System.EventHandler(this.btn_danhgia_Click);
             // 
             // pictureBox2
             // 
@@ -247,21 +247,21 @@
             this.pictureBox3.TabIndex = 38;
             this.pictureBox3.TabStop = false;
             // 
-            // btn_bpc
+            // btn_bpcnv
             // 
-            this.btn_bpc.BackColor = System.Drawing.Color.Transparent;
-            this.btn_bpc.FlatAppearance.BorderSize = 0;
-            this.btn_bpc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.btn_bpc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_bpc.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_bpc.ForeColor = System.Drawing.Color.White;
-            this.btn_bpc.Location = new System.Drawing.Point(39, 757);
-            this.btn_bpc.Name = "btn_bpc";
-            this.btn_bpc.Size = new System.Drawing.Size(176, 39);
-            this.btn_bpc.TabIndex = 60;
-            this.btn_bpc.Text = "Bảng Phân Công ";
-            this.btn_bpc.UseVisualStyleBackColor = false;
-            this.btn_bpc.Click += new System.EventHandler(this.btn_bpc_Click);
+            this.btn_bpcnv.BackColor = System.Drawing.Color.Transparent;
+            this.btn_bpcnv.FlatAppearance.BorderSize = 0;
+            this.btn_bpcnv.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.btn_bpcnv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_bpcnv.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_bpcnv.ForeColor = System.Drawing.Color.White;
+            this.btn_bpcnv.Location = new System.Drawing.Point(39, 757);
+            this.btn_bpcnv.Name = "btn_bpcnv";
+            this.btn_bpcnv.Size = new System.Drawing.Size(176, 39);
+            this.btn_bpcnv.TabIndex = 60;
+            this.btn_bpcnv.Text = "Bảng Phân Công ";
+            this.btn_bpcnv.UseVisualStyleBackColor = false;
+            this.btn_bpcnv.Click += new System.EventHandler(this.btn_bpc_Click);
             // 
             // btn_cudan
             // 
@@ -670,18 +670,18 @@
             // 
             // cht_ThongKeTaiChinh
             // 
-            chartArea14.Name = "ChartArea1";
-            this.cht_ThongKeTaiChinh.ChartAreas.Add(chartArea14);
-            legend14.Name = "Legend1";
-            this.cht_ThongKeTaiChinh.Legends.Add(legend14);
+            chartArea1.Name = "ChartArea1";
+            this.cht_ThongKeTaiChinh.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.cht_ThongKeTaiChinh.Legends.Add(legend1);
             this.cht_ThongKeTaiChinh.Location = new System.Drawing.Point(514, 207);
             this.cht_ThongKeTaiChinh.Margin = new System.Windows.Forms.Padding(4);
             this.cht_ThongKeTaiChinh.Name = "cht_ThongKeTaiChinh";
-            series14.ChartArea = "ChartArea1";
-            series14.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series14.Legend = "Legend1";
-            series14.Name = "Series1";
-            this.cht_ThongKeTaiChinh.Series.Add(series14);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.cht_ThongKeTaiChinh.Series.Add(series1);
             this.cht_ThongKeTaiChinh.Size = new System.Drawing.Size(884, 281);
             this.cht_ThongKeTaiChinh.TabIndex = 4;
             this.cht_ThongKeTaiChinh.Text = "Biểu đồ doanh thu-Chi";
@@ -815,11 +815,11 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btn_danhgia;
+        private System.Windows.Forms.Button btn_bdgns;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button btn_bpc;
+        private System.Windows.Forms.Button btn_bpcnv;
         private System.Windows.Forms.Button btn_cudan;
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.Button btn_canho;

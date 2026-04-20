@@ -29,15 +29,17 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.rdb_Nu = new System.Windows.Forms.RadioButton();
+            this.rdb_nam = new System.Windows.Forms.RadioButton();
+            this.txt_ngaysinh = new System.Windows.Forms.TextBox();
+            this.txt_sdt = new System.Windows.Forms.TextBox();
+            this.txt_noisinh = new System.Windows.Forms.TextBox();
+            this.txt_hoten = new System.Windows.Forms.TextBox();
+            this.txt_trangthai = new System.Windows.Forms.TextBox();
+            this.txt_email = new System.Windows.Forms.TextBox();
+            this.txt_cccd = new System.Windows.Forms.TextBox();
+            this.txt_diachi = new System.Windows.Forms.TextBox();
+            this.txt_mdd = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -49,17 +51,18 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lbl_exit = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
+            this.gpb_ttcanho = new System.Windows.Forms.GroupBox();
+            this.txt_TrangThaiCanHo = new System.Windows.Forms.TextBox();
+            this.txt_Tang = new System.Windows.Forms.TextBox();
+            this.txt_SoCan = new System.Windows.Forms.TextBox();
+            this.txt_MaCanHo = new System.Windows.Forms.TextBox();
+            this.lbl_mch = new System.Windows.Forms.Label();
+            this.lbl_socan = new System.Windows.Forms.Label();
+            this.lbl_trangthai = new System.Windows.Forms.Label();
+            this.lbl_tang = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -70,29 +73,32 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox3.SuspendLayout();
+            this.gpb_ttcanho.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Controls.Add(this.textBox7);
-            this.groupBox1.Controls.Add(this.textBox8);
-            this.groupBox1.Controls.Add(this.textBox9);
-            this.groupBox1.Controls.Add(this.textBox11);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.rdb_Nu);
+            this.groupBox1.Controls.Add(this.rdb_nam);
+            this.groupBox1.Controls.Add(this.txt_ngaysinh);
+            this.groupBox1.Controls.Add(this.txt_sdt);
+            this.groupBox1.Controls.Add(this.txt_noisinh);
+            this.groupBox1.Controls.Add(this.txt_hoten);
+            this.groupBox1.Controls.Add(this.txt_trangthai);
+            this.groupBox1.Controls.Add(this.txt_email);
+            this.groupBox1.Controls.Add(this.txt_cccd);
+            this.groupBox1.Controls.Add(this.txt_diachi);
+            this.groupBox1.Controls.Add(this.txt_mdd);
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label10);
@@ -112,77 +118,99 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Cá Nhân";
             // 
-            // textBox8
+            // rdb_Nu
             // 
-            this.textBox8.Enabled = false;
-            this.textBox8.Location = new System.Drawing.Point(560, 173);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(233, 34);
-            this.textBox8.TabIndex = 31;
+            this.rdb_Nu.AutoSize = true;
+            this.rdb_Nu.Location = new System.Drawing.Point(271, 84);
+            this.rdb_Nu.Name = "rdb_Nu";
+            this.rdb_Nu.Size = new System.Drawing.Size(62, 32);
+            this.rdb_Nu.TabIndex = 34;
+            this.rdb_Nu.TabStop = true;
+            this.rdb_Nu.Text = "Nữ";
+            this.rdb_Nu.UseVisualStyleBackColor = true;
             // 
-            // textBox9
+            // rdb_nam
             // 
-            this.textBox9.Enabled = false;
-            this.textBox9.Location = new System.Drawing.Point(560, 128);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(233, 34);
-            this.textBox9.TabIndex = 30;
+            this.rdb_nam.AutoSize = true;
+            this.rdb_nam.Location = new System.Drawing.Point(173, 83);
+            this.rdb_nam.Name = "rdb_nam";
+            this.rdb_nam.Size = new System.Drawing.Size(78, 32);
+            this.rdb_nam.TabIndex = 33;
+            this.rdb_nam.TabStop = true;
+            this.rdb_nam.Text = "Nam";
+            this.rdb_nam.UseVisualStyleBackColor = true;
             // 
-            // textBox11
+            // txt_ngaysinh
             // 
-            this.textBox11.Enabled = false;
-            this.textBox11.Location = new System.Drawing.Point(560, 40);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(233, 34);
-            this.textBox11.TabIndex = 28;
+            this.txt_ngaysinh.Enabled = false;
+            this.txt_ngaysinh.Location = new System.Drawing.Point(560, 85);
+            this.txt_ngaysinh.Name = "txt_ngaysinh";
+            this.txt_ngaysinh.Size = new System.Drawing.Size(233, 34);
+            this.txt_ngaysinh.TabIndex = 32;
             // 
-            // textBox6
+            // txt_sdt
             // 
-            this.textBox6.Enabled = false;
-            this.textBox6.Location = new System.Drawing.Point(560, 218);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(233, 34);
-            this.textBox6.TabIndex = 27;
+            this.txt_sdt.Enabled = false;
+            this.txt_sdt.Location = new System.Drawing.Point(560, 173);
+            this.txt_sdt.Name = "txt_sdt";
+            this.txt_sdt.Size = new System.Drawing.Size(233, 34);
+            this.txt_sdt.TabIndex = 31;
             // 
-            // textBox5
+            // txt_noisinh
             // 
-            this.textBox5.Enabled = false;
-            this.textBox5.Location = new System.Drawing.Point(172, 217);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(233, 34);
-            this.textBox5.TabIndex = 26;
+            this.txt_noisinh.Enabled = false;
+            this.txt_noisinh.Location = new System.Drawing.Point(560, 128);
+            this.txt_noisinh.Name = "txt_noisinh";
+            this.txt_noisinh.Size = new System.Drawing.Size(233, 34);
+            this.txt_noisinh.TabIndex = 30;
             // 
-            // textBox4
+            // txt_hoten
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(173, 173);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(233, 34);
-            this.textBox4.TabIndex = 25;
+            this.txt_hoten.Enabled = false;
+            this.txt_hoten.Location = new System.Drawing.Point(560, 40);
+            this.txt_hoten.Name = "txt_hoten";
+            this.txt_hoten.Size = new System.Drawing.Size(233, 34);
+            this.txt_hoten.TabIndex = 28;
             // 
-            // textBox3
+            // txt_trangthai
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(173, 129);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(233, 34);
-            this.textBox3.TabIndex = 24;
+            this.txt_trangthai.Enabled = false;
+            this.txt_trangthai.Location = new System.Drawing.Point(560, 218);
+            this.txt_trangthai.Name = "txt_trangthai";
+            this.txt_trangthai.Size = new System.Drawing.Size(233, 34);
+            this.txt_trangthai.TabIndex = 27;
             // 
-            // textBox2
+            // txt_email
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(173, 85);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(233, 34);
-            this.textBox2.TabIndex = 23;
+            this.txt_email.Enabled = false;
+            this.txt_email.Location = new System.Drawing.Point(172, 217);
+            this.txt_email.Name = "txt_email";
+            this.txt_email.Size = new System.Drawing.Size(233, 34);
+            this.txt_email.TabIndex = 26;
             // 
-            // textBox1
+            // txt_cccd
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(173, 40);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(233, 34);
-            this.textBox1.TabIndex = 22;
+            this.txt_cccd.Enabled = false;
+            this.txt_cccd.Location = new System.Drawing.Point(173, 173);
+            this.txt_cccd.Name = "txt_cccd";
+            this.txt_cccd.Size = new System.Drawing.Size(233, 34);
+            this.txt_cccd.TabIndex = 25;
+            // 
+            // txt_diachi
+            // 
+            this.txt_diachi.Enabled = false;
+            this.txt_diachi.Location = new System.Drawing.Point(173, 129);
+            this.txt_diachi.Name = "txt_diachi";
+            this.txt_diachi.Size = new System.Drawing.Size(233, 34);
+            this.txt_diachi.TabIndex = 24;
+            // 
+            // txt_mdd
+            // 
+            this.txt_mdd.Enabled = false;
+            this.txt_mdd.Location = new System.Drawing.Point(173, 40);
+            this.txt_mdd.Name = "txt_mdd";
+            this.txt_mdd.Size = new System.Drawing.Size(233, 34);
+            this.txt_mdd.TabIndex = 22;
             // 
             // label12
             // 
@@ -297,132 +325,146 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.White;
+            this.groupBox2.Controls.Add(this.lbl_exit);
             this.groupBox2.Controls.Add(this.pictureBox2);
             this.groupBox2.Controls.Add(this.pictureBox1);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.groupBox2.ForeColor = System.Drawing.Color.Teal;
             this.groupBox2.Location = new System.Drawing.Point(888, 9);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(403, 280);
+            this.groupBox2.Size = new System.Drawing.Size(366, 280);
             this.groupBox2.TabIndex = 34;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Ảnh Đại Diện";
             // 
+            // lbl_exit
+            // 
+            this.lbl_exit.AutoSize = true;
+            this.lbl_exit.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbl_exit.ForeColor = System.Drawing.Color.Red;
+            this.lbl_exit.Location = new System.Drawing.Point(328, 0);
+            this.lbl_exit.Name = "lbl_exit";
+            this.lbl_exit.Size = new System.Drawing.Size(29, 31);
+            this.lbl_exit.TabIndex = 30;
+            this.lbl_exit.Text = "X";
+            this.lbl_exit.Click += new System.EventHandler(this.lbl_exit_Click);
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::HETHONGQLCHUNGCU.Properties.Resources.pencil;
-            this.pictureBox2.Location = new System.Drawing.Point(299, 33);
+            this.pictureBox2.Location = new System.Drawing.Point(268, 40);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(38, 33);
+            this.pictureBox2.Size = new System.Drawing.Size(24, 26);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::HETHONGQLCHUNGCU.Properties.Resources.user;
-            this.pictureBox1.Location = new System.Drawing.Point(90, 53);
+            this.pictureBox1.Location = new System.Drawing.Point(59, 53);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(224, 182);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // groupBox3
+            // gpb_ttcanho
             // 
-            this.groupBox3.BackColor = System.Drawing.Color.White;
-            this.groupBox3.Controls.Add(this.textBox16);
-            this.groupBox3.Controls.Add(this.textBox12);
-            this.groupBox3.Controls.Add(this.textBox13);
-            this.groupBox3.Controls.Add(this.textBox14);
-            this.groupBox3.Controls.Add(this.label13);
-            this.groupBox3.Controls.Add(this.label17);
-            this.groupBox3.Controls.Add(this.label18);
-            this.groupBox3.Controls.Add(this.label21);
-            this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.groupBox3.ForeColor = System.Drawing.Color.Teal;
-            this.groupBox3.Location = new System.Drawing.Point(6, 306);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1285, 207);
-            this.groupBox3.TabIndex = 35;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Thông Tin Căn Hộ";
+            this.gpb_ttcanho.BackColor = System.Drawing.Color.White;
+            this.gpb_ttcanho.Controls.Add(this.txt_TrangThaiCanHo);
+            this.gpb_ttcanho.Controls.Add(this.txt_Tang);
+            this.gpb_ttcanho.Controls.Add(this.txt_SoCan);
+            this.gpb_ttcanho.Controls.Add(this.txt_MaCanHo);
+            this.gpb_ttcanho.Controls.Add(this.lbl_mch);
+            this.gpb_ttcanho.Controls.Add(this.lbl_socan);
+            this.gpb_ttcanho.Controls.Add(this.lbl_trangthai);
+            this.gpb_ttcanho.Controls.Add(this.lbl_tang);
+            this.gpb_ttcanho.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.gpb_ttcanho.ForeColor = System.Drawing.Color.Teal;
+            this.gpb_ttcanho.Location = new System.Drawing.Point(6, 301);
+            this.gpb_ttcanho.Name = "gpb_ttcanho";
+            this.gpb_ttcanho.Size = new System.Drawing.Size(1248, 170);
+            this.gpb_ttcanho.TabIndex = 35;
+            this.gpb_ttcanho.TabStop = false;
+            this.gpb_ttcanho.Text = "Thông Tin Căn Hộ";
             // 
-            // textBox16
+            // txt_TrangThaiCanHo
             // 
-            this.textBox16.Enabled = false;
-            this.textBox16.Location = new System.Drawing.Point(559, 114);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(233, 34);
-            this.textBox16.TabIndex = 29;
+            this.txt_TrangThaiCanHo.Enabled = false;
+            this.txt_TrangThaiCanHo.Location = new System.Drawing.Point(560, 89);
+            this.txt_TrangThaiCanHo.Name = "txt_TrangThaiCanHo";
+            this.txt_TrangThaiCanHo.Size = new System.Drawing.Size(233, 34);
+            this.txt_TrangThaiCanHo.TabIndex = 29;
             // 
-            // textBox12
+            // txt_Tang
             // 
-            this.textBox12.Enabled = false;
-            this.textBox12.Location = new System.Drawing.Point(559, 67);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(233, 34);
-            this.textBox12.TabIndex = 27;
+            this.txt_Tang.Enabled = false;
+            this.txt_Tang.Location = new System.Drawing.Point(560, 43);
+            this.txt_Tang.Name = "txt_Tang";
+            this.txt_Tang.Size = new System.Drawing.Size(233, 34);
+            this.txt_Tang.TabIndex = 27;
             // 
-            // textBox13
+            // txt_SoCan
             // 
-            this.textBox13.Enabled = false;
-            this.textBox13.Location = new System.Drawing.Point(172, 112);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(233, 34);
-            this.textBox13.TabIndex = 26;
+            this.txt_SoCan.Enabled = false;
+            this.txt_SoCan.Location = new System.Drawing.Point(172, 87);
+            this.txt_SoCan.Name = "txt_SoCan";
+            this.txt_SoCan.Size = new System.Drawing.Size(233, 34);
+            this.txt_SoCan.TabIndex = 26;
             // 
-            // textBox14
+            // txt_MaCanHo
             // 
-            this.textBox14.Enabled = false;
-            this.textBox14.Location = new System.Drawing.Point(172, 67);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(233, 34);
-            this.textBox14.TabIndex = 25;
+            this.txt_MaCanHo.Enabled = false;
+            this.txt_MaCanHo.Location = new System.Drawing.Point(172, 42);
+            this.txt_MaCanHo.Name = "txt_MaCanHo";
+            this.txt_MaCanHo.Size = new System.Drawing.Size(233, 34);
+            this.txt_MaCanHo.TabIndex = 25;
             // 
-            // label13
+            // lbl_mch
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label13.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label13.Location = new System.Drawing.Point(45, 70);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(113, 28);
-            this.label13.TabIndex = 10;
-            this.label13.Text = "Mã Căn Hộ:";
+            this.lbl_mch.AutoSize = true;
+            this.lbl_mch.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbl_mch.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lbl_mch.Location = new System.Drawing.Point(45, 45);
+            this.lbl_mch.Name = "lbl_mch";
+            this.lbl_mch.Size = new System.Drawing.Size(113, 28);
+            this.lbl_mch.TabIndex = 10;
+            this.lbl_mch.Text = "Mã Căn Hộ:";
             // 
-            // label17
+            // lbl_socan
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label17.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label17.Location = new System.Drawing.Point(83, 117);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(77, 28);
-            this.label17.TabIndex = 6;
-            this.label17.Text = "Số Căn:";
+            this.lbl_socan.AutoSize = true;
+            this.lbl_socan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbl_socan.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lbl_socan.Location = new System.Drawing.Point(83, 92);
+            this.lbl_socan.Name = "lbl_socan";
+            this.lbl_socan.Size = new System.Drawing.Size(77, 28);
+            this.lbl_socan.TabIndex = 6;
+            this.lbl_socan.Text = "Số Căn:";
             // 
-            // label18
+            // lbl_trangthai
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label18.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label18.Location = new System.Drawing.Point(447, 118);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(105, 28);
-            this.label18.TabIndex = 5;
-            this.label18.Text = "Trạng Thái:";
+            this.lbl_trangthai.AutoSize = true;
+            this.lbl_trangthai.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbl_trangthai.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lbl_trangthai.Location = new System.Drawing.Point(447, 93);
+            this.lbl_trangthai.Name = "lbl_trangthai";
+            this.lbl_trangthai.Size = new System.Drawing.Size(105, 28);
+            this.lbl_trangthai.TabIndex = 5;
+            this.lbl_trangthai.Text = "Trạng Thái:";
             // 
-            // label21
+            // lbl_tang
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label21.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label21.Location = new System.Drawing.Point(487, 71);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(59, 28);
-            this.label21.TabIndex = 2;
-            this.label21.Text = "Tầng:";
+            this.lbl_tang.AutoSize = true;
+            this.lbl_tang.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbl_tang.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lbl_tang.Location = new System.Drawing.Point(487, 46);
+            this.lbl_tang.Name = "lbl_tang";
+            this.lbl_tang.Size = new System.Drawing.Size(59, 28);
+            this.lbl_tang.TabIndex = 2;
+            this.lbl_tang.Text = "Tầng:";
             // 
             // groupBox4
             // 
@@ -435,9 +477,9 @@
             this.groupBox4.Controls.Add(this.label1);
             this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.groupBox4.ForeColor = System.Drawing.Color.Teal;
-            this.groupBox4.Location = new System.Drawing.Point(6, 531);
+            this.groupBox4.Location = new System.Drawing.Point(6, 482);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(1285, 207);
+            this.groupBox4.Size = new System.Drawing.Size(1248, 207);
             this.groupBox4.TabIndex = 36;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Ban Quản Lý Tòa Nhà";
@@ -544,54 +586,69 @@
             this.label1.TabIndex = 26;
             this.label1.Text = "Email Hỗ Trợ : hethongquanlychungcu@gmail.com";
             // 
-            // textBox7
+            // statusStrip1
             // 
-            this.textBox7.Enabled = false;
-            this.textBox7.Location = new System.Drawing.Point(560, 85);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(233, 34);
-            this.textBox7.TabIndex = 32;
+            this.statusStrip1.BackColor = System.Drawing.Color.White;
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 692);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1260, 26);
+            this.statusStrip1.TabIndex = 37;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(247, 20);
+            this.toolStripStatusLabel1.Text = "Phát triển bởi Lê Chí Hải - 24004190";
             // 
             // Frm_Thongtintaikhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1292, 738);
+            this.ClientSize = new System.Drawing.Size(1260, 718);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.gpb_ttcanho);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Frm_Thongtintaikhoan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_Thongtintaikhoan";
+            this.Load += new System.EventHandler(this.Frm_Thongtintaikhoan_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.gpb_ttcanho.ResumeLayout(false);
+            this.gpb_ttcanho.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_sdt;
+        private System.Windows.Forms.TextBox txt_noisinh;
+        private System.Windows.Forms.TextBox txt_hoten;
+        private System.Windows.Forms.TextBox txt_trangthai;
+        private System.Windows.Forms.TextBox txt_email;
+        private System.Windows.Forms.TextBox txt_cccd;
+        private System.Windows.Forms.TextBox txt_diachi;
+        private System.Windows.Forms.TextBox txt_mdd;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
@@ -603,15 +660,15 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.GroupBox gpb_ttcanho;
+        private System.Windows.Forms.TextBox txt_TrangThaiCanHo;
+        private System.Windows.Forms.TextBox txt_Tang;
+        private System.Windows.Forms.TextBox txt_SoCan;
+        private System.Windows.Forms.TextBox txt_MaCanHo;
+        private System.Windows.Forms.Label lbl_mch;
+        private System.Windows.Forms.Label lbl_socan;
+        private System.Windows.Forms.Label lbl_trangthai;
+        private System.Windows.Forms.Label lbl_tang;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox5;
@@ -624,6 +681,11 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txt_ngaysinh;
+        private System.Windows.Forms.Label lbl_exit;
+        private System.Windows.Forms.RadioButton rdb_nam;
+        private System.Windows.Forms.RadioButton rdb_Nu;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,8 @@ namespace HETHONGQLCHUNGCU
         public Frm_Menu menu;
         private Frm_HTxacthuctaptrung frmxacthuc = null;
         private Frm_ThongTinCuDan frmThongTinCuDan = null;
+        private Frm_Thongtintaikhoan frmttcanhan = null;
+        private Frm_TTCuDan frmttcudan = null;
         public Frm_CuDan()
         {
             InitializeComponent();
@@ -35,13 +38,111 @@ namespace HETHONGQLCHUNGCU
             frmThongTinCuDan.FormClosed += FrmThongTinCuDan_FormClosed;
             frmThongTinCuDan.Show();
         }
+        public void QuayVeMenu()
+        {
+            if (menu != null)
+            {
+                menu.Show();
+            }
+            this.Close();
+        }
         private void ancontrols()
         {
             grp_BoLoc.Visible = false;
             grp_trangthai.Visible = false;
             dgv_thongtincudan.Visible = false;
             pnl_title.Visible = false;
-        }        
+        }
+        //xây dựng hàm cgo grpbox
+        void thongke()
+        {
+            Connection ketnoi = new Connection();
+            try
+            {
+                if (ketnoi.moketnoi())
+                {
+                    string sel = "SELECT COUNT(*) FROM CuDan";
+                    SqlDataReader rdr = ketnoi.truyvan(sel);
+                    if (rdr.Read())
+                    {
+                        lbl_tong.Text = rdr[0].ToString();
+                    }
+                    rdr.Close();
+                    string sel1 = "SELECT COUNT(*) FROM CuDan WHERE TrangThai = N'Cư Trú'";
+                    SqlDataReader rdr1 = ketnoi.truyvan(sel1);
+                    if (rdr1.Read())
+                    {
+                        lbl_cutru.Text = rdr1[0].ToString();
+                    }
+                    rdr1.Close();
+                    string sel2 = "SELECT COUNT(*) FROM CuDan WHERE TrangThai = N'Tạm Trú'";
+                    SqlDataReader rdr2 = ketnoi.truyvan(sel2);
+                    if (rdr2.Read())
+                    {
+                        lbl_tamtru.Text = rdr2[0].ToString();
+                    }
+                    rdr2.Close();
+                    string sel3 = "SELECT COUNT(*) FROM CuDan WHERE TrangThai = N'Tạm Vắng'";
+                    SqlDataReader rdr3 = ketnoi.truyvan(sel3);
+                    if (rdr3.Read())
+                    {
+                        lbl_tamvang.Text = rdr3[0].ToString();
+                    } rdr3.Close();
+                    ketnoi.dongketnoi();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi kết nối cơ sở dữ liệu: " + ex.Message, "Hệ Thống Quản Lý Chung Cư - Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        void timkiem()
+        {
+            Connection ketnoi = new Connection();
+            try
+            {
+                if (ketnoi.moketnoi())
+                {
+                    string sel = "SELECT * FROM CuDan WHERE 1=1";
+                    if (!string.IsNullOrEmpty(txt_mcd.Text))
+                    {
+                        sel += " AND MaCuDan LIKE N'%" + txt_mcd.Text.Trim() + "%'";
+                    }
+                    if (!string.IsNullOrEmpty(txt_hoten.Text))
+                    {
+                        sel += " AND HoTen LIKE N'%" + txt_hoten.Text.Trim() + "%'";
+                    }
+                    if (!string.IsNullOrEmpty(txt_quequan.Text))
+                    {
+                        sel += " AND QueQuan LIKE N'%" + txt_quequan.Text.Trim() + "%'";
+                    }
+                    if (cbx_trangthai.SelectedIndex > 0)
+                    {
+                        sel += " AND TrangThai = N'" + cbx_trangthai.SelectedItem.ToString() + "'";
+                    }
+                    SqlDataReader rdr = ketnoi.truyvan(sel);
+                    DataTable tb = new DataTable();
+                    tb.Load(rdr);
+                    rdr.Close();
+                    dgv_thongtincudan.DataSource = tb;
+                    ketnoi.dongketnoi();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi kết nối cơ sở dữ liệu: " + ex.Message, "Hệ Thống Quản Lý Chung Cư - Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void AnTatCaFormCon()
+        {
+            foreach (Form frm in this.MdiChildren)
+            {
+                if (frm != null && !frm.IsDisposed)
+                {
+                    frm.Close();
+                }
+            }
+        }
         //----------------MenuStrip---------------------
         private void thêmCưDânToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -110,15 +211,7 @@ namespace HETHONGQLCHUNGCU
             {
                 menu.Show();
             } this.Close();
-        }
-        private void btn_trangchu_Click(object sender, EventArgs e)
-        {
-            if (menu != null)
-            {
-                menu.Show();
-            }
-            this.Close();
-        }
+        }       
         private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if(frmxacthuc == null || frmxacthuc.IsDisposed)
@@ -130,7 +223,18 @@ namespace HETHONGQLCHUNGCU
                 frmxacthuc.FormBorderStyle = FormBorderStyle.None;
                 frmxacthuc.FormClosed += Frm_HTxacthuctaptrung_FormClosed;
                 frmxacthuc.Show();
-                ancontrols();
+                if (cls_chcecklogin.Quyen == 6)
+                {
+                    if (frmttcudan != null && !frmttcudan.IsDisposed)
+                    {
+                        frmttcudan.Hide();
+                    }
+                }
+                else
+                {
+                    ancontrols();
+                }
+                frmxacthuc.Show();
             }
             else
             {
@@ -139,15 +243,35 @@ namespace HETHONGQLCHUNGCU
         }
         private void Frm_HTxacthuctaptrung_FormClosed(object sender, FormClosedEventArgs e)
         {
-            // hiển thị controls
-            grp_BoLoc.Visible = true;
-            grp_trangthai.Visible = true;
-            dgv_thongtincudan.Visible = true;
-            pnl_title.Visible = true;
+            frmxacthuc = null;
+            if (cls_chcecklogin.Quyen == 6)
+            {
+                if (frmttcudan != null && !frmttcudan.IsDisposed)
+                {
+                    frmttcudan.Show();
+                    frmttcudan.BringToFront();
+                }
+            }
+            else
+            {
+                grp_BoLoc.Visible = true;
+                grp_trangthai.Visible = true;
+                dgv_thongtincudan.Visible = true;
+                pnl_title.Visible = true;
+            }
         }
+       
         //----------------------------------------
         //&&//
         //-----------------Dashboard---------------
+        private void btn_trangchu_Click(object sender, EventArgs e)
+        {
+            if (menu != null)
+            {
+                menu.Show();
+            }
+            this.Close();
+        }
         private void btn_cudan_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Bạn đang ở trang Cư Dân!!", "Hệ Thống Quản Lý Chung Cư - Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -228,7 +352,124 @@ namespace HETHONGQLCHUNGCU
         //----------------Đổ Dữ Liệu--------------
         private void Frm_CuDan_Load(object sender, EventArgs e)
         {
-
+            
+            thongke();
+            //truyền dl cbx
+            cbx_trangthai.Items.Clear();
+            cbx_trangthai.Items.Add("--Chọn Trạng Thái--");
+            cbx_trangthai.Items.Add("Cư Trú");
+            cbx_trangthai.Items.Add("Tạm Trú");
+            cbx_trangthai.Items.Add("Tạm Vắng");
+            cbx_trangthai.SelectedIndex = 0;
+            //1. Phân Quyền Chức Năng
+            int quyen = cls_chcecklogin.Quyen;
+            if (quyen == 6)
+            {
+                PhanQuyenDashboard.tat(btn_chamcong, btn_bpcnv, btn_bdgns, btn_thongke, btn_btsc);
+                quảnLýThôngTInCưDânToolStripMenuItem.Visible = false;
+                AnTatCaFormCon();
+                frmttcudan = new Frm_TTCuDan();
+                frmttcudan.MdiParent = this;
+                frmttcudan.StartPosition = FormStartPosition.Manual;
+                frmttcudan.Location = new Point(190, 165);
+                frmttcudan.FormBorderStyle = FormBorderStyle.None;
+                frmttcudan.Show();
+                grp_BoLoc.Visible = false;
+                grp_trangthai.Visible = false;
+                dgv_thongtincudan.Visible = false;
+                pnl_title.Visible = false;
+            }
+            else if (quyen == 7)
+            {
+                //null
+            }
+            Connection ketnoi = new Connection();
+            try
+            {
+                if (ketnoi.moketnoi())
+                {
+                    string sel = "SELECT * FROM CuDan";
+                    SqlDataReader rdr = ketnoi.truyvan(sel);
+                    DataTable dt = new DataTable();
+                    dt.Load(rdr);
+                    rdr.Close();
+                    dgv_thongtincudan.DataSource = dt;
+                    ketnoi.dongketnoi();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi kết nối cơ sở dữ liệu: " + ex.Message, 
+                    "Hệ Thống Quản Lý Chung Cư - Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }            
+        }
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (frmttcanhan == null || frmttcanhan.IsDisposed)
+            {
+                frmttcanhan = new Frm_Thongtintaikhoan();
+                frmttcanhan.MdiParent = this;
+                frmttcanhan.StartPosition = FormStartPosition.Manual;
+                frmttcanhan.Location = new Point(180, 95);
+                frmttcanhan.FormBorderStyle = FormBorderStyle.None;
+                frmttcanhan.FormClosed += Frm_Thongtintaikhoan_FormClosed;
+                frmttcanhan.Show();
+                //ẩn contorls
+                if (cls_chcecklogin.Quyen == 6)
+                {
+                    if (frmttcudan != null && !frmttcudan.IsDisposed)
+                    {
+                        frmttcudan.Hide();
+                    }
+                }
+                else
+                {
+                    ancontrols();
+                }
+                frmttcanhan.Show();
+            }
+            else
+            {
+                frmttcanhan.Activate();
+            }
+        }
+        private void Frm_Thongtintaikhoan_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            frmttcanhan = null;
+            if (cls_chcecklogin.Quyen == 6)
+            {
+                if (frmttcudan != null && !frmttcudan.IsDisposed)
+                {
+                    frmttcudan.Show();
+                    frmttcudan.BringToFront();
+                }
+            }
+            else
+            {
+                grp_BoLoc.Visible = true;
+                grp_trangthai.Visible = true;
+                dgv_thongtincudan.Visible = true;
+                pnl_title.Visible = true;
+            }
+        }
+        private void btn_find_Click(object sender, EventArgs e)
+        {
+            if(txt_hoten.Text.Trim() == "" && txt_mcd.Text.Trim() == "" && txt_quequan.Text.Trim() == "" && cbx_trangthai.SelectedIndex == 0)
+            {
+                MessageBox.Show("Vui lòng nhập ít nhất một tiêu chí tìm kiếm!", "Hệ Thống Quản Lý Chung Cư - Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            else
+            {
+                timkiem();
+            }
+        }
+        private void btn_load_Click(object sender, EventArgs e)
+        {
+            Frm_CuDan_Load(sender, e);
+            txt_hoten.Clear();
+            txt_mcd.Clear();
+            txt_quequan.Clear();
         }
     }
 }

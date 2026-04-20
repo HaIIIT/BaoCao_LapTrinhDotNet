@@ -61,6 +61,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.label32 = new System.Windows.Forms.Label();
             this.btn_thoat = new System.Windows.Forms.Button();
             this.cb_user = new System.Windows.Forms.ComboBox();
@@ -94,7 +95,6 @@
             this.pic_hoadon = new System.Windows.Forms.PictureBox();
             this.pic_canho = new System.Windows.Forms.PictureBox();
             this.pic_cudan = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.pnl_canhbao = new System.Windows.Forms.Panel();
             this.pnl_baixe.SuspendLayout();
@@ -532,6 +532,13 @@
             this.panel1.Size = new System.Drawing.Size(1720, 60);
             this.panel1.TabIndex = 24;
             // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(116, 62);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1569, 31);
+            this.panel3.TabIndex = 59;
+            // 
             // label32
             // 
             this.label32.AutoSize = true;
@@ -567,10 +574,10 @@
             this.cb_user.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cb_user.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_user.FormattingEnabled = true;
-            this.cb_user.Location = new System.Drawing.Point(1440, 13);
+            this.cb_user.Location = new System.Drawing.Point(1393, 13);
             this.cb_user.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cb_user.Name = "cb_user";
-            this.cb_user.Size = new System.Drawing.Size(225, 31);
+            this.cb_user.Size = new System.Drawing.Size(272, 31);
             this.cb_user.TabIndex = 3;
             this.cb_user.SelectedIndexChanged += new System.EventHandler(this.cb_user_SelectedIndexChanged_1);
             // 
@@ -950,13 +957,6 @@
             this.pic_cudan.TabIndex = 28;
             this.pic_cudan.TabStop = false;
             this.pic_cudan.Click += new System.EventHandler(this.ptrb_cudan_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.Location = new System.Drawing.Point(116, 62);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1569, 31);
-            this.panel3.TabIndex = 59;
             // 
             // label3
             // 

@@ -9,6 +9,7 @@ namespace HETHONGQLCHUNGCU
 {
     internal class Program
     {
+        [STAThread]
         static void Main(string[] args)
         {
             Application.EnableVisualStyles();

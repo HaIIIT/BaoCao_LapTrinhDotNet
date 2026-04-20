@@ -33,9 +33,9 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.btn_danhgia = new System.Windows.Forms.Button();
+            this.btn_bddgns = new System.Windows.Forms.Button();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.btn_bpc = new System.Windows.Forms.Button();
+            this.btn_bpcnv = new System.Windows.Forms.Button();
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.btn_chamcong = new System.Windows.Forms.Button();
             this.pictureBox21 = new System.Windows.Forms.PictureBox();
@@ -143,9 +143,9 @@
             this.panel8.Controls.Add(this.btn_trangchu);
             this.panel8.Controls.Add(this.panel6);
             this.panel8.Controls.Add(this.pictureBox18);
-            this.panel8.Controls.Add(this.btn_danhgia);
+            this.panel8.Controls.Add(this.btn_bddgns);
             this.panel8.Controls.Add(this.pictureBox19);
-            this.panel8.Controls.Add(this.btn_bpc);
+            this.panel8.Controls.Add(this.btn_bpcnv);
             this.panel8.Controls.Add(this.pictureBox20);
             this.panel8.Controls.Add(this.btn_chamcong);
             this.panel8.Controls.Add(this.pictureBox21);
@@ -221,21 +221,21 @@
             this.pictureBox18.TabIndex = 33;
             this.pictureBox18.TabStop = false;
             // 
-            // btn_danhgia
+            // btn_bddgns
             // 
-            this.btn_danhgia.BackColor = System.Drawing.Color.Transparent;
-            this.btn_danhgia.FlatAppearance.BorderSize = 0;
-            this.btn_danhgia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.btn_danhgia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_danhgia.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_danhgia.ForeColor = System.Drawing.Color.White;
-            this.btn_danhgia.Location = new System.Drawing.Point(39, 802);
-            this.btn_danhgia.Name = "btn_danhgia";
-            this.btn_danhgia.Size = new System.Drawing.Size(183, 39);
-            this.btn_danhgia.TabIndex = 32;
-            this.btn_danhgia.Text = "Bảng Đánh Giá ";
-            this.btn_danhgia.UseVisualStyleBackColor = false;
-            this.btn_danhgia.Click += new System.EventHandler(this.btn_danhgia_Click);
+            this.btn_bddgns.BackColor = System.Drawing.Color.Transparent;
+            this.btn_bddgns.FlatAppearance.BorderSize = 0;
+            this.btn_bddgns.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.btn_bddgns.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_bddgns.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_bddgns.ForeColor = System.Drawing.Color.White;
+            this.btn_bddgns.Location = new System.Drawing.Point(39, 802);
+            this.btn_bddgns.Name = "btn_bddgns";
+            this.btn_bddgns.Size = new System.Drawing.Size(183, 39);
+            this.btn_bddgns.TabIndex = 32;
+            this.btn_bddgns.Text = "Bảng Đánh Giá ";
+            this.btn_bddgns.UseVisualStyleBackColor = false;
+            this.btn_bddgns.Click += new System.EventHandler(this.btn_danhgia_Click);
             // 
             // pictureBox19
             // 
@@ -247,21 +247,21 @@
             this.pictureBox19.TabIndex = 31;
             this.pictureBox19.TabStop = false;
             // 
-            // btn_bpc
+            // btn_bpcnv
             // 
-            this.btn_bpc.BackColor = System.Drawing.Color.Transparent;
-            this.btn_bpc.FlatAppearance.BorderSize = 0;
-            this.btn_bpc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.btn_bpc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_bpc.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_bpc.ForeColor = System.Drawing.Color.White;
-            this.btn_bpc.Location = new System.Drawing.Point(39, 757);
-            this.btn_bpc.Name = "btn_bpc";
-            this.btn_bpc.Size = new System.Drawing.Size(183, 39);
-            this.btn_bpc.TabIndex = 30;
-            this.btn_bpc.Text = "Bảng Phân Công ";
-            this.btn_bpc.UseVisualStyleBackColor = false;
-            this.btn_bpc.Click += new System.EventHandler(this.btn_bpc_Click);
+            this.btn_bpcnv.BackColor = System.Drawing.Color.Transparent;
+            this.btn_bpcnv.FlatAppearance.BorderSize = 0;
+            this.btn_bpcnv.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.btn_bpcnv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_bpcnv.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_bpcnv.ForeColor = System.Drawing.Color.White;
+            this.btn_bpcnv.Location = new System.Drawing.Point(39, 757);
+            this.btn_bpcnv.Name = "btn_bpcnv";
+            this.btn_bpcnv.Size = new System.Drawing.Size(183, 39);
+            this.btn_bpcnv.TabIndex = 30;
+            this.btn_bpcnv.Text = "Bảng Phân Công ";
+            this.btn_bpcnv.UseVisualStyleBackColor = false;
+            this.btn_bpcnv.Click += new System.EventHandler(this.btn_bpc_Click);
             // 
             // pictureBox20
             // 
@@ -1132,9 +1132,9 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Button btn_trangchu;
         private System.Windows.Forms.PictureBox pictureBox18;
-        private System.Windows.Forms.Button btn_danhgia;
+        private System.Windows.Forms.Button btn_bddgns;
         private System.Windows.Forms.PictureBox pictureBox19;
-        private System.Windows.Forms.Button btn_bpc;
+        private System.Windows.Forms.Button btn_bpcnv;
         private System.Windows.Forms.PictureBox pictureBox20;
         private System.Windows.Forms.Button btn_chamcong;
         private System.Windows.Forms.PictureBox pictureBox21;

@@ -249,6 +249,7 @@
             this.txt_otp.Name = "txt_otp";
             this.txt_otp.Size = new System.Drawing.Size(184, 30);
             this.txt_otp.TabIndex = 2;
+            this.txt_otp.TextChanged += new System.EventHandler(this.txt_otp_TextChanged_1);
             this.txt_otp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_otp_KeyPress);
             // 
             // label4

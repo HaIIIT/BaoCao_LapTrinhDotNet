@@ -10,7 +10,7 @@ namespace HETHONGQLCHUNGCU
 {
     public class Connection
     {
-        string connStr = "server= HWI; database=QLChungCU; uid=sa; pwd=hieu1234";
+        string connStr = "server=ASUS-TUF-A15-HA\\MSSQLSERVER01; database=QLChungCu; uid=sa; pwd=123";
         public SqlConnection conn { get; set; }
         public SqlCommand cmd { get; set; }
         public Connection()
@@ -47,12 +47,16 @@ namespace HETHONGQLCHUNGCU
         {
             cmd = new SqlCommand(sql, conn);
             return cmd.ExecuteReader();
-        }   
+        }
         public int capnhat(string sql)
         {
             cmd = new SqlCommand(sql, conn);
             return cmd.ExecuteNonQuery();
         }
-
+        public SqlCommand TaoLenh(string sql)
+        {
+            cmd = new SqlCommand(sql, conn);
+            return cmd;
+        }
     }
 }
