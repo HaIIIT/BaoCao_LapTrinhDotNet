@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -198,5 +199,118 @@ namespace HETHONGQLCHUNGCU
             danhGiaNhanSu.Show();
             this.Close();
         }
-    }  
+        void thongke()
+        {
+            Connection ketnoi = new Connection();
+            try
+            {
+                if (ketnoi.moketnoi())
+                {
+                    
+                    string sql1 = "SELECT COUNT(*) FROM BaoTriSuaChua";
+                    SqlDataReader rdr1 = ketnoi.truyvan(sql1);
+                    if (rdr1.Read())
+                        lbl_tong.Text = rdr1[0].ToString();
+                    rdr1.Close();
+
+                    
+                    string sql2 = "SELECT COUNT(*) FROM BaoTriSuaChua WHERE LoaiBaoTri = N'Bảo trì'";
+                    SqlDataReader rdr2 = ketnoi.truyvan(sql2);
+                    if (rdr2.Read())
+                        lbl_baotri.Text = rdr2[0].ToString();
+                    rdr2.Close();
+
+                    
+                    string sql3 = "SELECT COUNT(*) FROM BaoTriSuaChua WHERE LoaiBaoTri = N'Sửa chữa'";
+                    SqlDataReader rdr3 = ketnoi.truyvan(sql3);
+                    if (rdr3.Read())
+                        lbl_sua.Text = rdr3[0].ToString();
+                    rdr3.Close();
+
+                    
+                    string sql4 = "SELECT COUNT(*) FROM BaoTriSuaChua WHERE TrangThai = N'Mới'";
+                    SqlDataReader rdr4 = ketnoi.truyvan(sql4);
+                    if (rdr4.Read())
+                        lbl_moi.Text = rdr4[0].ToString();
+                    rdr4.Close();
+
+                    ketnoi.dongketnoi();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message,
+                                "Hệ Thống Quản Lý Chung Cư",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+            }
+        }
+        private void Frm_BaoTriSuaChua_Load(object sender, EventArgs e)
+
+        {
+            thongke();
+            Connection ketnoi = new Connection();
+            //mở kết nối
+            if (ketnoi.moketnoi())
+            {
+                string sel = "SELECT * FROM BaoTriSuaChua";
+                SqlDataReader rdr = ketnoi.truyvan(sel);
+                DataTable tb = new DataTable();
+                tb.Load(rdr);
+                rdr.Close();
+                dgv_ThongTinBt.DataSource = tb;
+
+                //đóng kết nối
+                ketnoi.dongketnoi();
+            }
+            else
+            {
+                MessageBox.Show("Khong the ket noi CSDL");
+            }
+        }
+
+        private void button29_Click(object sender, EventArgs e)
+        {
+            void tiemkiem()
+            {
+                Connection ketnoi = new Connection();
+                try
+                {
+                    if (ketnoi.moketnoi())
+                    {
+                        string sel = "SELECT MaBaoTri, MaCanHo, MaYeuCau, TrangThai FROM BaoTriSuaChua WHERE 1=1";
+                        if (!string.IsNullOrEmpty(txt_mbt.Text.Trim()))
+                        {
+                            sel += " AND MaBaoTri LIKE N'%" + txt_mbt.Text.Trim() + "%'";
+                        }
+                        if (!string.IsNullOrEmpty(txt_mch.Text.Trim()))
+                        {
+                            sel += " AND MaCanHo LIKE N'%" + txt_mch.Text.Trim() + "%'";
+                        }
+                        if (cbx_tt.SelectedIndex > 0)
+                        {
+                            string TrangThai = cbx_tt.Text.Split('-')[0].Trim();
+                            sel += " AND TrangThai = '" + TrangThai + "'";
+                        }
+                        if (!string.IsNullOrEmpty(txt_myc.Text.Trim()))
+                        {
+                            sel += " AND MaYeuCau LIKE N'%" + txt_myc.Text.Trim() + "%'";
+                        }
+                        SqlDataReader rdr = ketnoi.truyvan(sel);
+                        DataTable tb = new DataTable();
+                        tb.Load(rdr);
+                        rdr.Close();
+                        dgv_ThongTinBt.DataSource = tb;
+                        ketnoi.dongketnoi();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi kết nối: " + ex.Message, "Hệ Thống Quản Lý Chung Cư - Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+        }
+    }
+      
 }

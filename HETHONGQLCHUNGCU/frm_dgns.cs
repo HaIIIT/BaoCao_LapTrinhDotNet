@@ -26,5 +26,10 @@ namespace HETHONGQLCHUNGCU
         {
             this.Close();
         }
+
+        private void frm_dgns_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

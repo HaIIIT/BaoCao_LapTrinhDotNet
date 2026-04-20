@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -260,7 +261,124 @@ namespace HETHONGQLCHUNGCU
             frm_DanhGiaNhanSu danhGiaNhanSu = new frm_DanhGiaNhanSu(menu);
             danhGiaNhanSu.Show();
             this.Close();
-        }      
-        //-----------------------------------------
+        }
+        public void ThongKe()
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection())
+                {
+                    conn.Open();
+
+                    // 1. Lấy tổng số đăng ký dịch vụ
+                    string sqlDangKy = "SELECT COUNT(*) FROM DangKyDichVu";
+                    SqlCommand cmd1 = new SqlCommand(sqlDangKy, conn);
+                    lbl_tongdv.Text = cmd1.ExecuteScalar().ToString();
+
+                    // 2. Lấy tổng số dịch vụ hiện có
+                    string sqlHienCo = "SELECT COUNT(*) FROM DangKyDichVu";
+                    SqlCommand cmd2 = new SqlCommand(sqlHienCo, conn);
+                    lbl_ti.Text = cmd2.ExecuteScalar().ToString();
+
+                    // 3. Lấy số dịch vụ đang hoạt động
+                    string sqlDangHoatDong = "SELECT COUNT(*) FROM DangKyDichVu WHERE TrangThai = 1";
+                    SqlCommand cmd3 = new SqlCommand(sqlDangHoatDong, conn);
+                    lbl_tidhd.Text = cmd3.ExecuteScalar().ToString();
+
+                    // 4. Lấy số dịch vụ ngưng hoạt động
+                    string sqlNgungHoatDong = "SELECT COUNT(*) FROM DangKyDichVu WHERE TrangThai = 0";
+                    SqlCommand cmd4 = new SqlCommand(sqlNgungHoatDong, conn);
+                    lbl_tinhd.Text = cmd4.ExecuteScalar().ToString();
+                    // 5. Lấy số lượt đăng ký mới (giả sử là trong ngày hôm nay)
+                    string sqlMoi = "SELECT COUNT(*) FROM DangKy WHERE CAST(NgayDangKy AS DATE) = CAST(GETDATE() AS DATE)";
+                    SqlCommand cmd5 = new SqlCommand(sqlMoi, conn);
+
+                    // Gán vào Label tương ứng (ví dụ đặt tên là lblDangKyMoi)
+                    lbl_dkm.Text = cmd5.ExecuteScalar().ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi tải thống kê: " + ex.Message);
+            }
+        }
+        private void frm_Dangkydichvu_Load(object sender, EventArgs e)
+        {
+         
+            Connection ketnoi = new Connection();
+
+            if (ketnoi.moketnoi())
+            {
+              
+                string sql1 = "SELECT * FROM DangKyDichVu";
+                SqlDataReader rdr1 = ketnoi.truyvan(sql1);
+                DataTable tb1 = new DataTable();
+                tb1.Load(rdr1);
+                rdr1.Close();
+
+                dgv_ThongTindv.DataSource = tb1;
+
+
+              
+                string sql2 = "SELECT * FROM DichVu";
+                SqlDataReader rdr2 = ketnoi.truyvan(sql2);
+                DataTable tb2 = new DataTable();
+                tb2.Load(rdr2);
+                rdr2.Close();
+
+                dataGridView3.DataSource = tb2; 
+
+
+                ketnoi.dongketnoi();
+            }
+            else
+            {
+                MessageBox.Show("Không thể kết nối CSDL");
+            }
+        }
+
+        private void btn_tracuu_Click(object sender, EventArgs e)
+        {
+            void tiemkiem()
+            {
+                Connection ketnoi = new Connection();
+                try
+                {
+                    if (ketnoi.moketnoi())
+                    {
+                        string sel = "SELECT MaBaoTri, MaCanHo, MaYeuCau, TrangThai FROM BaoTriSuaChua WHERE 1=1";
+                        if (!string.IsNullOrEmpty(txt_mdk.Text.Trim()))
+                        {
+                            sel += " AND MaBaoTri LIKE N'%" + txt_mdk.Text.Trim() + "%'";
+                        }
+                        if (!string.IsNullOrEmpty(txt_mch.Text.Trim()))
+                        {
+                            sel += " AND MaCanHo LIKE N'%" + txt_mch.Text.Trim() + "%'";
+                        }
+                        if (cbx_tt.SelectedIndex > 0)
+                        {
+                            string TrangThai = cbx_tt.Text.Split('-')[0].Trim();
+                            sel += " AND TrangThai = '" + TrangThai + "'";
+                        }
+                        if (!string.IsNullOrEmpty(txt_mdv.Text.Trim()))
+                        {
+                            sel += " AND MaYeuCau LIKE N'%" + txt_mdv.Text.Trim() + "%'";
+                        }
+                        SqlDataReader rdr = ketnoi.truyvan(sel);
+                        DataTable tb = new DataTable();
+                        tb.Load(rdr);
+                        rdr.Close();
+                        dgv_ThongTindv.DataSource = tb;
+                        ketnoi.dongketnoi();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi kết nối: " + ex.Message, "Hệ Thống Quản Lý Chung Cư - Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
+        //-----------------------------------------
+    
 }

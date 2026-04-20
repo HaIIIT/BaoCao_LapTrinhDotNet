@@ -78,20 +78,20 @@
             this.pnl_title = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
             this.grp_ThonTinBaoTri = new System.Windows.Forms.GroupBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lbl_moi = new System.Windows.Forms.Label();
+            this.lbl_sua = new System.Windows.Forms.Label();
+            this.lbl_baotri = new System.Windows.Forms.Label();
+            this.lbl_tong = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lbl_tongsonv = new System.Windows.Forms.Label();
             this.grp_TraCuBaoTri = new System.Windows.Forms.GroupBox();
-            this.button29 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btn_tc = new System.Windows.Forms.Button();
+            this.cbx_tt = new System.Windows.Forms.ComboBox();
+            this.txt_myc = new System.Windows.Forms.TextBox();
+            this.txt_mch = new System.Windows.Forms.TextBox();
+            this.txt_mbt = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -731,10 +731,10 @@
             // grp_ThonTinBaoTri
             // 
             this.grp_ThonTinBaoTri.BackColor = System.Drawing.Color.White;
-            this.grp_ThonTinBaoTri.Controls.Add(this.label13);
-            this.grp_ThonTinBaoTri.Controls.Add(this.label12);
-            this.grp_ThonTinBaoTri.Controls.Add(this.label11);
-            this.grp_ThonTinBaoTri.Controls.Add(this.label10);
+            this.grp_ThonTinBaoTri.Controls.Add(this.lbl_moi);
+            this.grp_ThonTinBaoTri.Controls.Add(this.lbl_sua);
+            this.grp_ThonTinBaoTri.Controls.Add(this.lbl_baotri);
+            this.grp_ThonTinBaoTri.Controls.Add(this.lbl_tong);
             this.grp_ThonTinBaoTri.Controls.Add(this.label6);
             this.grp_ThonTinBaoTri.Controls.Add(this.label5);
             this.grp_ThonTinBaoTri.Controls.Add(this.label4);
@@ -748,45 +748,45 @@
             this.grp_ThonTinBaoTri.TabStop = false;
             this.grp_ThonTinBaoTri.Text = "Trạng Thái Yêu Cầu Bảo Trì - Sữa Chữa";
             // 
-            // label13
+            // lbl_moi
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label13.Location = new System.Drawing.Point(360, 178);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(24, 23);
-            this.label13.TabIndex = 7;
-            this.label13.Text = "--";
+            this.lbl_moi.AutoSize = true;
+            this.lbl_moi.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbl_moi.Location = new System.Drawing.Point(360, 178);
+            this.lbl_moi.Name = "lbl_moi";
+            this.lbl_moi.Size = new System.Drawing.Size(24, 23);
+            this.lbl_moi.TabIndex = 7;
+            this.lbl_moi.Text = "--";
             // 
-            // label12
+            // lbl_sua
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label12.Location = new System.Drawing.Point(360, 133);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(24, 23);
-            this.label12.TabIndex = 6;
-            this.label12.Text = "--";
+            this.lbl_sua.AutoSize = true;
+            this.lbl_sua.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbl_sua.Location = new System.Drawing.Point(360, 133);
+            this.lbl_sua.Name = "lbl_sua";
+            this.lbl_sua.Size = new System.Drawing.Size(24, 23);
+            this.lbl_sua.TabIndex = 6;
+            this.lbl_sua.Text = "--";
             // 
-            // label11
+            // lbl_baotri
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label11.Location = new System.Drawing.Point(360, 87);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(24, 23);
-            this.label11.TabIndex = 5;
-            this.label11.Text = "--";
+            this.lbl_baotri.AutoSize = true;
+            this.lbl_baotri.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbl_baotri.Location = new System.Drawing.Point(360, 87);
+            this.lbl_baotri.Name = "lbl_baotri";
+            this.lbl_baotri.Size = new System.Drawing.Size(24, 23);
+            this.lbl_baotri.TabIndex = 5;
+            this.lbl_baotri.Text = "--";
             // 
-            // label10
+            // lbl_tong
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label10.Location = new System.Drawing.Point(360, 43);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(24, 23);
-            this.label10.TabIndex = 4;
-            this.label10.Text = "--";
+            this.lbl_tong.AutoSize = true;
+            this.lbl_tong.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbl_tong.Location = new System.Drawing.Point(360, 43);
+            this.lbl_tong.Name = "lbl_tong";
+            this.lbl_tong.Size = new System.Drawing.Size(24, 23);
+            this.lbl_tong.TabIndex = 4;
+            this.lbl_tong.Text = "--";
             // 
             // label6
             // 
@@ -835,11 +835,11 @@
             // grp_TraCuBaoTri
             // 
             this.grp_TraCuBaoTri.BackColor = System.Drawing.Color.White;
-            this.grp_TraCuBaoTri.Controls.Add(this.button29);
-            this.grp_TraCuBaoTri.Controls.Add(this.comboBox1);
-            this.grp_TraCuBaoTri.Controls.Add(this.textBox3);
-            this.grp_TraCuBaoTri.Controls.Add(this.textBox2);
-            this.grp_TraCuBaoTri.Controls.Add(this.textBox1);
+            this.grp_TraCuBaoTri.Controls.Add(this.btn_tc);
+            this.grp_TraCuBaoTri.Controls.Add(this.cbx_tt);
+            this.grp_TraCuBaoTri.Controls.Add(this.txt_myc);
+            this.grp_TraCuBaoTri.Controls.Add(this.txt_mch);
+            this.grp_TraCuBaoTri.Controls.Add(this.txt_mbt);
             this.grp_TraCuBaoTri.Controls.Add(this.label9);
             this.grp_TraCuBaoTri.Controls.Add(this.label8);
             this.grp_TraCuBaoTri.Controls.Add(this.label7);
@@ -853,46 +853,47 @@
             this.grp_TraCuBaoTri.TabStop = false;
             this.grp_TraCuBaoTri.Text = "Tra Cứu Bảo Trì - Sửa Chữa";
             // 
-            // button29
+            // btn_tc
             // 
-            this.button29.Location = new System.Drawing.Point(495, 169);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(134, 38);
-            this.button29.TabIndex = 11;
-            this.button29.Text = "Tra Cứu";
-            this.button29.UseVisualStyleBackColor = true;
+            this.btn_tc.Location = new System.Drawing.Point(495, 169);
+            this.btn_tc.Name = "btn_tc";
+            this.btn_tc.Size = new System.Drawing.Size(134, 38);
+            this.btn_tc.TabIndex = 11;
+            this.btn_tc.Text = "Tra Cứu";
+            this.btn_tc.UseVisualStyleBackColor = true;
+            this.btn_tc.Click += new System.EventHandler(this.button29_Click);
             // 
-            // comboBox1
+            // cbx_tt
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(206, 171);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(267, 36);
-            this.comboBox1.TabIndex = 10;
+            this.cbx_tt.FormattingEnabled = true;
+            this.cbx_tt.Location = new System.Drawing.Point(206, 171);
+            this.cbx_tt.Name = "cbx_tt";
+            this.cbx_tt.Size = new System.Drawing.Size(267, 36);
+            this.cbx_tt.TabIndex = 10;
             // 
-            // textBox3
+            // txt_myc
             // 
-            this.textBox3.Location = new System.Drawing.Point(206, 125);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(267, 30);
-            this.textBox3.TabIndex = 9;
+            this.txt_myc.Location = new System.Drawing.Point(206, 125);
+            this.txt_myc.Multiline = true;
+            this.txt_myc.Name = "txt_myc";
+            this.txt_myc.Size = new System.Drawing.Size(267, 30);
+            this.txt_myc.TabIndex = 9;
             // 
-            // textBox2
+            // txt_mch
             // 
-            this.textBox2.Location = new System.Drawing.Point(206, 79);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(267, 30);
-            this.textBox2.TabIndex = 8;
+            this.txt_mch.Location = new System.Drawing.Point(206, 79);
+            this.txt_mch.Multiline = true;
+            this.txt_mch.Name = "txt_mch";
+            this.txt_mch.Size = new System.Drawing.Size(267, 30);
+            this.txt_mch.TabIndex = 8;
             // 
-            // textBox1
+            // txt_mbt
             // 
-            this.textBox1.Location = new System.Drawing.Point(206, 32);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(267, 30);
-            this.textBox1.TabIndex = 4;
+            this.txt_mbt.Location = new System.Drawing.Point(206, 32);
+            this.txt_mbt.Multiline = true;
+            this.txt_mbt.Name = "txt_mbt";
+            this.txt_mbt.Size = new System.Drawing.Size(267, 30);
+            this.txt_mbt.TabIndex = 4;
             // 
             // label9
             // 
@@ -1092,6 +1093,7 @@
             this.Name = "Frm_BaoTriSuaChua";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_BaoTriSuaChua";
+            this.Load += new System.EventHandler(this.Frm_BaoTriSuaChua_Load);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -1179,20 +1181,20 @@
         private System.Windows.Forms.Panel pnl_title;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.GroupBox grp_ThonTinBaoTri;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lbl_moi;
+        private System.Windows.Forms.Label lbl_sua;
+        private System.Windows.Forms.Label lbl_baotri;
+        private System.Windows.Forms.Label lbl_tong;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lbl_tongsonv;
         private System.Windows.Forms.GroupBox grp_TraCuBaoTri;
-        private System.Windows.Forms.Button button29;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btn_tc;
+        private System.Windows.Forms.ComboBox cbx_tt;
+        private System.Windows.Forms.TextBox txt_myc;
+        private System.Windows.Forms.TextBox txt_mch;
+        private System.Windows.Forms.TextBox txt_mbt;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;

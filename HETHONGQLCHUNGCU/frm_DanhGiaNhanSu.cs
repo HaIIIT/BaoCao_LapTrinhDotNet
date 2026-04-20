@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -194,6 +195,132 @@ namespace HETHONGQLCHUNGCU
         private void btn_danhgia_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Bạn đang ở trang đánh giá nhân sự!", "Hệ Thống Quản Lý Chung Cư - Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }       
+        }
+        void trangthai()
+        {
+            Connection ketnoi = new Connection();
+            try
+            {
+                if (ketnoi.moketnoi())
+                {
+                    //tổng số tài khoản
+                    string sel = "SELECT COUNT(*) FROM DanhGiaNhanSu";
+                    SqlDataReader rdr = ketnoi.truyvan(sel);
+                    if (rdr.Read())
+                    {
+                        lbl_1.Text = rdr[0].ToString();
+                    }
+                    rdr.Close();
+                    //tổng số tài khoản cư dân
+                    string sel2 = "SELECT COUNT(*) FROM DanhGiaNhanSu WHERE Quyen = '6'";
+                    SqlDataReader rdr2 = ketnoi.truyvan(sel2);
+                    if (rdr2.Read())
+                    {
+                        lbl_2.Text = rdr2[0].ToString();
+                    }
+                    rdr2.Close();
+                    //tổng số tài khoản nhân sự
+                    string sel3 = "SELECT COUNT(*) FROM DanhGiaNhanSu WHERE Quyen = '2' OR Quyen = '3' OR Quyen = '4' OR Quyen = '5'";
+                    SqlDataReader rdr3 = ketnoi.truyvan(sel3);
+                    if (rdr3.Read())
+                    {
+                        lbl_3.Text = rdr3[0].ToString();
+                    }
+                    rdr3.Close();
+                    //tổng số tài khoản Admin
+                    string sel4 = "SELECT COUNT(*) FROM DanhGiaNhanSu WHERE Quyen = '1'";
+                    SqlDataReader rdr4 = ketnoi.truyvan(sel4);
+                    if (rdr4.Read())
+                    {
+                        lbl_4.Text = rdr4[0].ToString();
+                    }
+                    rdr4.Close();
+                    //tổng số tài khoản đang hoạt động
+                    
+                    ketnoi.dongketnoi();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi kết nối: " + ex.Message, "Hệ Thống Quản Lý Chung Cư - Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void frm_DanhGiaNhanSu_Load(object sender, EventArgs e)
+        {
+            trangthai();
+            Connection ketnoi = new Connection();
+            //mở kết nối
+            if (ketnoi.moketnoi())
+            {
+                string sel = "SELECT * FROM DanhGiaNhanSu";
+                SqlDataReader rdr = ketnoi.truyvan(sel);
+                DataTable tb = new DataTable();
+                tb.Load(rdr);
+                rdr.Close();
+                dgv_ThongTinNs.DataSource = tb;
+
+                //đóng kết nối
+                ketnoi.dongketnoi();
+            }
+            else
+            {
+                MessageBox.Show("Khong the ket noi CSDL");
+            }
+        }
+        void tiemkiem()
+        {
+            Connection ketnoi = new Connection();
+            try
+            {
+                if (ketnoi.moketnoi())
+                {
+                    string sel = "SELECT MaDanhGia, MaNhanSu, KyDanhGia, DiemTacPhong, DiemHieuXuat, DiemThaiDo, DiemHieuXuat, TongDiem, NhanXet, XepLoai FROM DanhGiaNhanSu WHERE 1=1";
+                    if (!string.IsNullOrEmpty(txt_msns.Text.Trim()))
+                    {
+                        sel += " AND MaSoNhanVien LIKE N'%" + txt_msns.Text.Trim() + "%'";
+                    }
+                    if (!string.IsNullOrEmpty(txt_htnv.Text.Trim()))
+                    {
+                        sel += " AND Họ Tên Nhân Viên LIKE N'%" + txt_htnv.Text.Trim() + "%'";
+                    }
+                    if (cbx_pb.SelectedIndex > 0)
+                    {
+                        string PhongBan = cbx_pb.Text.Split('-')[0].Trim();
+                        sel += " AND PhongBan  = '" + PhongBan + "'";
+                    }
+                    if (cbx_cv.SelectedIndex > 0)
+                    {
+                        string ChucVu = cbx_cv.Text.Split('-')[0].Trim();
+                        sel += " AND ChucVu = '" + ChucVu + "'";
+                    }
+                    SqlDataReader rdr = ketnoi.truyvan(sel);
+                    DataTable tb = new DataTable();
+                    tb.Load(rdr);
+                    rdr.Close();
+                    dgv_ThongTinNs.DataSource = tb;
+                    ketnoi.dongketnoi();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi kết nối: " + ex.Message, "Hệ Thống Quản Lý Chung Cư - Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btn_tc_Click(object sender, EventArgs e)
+        {
+            if (txt_msns.Text.Trim() == "" && txt_htnv.Text.Trim() == "" && cbx_pb.SelectedIndex == 0 && cbx_cv.SelectedIndex == 0)
+            {
+                MessageBox.Show("Vui lòng nhập thông tin tìm kiếm!", "Hệ Thống Quản Lý Chung Cư - Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            else
+            {
+                tiemkiem();
+               
+            }
+
+        }
     }
 }

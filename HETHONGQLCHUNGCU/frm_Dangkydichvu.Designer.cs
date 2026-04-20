@@ -46,19 +46,19 @@
             this.sửaDịchVụTiệnÍchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.xóaDịchVụTiệnÍchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label7 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lbl_tidhd = new System.Windows.Forms.Label();
+            this.lbl_ti = new System.Windows.Forms.Label();
+            this.lbl_dkm = new System.Windows.Forms.Label();
             this.grp_ThonTinDangKy = new System.Windows.Forms.GroupBox();
-            this.label23 = new System.Windows.Forms.Label();
+            this.lbl_tinhd = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lbl_tongdv = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lbl_tongsonv = new System.Windows.Forms.Label();
-            this.dgv_ThongTinBt = new System.Windows.Forms.DataGridView();
+            this.dgv_ThongTindv = new System.Windows.Forms.DataGridView();
             this.MaDangKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaCanHo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaDichVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,10 +68,10 @@
             this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grp_TraCuDichVu = new System.Windows.Forms.GroupBox();
             this.btn_tracuu = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cbx_tt = new System.Windows.Forms.ComboBox();
+            this.txt_mdv = new System.Windows.Forms.TextBox();
+            this.txt_mch = new System.Windows.Forms.TextBox();
+            this.txt_mdk = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -227,7 +227,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.grp_ThonTinDangKy.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_ThongTinBt)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_ThongTindv)).BeginInit();
             this.grp_TraCuDichVu.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -472,47 +472,47 @@
             this.label7.TabIndex = 1;
             this.label7.Text = "Mã Căn Hộ :";
             // 
-            // label13
+            // lbl_tidhd
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label13.Location = new System.Drawing.Point(370, 159);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(24, 23);
-            this.label13.TabIndex = 7;
-            this.label13.Text = "--";
+            this.lbl_tidhd.AutoSize = true;
+            this.lbl_tidhd.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbl_tidhd.Location = new System.Drawing.Point(370, 159);
+            this.lbl_tidhd.Name = "lbl_tidhd";
+            this.lbl_tidhd.Size = new System.Drawing.Size(24, 23);
+            this.lbl_tidhd.TabIndex = 7;
+            this.lbl_tidhd.Text = "--";
             // 
-            // label12
+            // lbl_ti
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label12.Location = new System.Drawing.Point(370, 121);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(24, 23);
-            this.label12.TabIndex = 6;
-            this.label12.Text = "--";
+            this.lbl_ti.AutoSize = true;
+            this.lbl_ti.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbl_ti.Location = new System.Drawing.Point(370, 121);
+            this.lbl_ti.Name = "lbl_ti";
+            this.lbl_ti.Size = new System.Drawing.Size(24, 23);
+            this.lbl_ti.TabIndex = 6;
+            this.lbl_ti.Text = "--";
             // 
-            // label11
+            // lbl_dkm
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label11.Location = new System.Drawing.Point(370, 83);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(24, 23);
-            this.label11.TabIndex = 5;
-            this.label11.Text = "--";
+            this.lbl_dkm.AutoSize = true;
+            this.lbl_dkm.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbl_dkm.Location = new System.Drawing.Point(370, 83);
+            this.lbl_dkm.Name = "lbl_dkm";
+            this.lbl_dkm.Size = new System.Drawing.Size(24, 23);
+            this.lbl_dkm.TabIndex = 5;
+            this.lbl_dkm.Text = "--";
             // 
             // grp_ThonTinDangKy
             // 
             this.grp_ThonTinDangKy.BackColor = System.Drawing.Color.White;
-            this.grp_ThonTinDangKy.Controls.Add(this.label23);
+            this.grp_ThonTinDangKy.Controls.Add(this.lbl_tinhd);
             this.grp_ThonTinDangKy.Controls.Add(this.label22);
             this.grp_ThonTinDangKy.Controls.Add(this.label21);
             this.grp_ThonTinDangKy.Controls.Add(this.label20);
-            this.grp_ThonTinDangKy.Controls.Add(this.label13);
-            this.grp_ThonTinDangKy.Controls.Add(this.label12);
-            this.grp_ThonTinDangKy.Controls.Add(this.label11);
-            this.grp_ThonTinDangKy.Controls.Add(this.label10);
+            this.grp_ThonTinDangKy.Controls.Add(this.lbl_tidhd);
+            this.grp_ThonTinDangKy.Controls.Add(this.lbl_ti);
+            this.grp_ThonTinDangKy.Controls.Add(this.lbl_dkm);
+            this.grp_ThonTinDangKy.Controls.Add(this.lbl_tongdv);
             this.grp_ThonTinDangKy.Controls.Add(this.label5);
             this.grp_ThonTinDangKy.Controls.Add(this.label4);
             this.grp_ThonTinDangKy.Controls.Add(this.lbl_tongsonv);
@@ -525,15 +525,15 @@
             this.grp_ThonTinDangKy.TabStop = false;
             this.grp_ThonTinDangKy.Text = "Trạng Thái Hoạt Động Dịch Vụ";
             // 
-            // label23
+            // lbl_tinhd
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label23.Location = new System.Drawing.Point(370, 200);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(24, 23);
-            this.label23.TabIndex = 11;
-            this.label23.Text = "--";
+            this.lbl_tinhd.AutoSize = true;
+            this.lbl_tinhd.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbl_tinhd.Location = new System.Drawing.Point(370, 200);
+            this.lbl_tinhd.Name = "lbl_tinhd";
+            this.lbl_tinhd.Size = new System.Drawing.Size(24, 23);
+            this.lbl_tinhd.TabIndex = 11;
+            this.lbl_tinhd.Text = "--";
             // 
             // label22
             // 
@@ -568,15 +568,15 @@
             this.label20.TabIndex = 8;
             this.label20.Text = "Tổng số dịch vụ - tiện ích đang hoạt động :";
             // 
-            // label10
+            // lbl_tongdv
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label10.Location = new System.Drawing.Point(369, 46);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(24, 23);
-            this.label10.TabIndex = 4;
-            this.label10.Text = "--";
+            this.lbl_tongdv.AutoSize = true;
+            this.lbl_tongdv.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbl_tongdv.Location = new System.Drawing.Point(369, 46);
+            this.lbl_tongdv.Name = "lbl_tongdv";
+            this.lbl_tongdv.Size = new System.Drawing.Size(24, 23);
+            this.lbl_tongdv.TabIndex = 4;
+            this.lbl_tongdv.Text = "--";
             // 
             // label5
             // 
@@ -611,12 +611,12 @@
             this.lbl_tongsonv.TabIndex = 0;
             this.lbl_tongsonv.Text = "Tổng số đăng ký dịch vụ : ";
             // 
-            // dgv_ThongTinBt
+            // dgv_ThongTindv
             // 
-            this.dgv_ThongTinBt.AllowUserToDeleteRows = false;
-            this.dgv_ThongTinBt.BackgroundColor = System.Drawing.Color.White;
-            this.dgv_ThongTinBt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_ThongTinBt.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_ThongTindv.AllowUserToDeleteRows = false;
+            this.dgv_ThongTindv.BackgroundColor = System.Drawing.Color.White;
+            this.dgv_ThongTindv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_ThongTindv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaDangKy,
             this.MaCanHo,
             this.MaDichVu,
@@ -624,15 +624,15 @@
             this.SoLuong,
             this.TrangThai,
             this.GhiChu});
-            this.dgv_ThongTinBt.Location = new System.Drawing.Point(5, 26);
-            this.dgv_ThongTinBt.Name = "dgv_ThongTinBt";
-            this.dgv_ThongTinBt.ReadOnly = true;
-            this.dgv_ThongTinBt.RowHeadersVisible = false;
-            this.dgv_ThongTinBt.RowHeadersWidth = 51;
-            this.dgv_ThongTinBt.RowTemplate.Height = 24;
-            this.dgv_ThongTinBt.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_ThongTinBt.Size = new System.Drawing.Size(782, 359);
-            this.dgv_ThongTinBt.TabIndex = 20;
+            this.dgv_ThongTindv.Location = new System.Drawing.Point(5, 26);
+            this.dgv_ThongTindv.Name = "dgv_ThongTindv";
+            this.dgv_ThongTindv.ReadOnly = true;
+            this.dgv_ThongTindv.RowHeadersVisible = false;
+            this.dgv_ThongTindv.RowHeadersWidth = 51;
+            this.dgv_ThongTindv.RowTemplate.Height = 24;
+            this.dgv_ThongTindv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgv_ThongTindv.Size = new System.Drawing.Size(782, 359);
+            this.dgv_ThongTindv.TabIndex = 20;
             // 
             // MaDangKy
             // 
@@ -701,10 +701,10 @@
             // 
             this.grp_TraCuDichVu.BackColor = System.Drawing.Color.White;
             this.grp_TraCuDichVu.Controls.Add(this.btn_tracuu);
-            this.grp_TraCuDichVu.Controls.Add(this.comboBox1);
-            this.grp_TraCuDichVu.Controls.Add(this.textBox3);
-            this.grp_TraCuDichVu.Controls.Add(this.textBox2);
-            this.grp_TraCuDichVu.Controls.Add(this.textBox1);
+            this.grp_TraCuDichVu.Controls.Add(this.cbx_tt);
+            this.grp_TraCuDichVu.Controls.Add(this.txt_mdv);
+            this.grp_TraCuDichVu.Controls.Add(this.txt_mch);
+            this.grp_TraCuDichVu.Controls.Add(this.txt_mdk);
             this.grp_TraCuDichVu.Controls.Add(this.label9);
             this.grp_TraCuDichVu.Controls.Add(this.label8);
             this.grp_TraCuDichVu.Controls.Add(this.label7);
@@ -726,35 +726,36 @@
             this.btn_tracuu.TabIndex = 8;
             this.btn_tracuu.Text = "Tra cứu";
             this.btn_tracuu.UseVisualStyleBackColor = true;
+            this.btn_tracuu.Click += new System.EventHandler(this.btn_tracuu_Click);
             // 
-            // comboBox1
+            // cbx_tt
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(191, 187);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(270, 31);
-            this.comboBox1.TabIndex = 7;
+            this.cbx_tt.FormattingEnabled = true;
+            this.cbx_tt.Location = new System.Drawing.Point(191, 187);
+            this.cbx_tt.Name = "cbx_tt";
+            this.cbx_tt.Size = new System.Drawing.Size(270, 31);
+            this.cbx_tt.TabIndex = 7;
             // 
-            // textBox3
+            // txt_mdv
             // 
-            this.textBox3.Location = new System.Drawing.Point(191, 135);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(270, 30);
-            this.textBox3.TabIndex = 6;
+            this.txt_mdv.Location = new System.Drawing.Point(191, 135);
+            this.txt_mdv.Name = "txt_mdv";
+            this.txt_mdv.Size = new System.Drawing.Size(270, 30);
+            this.txt_mdv.TabIndex = 6;
             // 
-            // textBox2
+            // txt_mch
             // 
-            this.textBox2.Location = new System.Drawing.Point(191, 86);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(270, 30);
-            this.textBox2.TabIndex = 5;
+            this.txt_mch.Location = new System.Drawing.Point(191, 86);
+            this.txt_mch.Name = "txt_mch";
+            this.txt_mch.Size = new System.Drawing.Size(270, 30);
+            this.txt_mch.TabIndex = 5;
             // 
-            // textBox1
+            // txt_mdk
             // 
-            this.textBox1.Location = new System.Drawing.Point(191, 40);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(270, 30);
-            this.textBox1.TabIndex = 4;
+            this.txt_mdk.Location = new System.Drawing.Point(191, 40);
+            this.txt_mdk.Name = "txt_mdk";
+            this.txt_mdk.Size = new System.Drawing.Size(270, 30);
+            this.txt_mdk.TabIndex = 4;
             // 
             // label9
             // 
@@ -2676,7 +2677,7 @@
             // grb_dsdkdv
             // 
             this.grb_dsdkdv.BackColor = System.Drawing.Color.White;
-            this.grb_dsdkdv.Controls.Add(this.dgv_ThongTinBt);
+            this.grb_dsdkdv.Controls.Add(this.dgv_ThongTindv);
             this.grb_dsdkdv.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grb_dsdkdv.ForeColor = System.Drawing.Color.Teal;
             this.grb_dsdkdv.Location = new System.Drawing.Point(248, 490);
@@ -2723,11 +2724,12 @@
             this.Name = "frm_Dangkydichvu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_Dangkydichvu";
+            this.Load += new System.EventHandler(this.frm_Dangkydichvu_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.grp_ThonTinDangKy.ResumeLayout(false);
             this.grp_ThonTinDangKy.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_ThongTinBt)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_ThongTindv)).EndInit();
             this.grp_TraCuDichVu.ResumeLayout(false);
             this.grp_TraCuDichVu.PerformLayout();
             this.panel8.ResumeLayout(false);
@@ -2844,19 +2846,19 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem đăngXuâToolStripMenuItem;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lbl_tidhd;
+        private System.Windows.Forms.Label lbl_ti;
+        private System.Windows.Forms.Label lbl_dkm;
         private System.Windows.Forms.GroupBox grp_ThonTinDangKy;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lbl_tongdv;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lbl_tongsonv;
-        private System.Windows.Forms.DataGridView dgv_ThongTinBt;
+        private System.Windows.Forms.DataGridView dgv_ThongTindv;
         private System.Windows.Forms.GroupBox grp_TraCuDichVu;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_mdv;
+        private System.Windows.Forms.TextBox txt_mch;
+        private System.Windows.Forms.TextBox txt_mdk;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label14;
@@ -2983,7 +2985,7 @@
         private System.Windows.Forms.ToolStripMenuItem xóaDịchVụTiệnÍchToolStripMenuItem;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label lbl_tinhd;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaDangKy;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaCanHo;
@@ -2993,7 +2995,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TrangThai;
         private System.Windows.Forms.DataGridViewTextBoxColumn GhiChu;
         private System.Windows.Forms.Button btn_tracuu;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbx_tt;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.GroupBox grb_dsdvti;

@@ -30,22 +30,22 @@
         {
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dgv_dsdv = new System.Windows.Forms.DataGridView();
             this.MaDV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tENDV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayDk = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_mdv = new System.Windows.Forms.TextBox();
+            this.txt_tt = new System.Windows.Forms.TextBox();
+            this.txt_tdv = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtp_ndk = new System.Windows.Forms.DateTimePicker();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_dsdv)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -72,85 +72,27 @@
             this.label1.TabIndex = 16;
             this.label1.Text = "THÔNG TIN DỊCH VỤ ĐÃ ĐĂNG KÝ";
             // 
-            // dataGridView1
+            // dgv_dsdv
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_dsdv.AllowUserToAddRows = false;
+            this.dgv_dsdv.AllowUserToDeleteRows = false;
+            this.dgv_dsdv.BackgroundColor = System.Drawing.Color.White;
+            this.dgv_dsdv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_dsdv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaDV,
             this.tENDV,
             this.SL,
             this.NgayDk,
             this.TrangThai});
-            this.dataGridView1.Location = new System.Drawing.Point(6, 29);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(943, 266);
-            this.dataGridView1.TabIndex = 6;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label4.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label4.Location = new System.Drawing.Point(42, 108);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 23);
-            this.label4.TabIndex = 21;
-            this.label4.Text = "Tên dịch vụ :";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label3.Location = new System.Drawing.Point(39, 60);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 23);
-            this.label3.TabIndex = 20;
-            this.label3.Text = "Mã Dịch Vụ :";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.groupBox1.ForeColor = System.Drawing.Color.Teal;
-            this.groupBox1.Location = new System.Drawing.Point(12, 239);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(961, 316);
-            this.groupBox1.TabIndex = 19;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Danh sách dịch vụ";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(161, 56);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(245, 29);
-            this.textBox2.TabIndex = 24;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(575, 104);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(245, 29);
-            this.textBox3.TabIndex = 25;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(161, 104);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(245, 29);
-            this.textBox1.TabIndex = 26;
+            this.dgv_dsdv.Location = new System.Drawing.Point(6, 29);
+            this.dgv_dsdv.Name = "dgv_dsdv";
+            this.dgv_dsdv.ReadOnly = true;
+            this.dgv_dsdv.RowHeadersVisible = false;
+            this.dgv_dsdv.RowHeadersWidth = 51;
+            this.dgv_dsdv.RowTemplate.Height = 24;
+            this.dgv_dsdv.Size = new System.Drawing.Size(943, 266);
+            this.dgv_dsdv.TabIndex = 6;
+            this.dgv_dsdv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // MaDV
             // 
@@ -192,6 +134,65 @@
             this.TrangThai.ReadOnly = true;
             this.TrangThai.Width = 250;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label4.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label4.Location = new System.Drawing.Point(42, 108);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(105, 23);
+            this.label4.TabIndex = 21;
+            this.label4.Text = "Tên dịch vụ :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label3.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label3.Location = new System.Drawing.Point(39, 60);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(108, 23);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "Mã Dịch Vụ :";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.Controls.Add(this.dgv_dsdv);
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.groupBox1.ForeColor = System.Drawing.Color.Teal;
+            this.groupBox1.Location = new System.Drawing.Point(12, 239);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(961, 316);
+            this.groupBox1.TabIndex = 19;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Danh sách dịch vụ";
+            // 
+            // txt_mdv
+            // 
+            this.txt_mdv.Location = new System.Drawing.Point(161, 56);
+            this.txt_mdv.Multiline = true;
+            this.txt_mdv.Name = "txt_mdv";
+            this.txt_mdv.Size = new System.Drawing.Size(245, 29);
+            this.txt_mdv.TabIndex = 24;
+            // 
+            // txt_tt
+            // 
+            this.txt_tt.Location = new System.Drawing.Point(575, 104);
+            this.txt_tt.Multiline = true;
+            this.txt_tt.Name = "txt_tt";
+            this.txt_tt.Size = new System.Drawing.Size(245, 29);
+            this.txt_tt.TabIndex = 25;
+            // 
+            // txt_tdv
+            // 
+            this.txt_tdv.Location = new System.Drawing.Point(161, 104);
+            this.txt_tdv.Multiline = true;
+            this.txt_tdv.Name = "txt_tdv";
+            this.txt_tdv.Size = new System.Drawing.Size(245, 29);
+            this.txt_tdv.TabIndex = 26;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -203,28 +204,28 @@
             this.label5.TabIndex = 27;
             this.label5.Text = "Ngày Đăng Ký :";
             // 
-            // dateTimePicker1
+            // dtp_ndk
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(575, 56);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(245, 27);
-            this.dateTimePicker1.TabIndex = 28;
-            this.dateTimePicker1.Value = new System.DateTime(2026, 4, 15, 0, 0, 0, 0);
+            this.dtp_ndk.CalendarFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_ndk.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_ndk.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_ndk.Location = new System.Drawing.Point(575, 56);
+            this.dtp_ndk.Name = "dtp_ndk";
+            this.dtp_ndk.Size = new System.Drawing.Size(245, 27);
+            this.dtp_ndk.TabIndex = 28;
+            this.dtp_ndk.Value = new System.DateTime(2026, 4, 15, 0, 0, 0, 0);
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.White;
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.dateTimePicker1);
+            this.groupBox2.Controls.Add(this.txt_tdv);
+            this.groupBox2.Controls.Add(this.dtp_ndk);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.txt_tt);
+            this.groupBox2.Controls.Add(this.txt_mdv);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.Teal;
             this.groupBox2.Location = new System.Drawing.Point(12, 55);
@@ -246,7 +247,8 @@
             this.Name = "Frm_TTDV_DKDV_CUDAN";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_TTDV_DKDV_CUDAN";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Frm_TTDV_DKDV_CUDAN_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_dsdv)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -259,20 +261,20 @@
 
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgv_dsdv;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_mdv;
+        private System.Windows.Forms.TextBox txt_tt;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaDV;
         private System.Windows.Forms.DataGridViewTextBoxColumn tENDV;
         private System.Windows.Forms.DataGridViewTextBoxColumn SL;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayDk;
         private System.Windows.Forms.DataGridViewTextBoxColumn TrangThai;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_tdv;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtp_ndk;
         private System.Windows.Forms.GroupBox groupBox2;
     }
 }

@@ -424,6 +424,7 @@
             this.Name = "frm_dgns";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "quanlynhansu";
+            this.Load += new System.EventHandler(this.frm_dgns_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
