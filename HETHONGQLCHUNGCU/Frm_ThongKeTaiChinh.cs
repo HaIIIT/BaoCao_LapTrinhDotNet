@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace HETHONGQLCHUNGCU
 {
@@ -125,6 +127,56 @@ namespace HETHONGQLCHUNGCU
             danhgia.Show();
             this.Close();
         }
+
+        private void Frm_ThongKeTaiChinh_Load(object sender, EventArgs e)
+        {
+            LoadThongKeTaiChinh();
+        }
         //-----------------------------------------
+        void LoadThongKeTaiChinh()
+        {
+            Connection ketnoi = new Connection();
+            if (ketnoi.moketnoi())
+            {
+                try
+                {
+                    // 1. Tính toán xong...
+                    string sqlDT = "SELECT SUM(TongTien) FROM HoaDon";
+                    SqlCommand cmdDT = new SqlCommand(sqlDT, ketnoi.conn);
+                    object resultDT = cmdDT.ExecuteScalar();
+                    double tongDT = (resultDT != DBNull.Value) ? Convert.ToDouble(resultDT) : 0;
+
+                    string sqlHC = "SELECT SUM(TongTien) FROM HoaDon WHERE TrangThai = N'Đã thanh toán'";
+                    SqlCommand cmdHC = new SqlCommand(sqlHC, ketnoi.conn);
+                    object resultHC = cmdHC.ExecuteScalar();
+                    double tongHC = (resultHC != DBNull.Value) ? Convert.ToDouble(resultHC) : 0;
+
+                    string sqlCN = "SELECT SUM(TongTien) FROM HoaDon WHERE TrangThai = N'Chưa thanh toán'";
+                    SqlCommand cmdCN = new SqlCommand(sqlCN, ketnoi.conn);
+                    object resultCN = cmdCN.ExecuteScalar();
+                    double tongCN = (resultCN != DBNull.Value) ? Convert.ToDouble(resultCN) : 0;
+
+                    // 2. ...THÌ PHẢI GÁN VÀO LABEL NGAY TẠI ĐÂY (Trong dấu ngoặc của hàm)
+                    lblTongDoanhThu.Text = tongDT.ToString("N0") + " VNĐ";
+                    lblTongHienCo.Text = tongHC.ToString("N0") + " VNĐ";
+                    lblTongCongNo.Text = tongCN.ToString("N0") + " VNĐ";
+
+                    // 3. Sau đó vẽ biểu đồ (Cũng nằm trong này luôn)
+                    cht_ThongKeTaiChinh.Series["Series1"].Points.Clear();
+                    cht_ThongKeTaiChinh.Series["Series1"].Points.AddXY("Doanh thu", tongDT);
+                    cht_ThongKeTaiChinh.Series["Series1"].Points.AddXY("Hiện có", tongHC);
+                    cht_ThongKeTaiChinh.Series["Series1"].Points.AddXY("Công nợ", tongCN);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    ketnoi.dongketnoi();
+                }
+            }
+        }
+
     }
 }
