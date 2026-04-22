@@ -381,7 +381,7 @@ namespace HETHONGQLCHUNGCU
             
         }
 
-        // Hàm tìm kiếm bãi xe 
+        // tìm kiếm bãi xe 
         void timkiemBaiXe()
         {
             Connection ketnoi = new Connection();
@@ -389,7 +389,7 @@ namespace HETHONGQLCHUNGCU
             {
                 if (ketnoi.moketnoi())
                 {
-                    // --- 1. Tìm kiếm và hiển thị cho dgvTTX (Bảng Xe) ---
+                    //Tìmf kiếm và hiển thị cho dgvTTX (Bảng Xe))
                     string sqlXe = "SELECT MaXe, MaCuDan, BienSo, LoaiXe, HangXe, MauSac, NgayDangKi, TrangThai, MaDichVu FROM Xe WHERE 1=1";
                     SqlCommand cmdXe = new SqlCommand();
                     if (!string.IsNullOrEmpty(txtMaxe.Text.Trim()))
@@ -471,7 +471,8 @@ namespace HETHONGQLCHUNGCU
             }
 
             timkiemBaiXe();
-           
+            btnLamMoi.Visible = true; // Hiển thị nút làm mới sau khi tìm kiếm
+
         }
 
         // Hàm thống kê các con số trên Dashboard bãi xe
@@ -480,34 +481,34 @@ namespace HETHONGQLCHUNGCU
             Connection ketnoi = new Connection();
             try
             {
-                if (ketnoi.moketnoi())
-                {
-                    // Tổng số xe
-                    string sel = "SELECT COUNT(*) FROM Xe";
-                    SqlDataReader rdr = ketnoi.truyvan(sel);
-                    if (rdr.Read()) lblTongSoXe.Text = rdr[0].ToString();
-                    rdr.Close();
+                
+                
+                    if (ketnoi.moketnoi())
+                    {
+                        // Tổng số xe đã đăng ký trong hệ thống
+                        string sel = "SELECT COUNT(*) FROM Xe";
+                        SqlCommand cmd = new SqlCommand(sel, ketnoi.conn);
+                        lblTongSoXe.Text = cmd.ExecuteScalar().ToString();
 
-                    // Tổng số xe đang gửi thực tế
-                    string sel1 = "SELECT COUNT(*) FROM GuiXe WHERE TrangThai = N'Đang gửi'";
-                    SqlDataReader rdr1 = ketnoi.truyvan(sel1);
-                    if (rdr1.Read()) lblTongSoXeTrongBai.Text = rdr1[0].ToString();
-                    rdr1.Close();
+                        // Tổng số xe đang gửi thực tế (Dựa vào bảng GuiXe)
+                        // LDùng LIKE để tránh lỗi khoảng trắng hoặc viết hoa/thường
+                        string sel1 = "SELECT COUNT(*) FROM GuiXe WHERE TrangThai LIKE N'%Đang gửi%'";
+                        SqlCommand cmd1 = new SqlCommand(sel1, ketnoi.conn);
+                        lblTongSoXeTrongBai.Text = cmd1.ExecuteScalar().ToString();
 
-                    // Tổng số vị trí đỗ
-                    string sel2 = "SELECT COUNT(*) FROM ViTriBaiXe";
-                    SqlDataReader rdr2 = ketnoi.truyvan(sel2);
-                    if (rdr2.Read()) lblTongSoViTri.Text = rdr2[0].ToString();
-                    rdr2.Close();
+                        // Tổng số vị trí đỗ có trong bãi
+                        string sel2 = "SELECT COUNT(*) FROM ViTriBaiXe";
+                        SqlCommand cmd2 = new SqlCommand(sel2, ketnoi.conn);
+                        lblTongSoViTri.Text = cmd2.ExecuteScalar().ToString();
 
-                    // Số vị trí còn trống
-                    string sel3 = "SELECT COUNT(*) FROM ViTriBaiXe WHERE TrangThai = N'Trống'";
-                    SqlDataReader rdr3 = ketnoi.truyvan(sel3);
-                    if (rdr3.Read()) lblSoViTriTrong.Text = rdr3[0].ToString();
-                    rdr3.Close();
+                        // Số vị trí còn trống
+                        string sel3 = "SELECT COUNT(*) FROM ViTriBaiXe WHERE TrangThai LIKE N'%trống%'";
+                        SqlCommand cmd3 = new SqlCommand(sel3, ketnoi.conn);
+                        lblSoViTriTrong.Text = cmd3.ExecuteScalar().ToString();
 
-                    ketnoi.dongketnoi();
-                }
+                        ketnoi.dongketnoi();
+                    }
+                
             }
             catch (Exception ex)
             {
@@ -533,7 +534,7 @@ namespace HETHONGQLCHUNGCU
                     {
                         txtMaxe.Text = rdr["MaXe"].ToString().Trim();
                         txtBienso.Text = rdr["BienSo"].ToString().Trim();
-                        // Điền thêm các ô khác của bạn ở đây
+                        
                         // ví dụ: txtLoaiXe.Text = rdr["LoaiXe"].ToString();
                     }
                     rdr.Close();
@@ -572,6 +573,24 @@ namespace HETHONGQLCHUNGCU
         {
             if (e.RowIndex < 0) return;
             txtMavitri.Text = dgvViTriXe.Rows[e.RowIndex].Cells["MaViTri"].Value.ToString();
+
+            //LoadChiTietXe(txtMaxe.Text); // Điền thông tin xe dựa trên mã xe đã có sẵn ở ô txtMaxe
+        }
+
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+
+            Frm_BaiXe_Load(sender, e); 
+            txtMaxe.Clear();
+            txtBienso.Clear();
+            txtMavitri.Clear();
+            txtMaguixe.Clear();
+
+            thongke();
+            // Cập nhật lại thống kê sau khi làm mới
+            btnLamMoi.Visible = false; // Ẩn nút làm mới sau khi đã nhấn
+
+
         }
     }
 }

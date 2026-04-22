@@ -113,6 +113,7 @@
             this.dgvGuiXe = new System.Windows.Forms.DataGridView();
             this.dgvViTriXe = new System.Windows.Forms.DataGridView();
             this.dgvTTX = new System.Windows.Forms.DataGridView();
+            this.btnLamMoi = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.grb_TrangThaiBaiXe.SuspendLayout();
             this.grb_TraCuuThongTinXe.SuspendLayout();
@@ -436,6 +437,7 @@
             // 
             // grb_TraCuuThongTinXe
             // 
+            this.grb_TraCuuThongTinXe.Controls.Add(this.btnLamMoi);
             this.grb_TraCuuThongTinXe.Controls.Add(this.txtMaguixe);
             this.grb_TraCuuThongTinXe.Controls.Add(this.txtMavitri);
             this.grb_TraCuuThongTinXe.Controls.Add(this.txtBienso);
@@ -1174,6 +1176,17 @@
             this.dgvTTX.TabIndex = 24;
             this.dgvTTX.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTTX_CellClick);
             // 
+            // btnLamMoi
+            // 
+            this.btnLamMoi.Location = new System.Drawing.Point(386, 91);
+            this.btnLamMoi.Name = "btnLamMoi";
+            this.btnLamMoi.Size = new System.Drawing.Size(106, 26);
+            this.btnLamMoi.TabIndex = 23;
+            this.btnLamMoi.Text = "Làm mới";
+            this.btnLamMoi.UseVisualStyleBackColor = true;
+            this.btnLamMoi.Visible = false;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
+            // 
             // Frm_BaiXe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1321,5 +1334,6 @@
         private System.Windows.Forms.ToolStripMenuItem cậpNhậtThôngTinGửiXeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem xóaThôngTinGửiXeToolStripMenuItem;
         private System.Windows.Forms.DataGridView dgvTTX;
+        private System.Windows.Forms.Button btnLamMoi;
     }
 }

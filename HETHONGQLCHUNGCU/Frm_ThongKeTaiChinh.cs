@@ -140,7 +140,7 @@ namespace HETHONGQLCHUNGCU
             {
                 try
                 {
-                    // 1. Tính toán xong...
+                    
                     string sqlDT = "SELECT SUM(TongTien) FROM HoaDon";
                     SqlCommand cmdDT = new SqlCommand(sqlDT, ketnoi.conn);
                     object resultDT = cmdDT.ExecuteScalar();
@@ -156,12 +156,12 @@ namespace HETHONGQLCHUNGCU
                     object resultCN = cmdCN.ExecuteScalar();
                     double tongCN = (resultCN != DBNull.Value) ? Convert.ToDouble(resultCN) : 0;
 
-                    // 2. ...THÌ PHẢI GÁN VÀO LABEL NGAY TẠI ĐÂY (Trong dấu ngoặc của hàm)
+                    // GÁN VÀO LABEL 
                     lblTongDoanhThu.Text = tongDT.ToString("N0") + " VNĐ";
                     lblTongHienCo.Text = tongHC.ToString("N0") + " VNĐ";
                     lblTongCongNo.Text = tongCN.ToString("N0") + " VNĐ";
 
-                    // 3. Sau đó vẽ biểu đồ (Cũng nằm trong này luôn)
+                    // vẽx biểu đồ 
                     cht_ThongKeTaiChinh.Series["Series1"].Points.Clear();
                     cht_ThongKeTaiChinh.Series["Series1"].Points.AddXY("Doanh thu", tongDT);
                     cht_ThongKeTaiChinh.Series["Series1"].Points.AddXY("Hiện có", tongHC);
