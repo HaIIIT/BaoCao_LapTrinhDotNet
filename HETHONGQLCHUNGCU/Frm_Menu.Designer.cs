@@ -97,6 +97,8 @@
             this.pic_cudan = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pnl_canhbao = new System.Windows.Forms.Panel();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.pnl_baixe.SuspendLayout();
             this.pnl_baotri.SuspendLayout();
             this.pnl_cskh.SuspendLayout();
@@ -125,6 +127,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic_canho)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_cudan)).BeginInit();
             this.pnl_canhbao.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_dangnhap
@@ -572,12 +575,12 @@
             // 
             this.cb_user.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cb_user.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cb_user.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_user.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_user.FormattingEnabled = true;
-            this.cb_user.Location = new System.Drawing.Point(1393, 13);
+            this.cb_user.Location = new System.Drawing.Point(1371, 13);
             this.cb_user.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cb_user.Name = "cb_user";
-            this.cb_user.Size = new System.Drawing.Size(272, 31);
+            this.cb_user.Size = new System.Drawing.Size(294, 28);
             this.cb_user.TabIndex = 3;
             this.cb_user.SelectedIndexChanged += new System.EventHandler(this.cb_user_SelectedIndexChanged_1);
             // 
@@ -977,12 +980,30 @@
             this.pnl_canhbao.Size = new System.Drawing.Size(1501, 35);
             this.pnl_canhbao.TabIndex = 60;
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 882);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1603, 26);
+            this.statusStrip1.TabIndex = 61;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(247, 20);
+            this.toolStripStatusLabel1.Text = "Phát triển bởi Lê Chí Hải - 24004190";
+            // 
             // Frm_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1603, 908);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.pnl_canhbao);
             this.Controls.Add(this.pic_dkdv);
             this.Controls.Add(this.pnl_dkdv);
@@ -1068,6 +1089,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic_cudan)).EndInit();
             this.pnl_canhbao.ResumeLayout(false);
             this.pnl_canhbao.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1144,5 +1167,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel pnl_canhbao;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     }
 }

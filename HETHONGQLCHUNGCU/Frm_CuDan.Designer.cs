@@ -777,7 +777,7 @@
             this.QueQuan,
             this.NgheNghiep,
             this.TrangThai});
-            this.dgv_thongtincudan.Location = new System.Drawing.Point(229, 384);
+            this.dgv_thongtincudan.Location = new System.Drawing.Point(229, 385);
             this.dgv_thongtincudan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgv_thongtincudan.Name = "dgv_thongtincudan";
             this.dgv_thongtincudan.ReadOnly = true;
@@ -1162,8 +1162,8 @@
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(169, 20);
-            this.toolStripStatusLabel1.Text = "Phát triển bởi Lê Chí Hải";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(247, 20);
+            this.toolStripStatusLabel1.Text = "Phát triển bởi Lê Chí Hải - 24004190";
             // 
             // Frm_CuDan
             // 

@@ -395,7 +395,7 @@
             this.txt_TrangThaiCanHo.Enabled = false;
             this.txt_TrangThaiCanHo.Location = new System.Drawing.Point(560, 89);
             this.txt_TrangThaiCanHo.Name = "txt_TrangThaiCanHo";
-            this.txt_TrangThaiCanHo.Size = new System.Drawing.Size(233, 34);
+            this.txt_TrangThaiCanHo.Size = new System.Drawing.Size(289, 34);
             this.txt_TrangThaiCanHo.TabIndex = 29;
             // 
             // txt_Tang
@@ -403,7 +403,7 @@
             this.txt_Tang.Enabled = false;
             this.txt_Tang.Location = new System.Drawing.Point(560, 43);
             this.txt_Tang.Name = "txt_Tang";
-            this.txt_Tang.Size = new System.Drawing.Size(233, 34);
+            this.txt_Tang.Size = new System.Drawing.Size(289, 34);
             this.txt_Tang.TabIndex = 27;
             // 
             // txt_SoCan

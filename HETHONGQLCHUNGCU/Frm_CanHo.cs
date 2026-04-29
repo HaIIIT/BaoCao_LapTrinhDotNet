@@ -28,6 +28,14 @@ namespace HETHONGQLCHUNGCU
             InitializeComponent();
             menu = frmmenu;
         }
+        public void QuayVeMenu()
+        {
+            if (menu != null)
+            {
+                menu.Show();
+            }
+            this.Close();
+        }
         private void AnTatCaFormCon()
         {
             foreach (Form frm in this.MdiChildren)
@@ -418,7 +426,7 @@ namespace HETHONGQLCHUNGCU
                 frmcanho = new Frm_TTCanHo_CuDan();
                 frmcanho.MdiParent = this;
                 frmcanho.StartPosition = FormStartPosition.Manual;
-                frmcanho.Location = new Point(170, 125);
+                frmcanho.Location = new Point(245, 150);
                 frmcanho.FormBorderStyle = FormBorderStyle.None;
                 frmcanho.Show();
                 //ẩn contorls
@@ -431,8 +439,8 @@ namespace HETHONGQLCHUNGCU
             {
                 //null
             }
-            //-----------------------------
-            Connection ketnoi = new Connection();
+                //-----------------------------
+                Connection ketnoi = new Connection();
             try
             {
                 if (ketnoi.moketnoi())

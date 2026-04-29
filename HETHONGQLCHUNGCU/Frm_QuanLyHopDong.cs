@@ -321,7 +321,7 @@ namespace HETHONGQLCHUNGCU
                             if (maCanHoCu != "" && maCanHoCu != mach)
                             {
                                 string upCanHoCu = "UPDATE CanHo SET TrangThai=N'Trống' " +
-                                                   "WHERE MaCanHo='" + maCanHoCu + "'";
+                                                    "WHERE MaCanHo='" + maCanHoCu + "'";
                                 ketnoi.capnhat(upCanHoCu);
                             }
                             MessageBox.Show("Cập nhật hợp đồng thành công!", "Hệ Thống Quản Lý Chung Cư - Thông Báo",

@@ -45,6 +45,9 @@ namespace HETHONGQLCHUNGCU
             else if (quyen == 4) // 4. Quyền Trưởng Phòng Kế Hoạch Tài Chính
             {
                 capnhattrangthaichucnang(false);
+                settrangthaichucnang(true, pnl_bangdanhgia, pic_bangdanhgia, lbl_dg, lbl_dg1);
+                settrangthaichucnang(true, pnl_chamcong, pic_chamcong, lbl_cc, lbl_cc1);
+                settrangthaichucnang(true, pnl_bangphancong, pic_bangphancong, lbl_pc, lbl_pc1);
                 settrangthaichucnang(true, pnl_congno, pic_congno, lbl_cn, lbl_cn1);
                 settrangthaichucnang(true, pnl_thanhtoan, pic_thanhtoan, lbl_tt, lbl_tt1);
                 settrangthaichucnang(true, pnl_hoadon, pic_hoadon, lbl_hoadon, lbl_hoadon1);
@@ -53,6 +56,9 @@ namespace HETHONGQLCHUNGCU
             else if (quyen == 5) // 5. Quyền Trưởng Phòng Dịch Vụ - Tiện Ích
             {
                 capnhattrangthaichucnang(false);
+                settrangthaichucnang(true, pnl_bangdanhgia, pic_bangdanhgia, lbl_dg, lbl_dg1);
+                settrangthaichucnang(true, pnl_chamcong, pic_chamcong, lbl_cc, lbl_cc1);
+                settrangthaichucnang(true, pnl_bangphancong, pic_bangphancong, lbl_pc, lbl_pc1);
                 settrangthaichucnang(true, pnl_cskh, pic_CSKH, lbl_cskh, lbl_cskh1);
                 settrangthaichucnang(true, pnl_dkdv, pic_dkdv, lbl_dk, lbl_dk1);
                 settrangthaichucnang(true, pnl_baotri, pic_btsc, lbl_btsc, lbl_btsc1);
@@ -64,7 +70,10 @@ namespace HETHONGQLCHUNGCU
                 settrangthaichucnang(false, pnl_bangdanhgia, pic_bangdanhgia, lbl_dg, lbl_dg1);
                 settrangthaichucnang(false, pnl_chamcong, pic_chamcong, lbl_cc, lbl_cc1);
                 settrangthaichucnang(false, pnl_bangphancong, pic_bangphancong, lbl_pc, lbl_pc1);
-            }else if(quyen == 7)// 7. Quyền Ban Quản Lý
+                settrangthaichucnang(false, pnl_thongketc, pic_thongketc, lbl_tk, lbl_tk1);
+                settrangthaichucnang(false, pnl_baotri, pic_btsc, lbl_btsc, lbl_btsc1);
+            }
+            else if(quyen == 7)// 7. Quyền Ban Quản Lý
             {
                 capnhattrangthaichucnang(true);
             }
@@ -197,6 +206,10 @@ namespace HETHONGQLCHUNGCU
                     MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     DangXuat();
+                }
+                else
+                {
+                    cb_user.SelectedIndex = 0;
                 }
             }
             else if (luaChon == "Đổi Mật Khẩu")

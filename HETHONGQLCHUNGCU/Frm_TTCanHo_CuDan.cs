@@ -93,5 +93,14 @@ namespace HETHONGQLCHUNGCU
                     "Hệ Thống Quản Lý Chung Cư - Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void lbl_exit_Click(object sender, EventArgs e)
+        {
+            Frm_CanHo frmCha = this.MdiParent as Frm_CanHo;
+            if (frmCha != null)
+            {
+                frmCha.QuayVeMenu();
+            }
+        }
     }
 }

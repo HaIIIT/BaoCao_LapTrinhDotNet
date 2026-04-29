@@ -58,6 +58,7 @@
             this.TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label3 = new System.Windows.Forms.Label();
+            this.lbl_exit = new System.Windows.Forms.Label();
             this.grp_BoLoc.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.upd_diemtich)).BeginInit();
@@ -445,11 +446,24 @@
             this.label3.TabIndex = 16;
             this.label3.Text = "Danh Sách Căn Hộ";
             // 
+            // lbl_exit
+            // 
+            this.lbl_exit.AutoSize = true;
+            this.lbl_exit.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_exit.ForeColor = System.Drawing.Color.Red;
+            this.lbl_exit.Location = new System.Drawing.Point(1075, 3);
+            this.lbl_exit.Name = "lbl_exit";
+            this.lbl_exit.Size = new System.Drawing.Size(29, 31);
+            this.lbl_exit.TabIndex = 31;
+            this.lbl_exit.Text = "X";
+            this.lbl_exit.Click += new System.EventHandler(this.lbl_exit_Click);
+            // 
             // Frm_TTCanHo_CuDan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1107, 607);
+            this.Controls.Add(this.lbl_exit);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dgv_thongtincanho);
             this.Controls.Add(this.grp_BoLoc);
@@ -501,5 +515,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TrangThai;
         private System.Windows.Forms.DataGridViewTextBoxColumn GhiChu;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbl_exit;
     }
 }

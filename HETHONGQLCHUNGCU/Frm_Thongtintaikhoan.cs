@@ -36,7 +36,7 @@ namespace HETHONGQLCHUNGCU
                     {
                         txt_mdd.Text = rdr["MaCuDan"].ToString();
                         txt_hoten.Text = rdr["HoTen"].ToString();
-                        txt_ngaysinh.Text = rdr["NgaySinh"].ToString();
+                        txt_ngaysinh.Text = Convert.ToDateTime(rdr["NgaySinh"]).ToString("dd/MM/yyyy");
                         txt_noisinh.Text = rdr["NoiSinh"].ToString();
                         txt_diachi.Text = rdr["QueQuan"].ToString();
                         txt_cccd.Text = rdr["CCCD"].ToString();
@@ -72,8 +72,9 @@ namespace HETHONGQLCHUNGCU
             lbl_trangthai.Visible = false;
             gpb_ttcanho.Text= "Thông Tin Phòng Ban - Chức Vụ";
             lbl_socan.Text = "Chức Vụ:";
-            lbl_mch.Text = "Mã Nhân Sự:";
+            lbl_mch.Text = "Mã Phòng Ban:";
             lbl_tang.Text = "Phòng Ban:";
+            txt_MaCanHo.Location= new Point(150, 34);
             txt_Tang.Location = new Point(450, 34);
             Connection ketnoi = new Connection();
             try
@@ -90,7 +91,7 @@ namespace HETHONGQLCHUNGCU
                     {
                         txt_mdd.Text = rdr["MaNhanSu"].ToString();
                         txt_hoten.Text = rdr["HoTen"].ToString();
-                        txt_ngaysinh.Text = rdr["NgaySinh"].ToString();
+                        txt_ngaysinh.Text = Convert.ToDateTime(rdr["NgaySinh"]).ToString("dd/MM/yyyy");
                         txt_noisinh.Text = rdr["NoiSinh"].ToString();
                         txt_diachi.Text = rdr["QueQuan"].ToString();
                         txt_cccd.Text = rdr["CCCD"].ToString();

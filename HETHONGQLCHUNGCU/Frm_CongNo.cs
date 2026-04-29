@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Drawing.Text;
 using System.Linq;
@@ -15,6 +16,9 @@ namespace HETHONGQLCHUNGCU
     {
         private Frm_thongtincongno frmthongtincongno = null;
         public Frm_Menu menu;
+        private Frm_HTxacthuctaptrung frmxacthuc = null;
+        private Frm_Thongtintaikhoan frmttcanhan = null;
+        private Frm_TTCongNo_CUDAN frmcongno = null;
         public Frm_CongNo()
         {
             InitializeComponent();          
@@ -27,6 +31,7 @@ namespace HETHONGQLCHUNGCU
         //xây dựng hàm dùng chung
         private void MDI()
         {
+            AnTatCaFormCon();
             frmthongtincongno = new Frm_thongtincongno();
             frmthongtincongno.MdiParent = this;
             frmthongtincongno.StartPosition = FormStartPosition.Manual;
@@ -41,6 +46,65 @@ namespace HETHONGQLCHUNGCU
             pnl_find.Visible = false;
             pnl_titel.Visible = false;
             pnl_titel2.Visible = false;
+        }
+        private void hiencontrols()
+        {
+            dgv_dscongno.Visible = true;
+            pnl_find.Visible = true;
+            pnl_titel.Visible = true;
+            pnl_titel2.Visible = true;
+        }
+        void timkiem()
+        {
+            Connection ketnoi = new Connection();
+            try
+            {
+                if (ketnoi.moketnoi())
+                {
+                    string sel = "SELECT MaCongNo,MaCanHo,MaHoaDon,SoTienNo,NgayPhatSinh,HanNo,TrangThai,GhiChu FROM CongNo WHERE 1=1";
+                    if (!string.IsNullOrEmpty(txt_cn.Text.Trim()))
+                    {
+                        sel += " AND MaCongNo LIKE N'%" + txt_cn.Text.Trim() + "%'";
+                    }
+                    if (!string.IsNullOrEmpty(txt_ch.Text.Trim()))
+                    {
+                        sel += " AND MaCanHo LIKE N'%" + txt_ch.Text.Trim() + "%'";
+                    }
+                    if (cbx_tt.SelectedIndex > 0)
+                    {
+                        string TrangThai = cbx_tt.Text.Split('-')[0].Trim();
+                        sel += " AND TrangThai = N'" +cbx_tt.Text.Trim()+ "'";
+                    }
+                    SqlDataReader rdr = ketnoi.truyvan(sel);
+                    DataTable tb = new DataTable();
+                    tb.Load(rdr);
+                    rdr.Close();
+                    dgv_dscongno.DataSource = tb;
+                    ketnoi.dongketnoi();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi kết nối: " + ex.Message, "Hệ Thống Quản Lý Chung Cư - Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void AnTatCaFormCon()
+        {
+            foreach (Form frm in this.MdiChildren)
+            {
+                if (frm != null && !frm.IsDisposed)
+                {
+                    frm.Close();
+                }
+            }
+        }
+        public void QuayVeMenu()
+        {
+            if (menu != null)
+            {
+                menu.Show();
+            }
+            this.Close();
         }
         //----------------MenuStrip---------------------
         private void themcongnotool_Click(object sender, EventArgs e)
@@ -88,10 +152,7 @@ namespace HETHONGQLCHUNGCU
         private void frmthongtincongno_FormClosed(object sender, FormClosedEventArgs e)
         {
             //hiện contorls
-            dgv_dscongno.Visible = true;
-            pnl_find.Visible = true;
-            pnl_titel.Visible = true;
-            pnl_titel2.Visible = true;
+            hiencontrols();
         }
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -108,8 +169,100 @@ namespace HETHONGQLCHUNGCU
                 menu.Show();
             }this.Close();
         }
+        private void thôngTinTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (frmttcanhan == null || frmttcanhan.IsDisposed)
+            {
+                AnTatCaFormCon();
+                frmttcanhan = new Frm_Thongtintaikhoan();
+                frmttcanhan.MdiParent = this;
+                frmttcanhan.StartPosition = FormStartPosition.Manual;
+                frmttcanhan.Location = new Point(180, 95);
+                frmttcanhan.FormBorderStyle = FormBorderStyle.None;
+                frmttcanhan.FormClosed += Frm_Thongtintaikhoan_FormClosed;
+                if (cls_chcecklogin.Quyen == 6)
+                {
+                    if (frmcongno != null && !frmcongno.IsDisposed)
+                    {
+                        frmcongno.Hide();
+                    }
+                }
+                else
+                {
+                    ancontrols();
+                }
+                frmttcanhan.Show();
+            }
+            else
+            {
+                frmttcanhan.Activate();
+            }
+        }
+        private void Frm_Thongtintaikhoan_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            frmttcanhan = null;
+            if (cls_chcecklogin.Quyen == 6)
+            {
+                if (frmcongno != null && !frmcongno.IsDisposed)
+                {
+                    frmcongno.Show();
+                    frmcongno.BringToFront();
+                }
+            }
+            else
+            {
+                // hiển thị controls
+                hiencontrols();
+            }
+        }
+        private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (frmxacthuc == null || frmxacthuc.IsDisposed)
+            {
+                AnTatCaFormCon();
+                frmxacthuc = new Frm_HTxacthuctaptrung();
+                frmxacthuc.MdiParent = this;
+                frmxacthuc.StartPosition = FormStartPosition.Manual;
+                frmxacthuc.Location = new Point(354, 215);
+                frmxacthuc.FormBorderStyle = FormBorderStyle.None;
+                frmxacthuc.FormClosed += Frm_HTxacthuctaptrung_FormClosed;
+                frmxacthuc.Show();
+                if (cls_chcecklogin.Quyen == 6)
+                {
+                    if (frmcongno != null && !frmcongno.IsDisposed)
+                    {
+                        frmcongno.Hide();
+                    }
+                }
+                else
+                {
+                    ancontrols();
+                }
+                frmxacthuc.Show();
+            }
+            else
+            {
+                frmxacthuc.Activate();
+            }
+        }
+        private void Frm_HTxacthuctaptrung_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            frmxacthuc = null;
+            if (cls_chcecklogin.Quyen == 6)
+            {
+                if (frmcongno != null && !frmcongno.IsDisposed)
+                {
+                    frmcongno.Show();
+                    frmcongno.BringToFront();
+                }
+            }
+            else
+            {
+                hiencontrols();
+            }
+        }
         //-----------------------------------------
-                            //&&//
+        //&&//
         //-----------------Dashboard---------------
         private void btn_trangchu_Click(object sender, EventArgs e)
         {
@@ -194,6 +347,75 @@ namespace HETHONGQLCHUNGCU
             frm_DanhGiaNhanSu danhgia = new frm_DanhGiaNhanSu(menu);
             danhgia.Show();
             this.Close();
-        }       
+        }
+        //-----------------------------
+        private void Frm_CongNo_Load(object sender, EventArgs e)
+        {
+            btn_load.Visible = false;
+            cbx_tt.Items.Clear();
+            cbx_tt.Items.Add("--Chọn Trạng Thái--");
+            cbx_tt.Items.Add("Đã Tất Toán");
+            cbx_tt.Items.Add("Chưa Thanh Toán");
+            cbx_tt.Items.Add("Quá Hạn");
+            cbx_tt.SelectedIndex = 0;
+            int quyen = cls_chcecklogin.Quyen;
+            if (quyen == 6)
+            {
+                PhanQuyenDashboard.tat(btn_chamcong, btn_bpcnv, btn_dgns, btn_thongketc, btn_btsc);
+                quảnLýCôngNợToolStripMenuItem.Visible = false;
+                AnTatCaFormCon();
+                frmcongno = new Frm_TTCongNo_CUDAN();
+                frmcongno.MdiParent = this;
+                frmcongno.StartPosition = FormStartPosition.Manual;
+                frmcongno.Location = new Point(220, 130);
+                frmcongno.FormBorderStyle = FormBorderStyle.None;
+                frmcongno.Show();
+                //ẩn contorls
+                ancontrols();
+            }
+            else if (quyen == 7)
+            {
+                //null
+            }
+            else if (quyen == 4)
+            {
+                PhanQuyenDashboard.tat(btn_cudan, btn_canho, btn_cskh, btn_dkdv, btn_btsc, btn_baixe);
+            } 
+                Connection ketnoi = new Connection();
+            if (ketnoi.moketnoi())
+            {
+                string sel = "SELECT MaCongNo,MaCanHo,MaHoaDon,SoTienNo,NgayPhatSinh,HanNo,TrangThai,GhiChu FROM CongNo";
+                SqlDataReader rdr = ketnoi.truyvan(sel);
+                DataTable tb = new DataTable();
+                tb.Load(rdr);
+                dgv_dscongno.DataSource = tb;
+                rdr.Close();
+                ketnoi.dongketnoi();
+            }
+            else
+            {
+                MessageBox.Show("Khong the ket noi CSDL");
+            }
+        }
+        private void btn_tracuu_Click(object sender, EventArgs e)
+        {
+            if (txt_cn.Text.Trim() == "" && txt_ch.Text.Trim() == "" && cbx_tt.SelectedIndex == 0)
+            {
+                MessageBox.Show("Vui lòng nhập thông tin tìm kiếm!", "Hệ Thống Quản Lý Chung Cư - Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            else
+            {
+                timkiem();
+                btn_load.Visible = true;
+            }
+        }
+        private void btn_load_Click(object sender, EventArgs e)
+        {
+            Frm_CongNo_Load(sender, e);
+            txt_ch.Clear();
+            txt_cn.Clear();
+            cbx_tt.SelectedIndex = 0;
+        }        
     }
 }

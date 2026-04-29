@@ -396,6 +396,10 @@ namespace HETHONGQLCHUNGCU
                     dgv_thongtincudan.DataSource = dt;
                     ketnoi.dongketnoi();
                 }
+                else
+                {
+                    MessageBox.Show("Không thể kết nối CSDL");
+                }
             }
             catch (Exception ex)
             {

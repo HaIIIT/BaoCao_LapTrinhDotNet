@@ -5,12 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace HETHONGQLCHUNGCU
 {
     public class Connection
     {
         string connStr = "server=ASUS-TUF-A15-HA\\MSSQLSERVER01; database=QLChungCu; uid=sa; pwd=123";
+        //  string connStr= "Server = 10.10.60.147,1433; Database=QLChungCu;User Id = sa; Password=hieu1234";
         public SqlConnection conn { get; set; }
         public SqlCommand cmd { get; set; }
         public Connection()
